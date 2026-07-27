@@ -3,7 +3,7 @@ const DEFAULT_CONFIG = {
   githubOwner: "buleye-ai",
   githubRepo: "cloud-native-aiops-performance-lab",
   githubBranch: "main",
-  marker: "#思考"
+  markers: ["#思考", "#面试"]
 };
 
 export default {
@@ -12,7 +12,7 @@ export default {
       return json({
         ok: true,
         service: "telegram-thoughts",
-        marker: env.THOUGHT_MARKER ?? DEFAULT_CONFIG.marker
+        markers: getConfig(env).markers
       });
     }
 
@@ -55,11 +55,12 @@ export async function processTelegramUpdate(update, env) {
   }
 
   const source = message.text ?? message.caption ?? "";
-  if (!source.includes(config.marker)) {
+  const matchedMarker = config.markers.find((marker) => source.includes(marker));
+  if (!matchedMarker) {
     return { ignored: "marker_not_found" };
   }
 
-  const body = cleanThought(source, config.marker);
+  const body = cleanThought(source, matchedMarker);
   if (!body) return { ignored: "empty_thought" };
 
   const publishedAt = new Date(message.date * 1000);
@@ -75,7 +76,8 @@ export async function processTelegramUpdate(update, env) {
     body,
     publishedAt,
     messageId: message.message_id,
-    telegramUrl
+    telegramUrl,
+    tag: matchedMarker.slice(1)
   });
 
   const result = await createGitHubFile({
@@ -101,7 +103,10 @@ function getConfig(env) {
     githubOwner: env.GITHUB_OWNER ?? DEFAULT_CONFIG.githubOwner,
     githubRepo: env.GITHUB_REPO ?? DEFAULT_CONFIG.githubRepo,
     githubBranch: env.GITHUB_BRANCH ?? DEFAULT_CONFIG.githubBranch,
-    marker: env.THOUGHT_MARKER ?? DEFAULT_CONFIG.marker
+    markers: (env.THOUGHT_MARKERS ?? DEFAULT_CONFIG.markers.join(","))
+      .split(",")
+      .map((marker) => marker.trim())
+      .filter(Boolean)
   };
 }
 
@@ -158,13 +163,14 @@ function renderMarkdown({
   body,
   publishedAt,
   messageId,
-  telegramUrl
+  telegramUrl,
+  tag
 }) {
   return `---
 title: ${JSON.stringify(title)}
 date: ${JSON.stringify(publishedAt.toISOString())}
 tags:
-  - 思考
+  - ${tag}
 source: telegram
 telegram_message_id: ${messageId}
 telegram_url: ${JSON.stringify(telegramUrl)}

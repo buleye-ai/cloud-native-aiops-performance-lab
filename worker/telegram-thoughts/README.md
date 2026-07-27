@@ -1,6 +1,6 @@
 # Telegram Thoughts Worker
 
-把 Telegram 公开频道 `@FrogsAndDucks` 中带有 `#思考` 的新消息转换为 Markdown，并写入博客仓库。
+把 Telegram 公开频道 `@FrogsAndDucks` 中带有 `#思考` 或 `#面试` 的新消息转换为 Markdown，并写入博客仓库。
 
 ## 数据流
 
@@ -29,7 +29,15 @@ Telegram channel_post
 排障不是从命令开始，而是从可证伪的假设开始。
 ```
 
-不包含 `#思考` 的频道消息会返回成功但不写入 GitHub。相同 Telegram 消息 ID 只会创建一次文件。
+也可以发布：
+
+```text
+#面试
+
+如何用一分钟解释 CPU 使用率与系统负载的区别？
+```
+
+不包含这两个标签的频道消息会返回成功但不写入 GitHub。相同 Telegram 消息 ID 只会创建一次文件。
 
 ## 当前边界
 

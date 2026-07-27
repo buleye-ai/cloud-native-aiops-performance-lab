@@ -32,8 +32,8 @@ const formatDate = (value: string) =>
     </article>
   </div>
   <div v-else class="thought-empty">
-    暂无思考日志。在 Telegram 频道发布带有 <code>#思考</code> 的消息后，
-    它会自动出现在这里。
+    暂无日志。在 Telegram 频道发布带有 <code>#思考</code> 或
+    <code>#面试</code> 的消息后，它会自动出现在这里。
   </div>
 </template>
 
