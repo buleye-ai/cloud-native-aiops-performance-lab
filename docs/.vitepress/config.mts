@@ -4,7 +4,7 @@ export default defineConfig({
   lang: "zh-CN",
   title: "Cloud Native AIOps Performance Lab",
   description: "Linux 性能、云原生、可观测性与 AIOps 实战知识库",
-  base: "/cloud-native-aiops-performance-lab/",
+  base: "/",
   cleanUrls: true,
   lastUpdated: true,
   themeConfig: {
@@ -97,4 +97,3 @@ export default defineConfig({
     }
   }
 });
-

@@ -77,7 +77,7 @@ export async function loadArticle(file) {
 export function articleUrl(relativePath) {
   const base = (
     process.env.BLOG_BASE_URL ??
-    "https://buleye-ai.github.io/cloud-native-aiops-performance-lab"
+    "https://ai.buleye.com"
   ).replace(/\/$/, "");
 
   const cleanPath = relativePath

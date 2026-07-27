@@ -76,6 +76,7 @@ pnpm telegram:publish -- \
 
 - `pages.yml`：推送到 `main` 后构建并发布 GitHub Pages。
 - `telegram.yml`：手动选择文章，先预览或正式推送频道。
+- 正式博客域名：<https://ai.buleye.com>。
 
 第一阶段刻意不设置自动群发，避免提交测试时刷屏。发布格式稳定后，再增加间隔复习计划。
 
