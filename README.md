@@ -57,7 +57,7 @@ pnpm docs:build
 
 ```bash
 pnpm telegram:preview -- \
-  --file docs/performance-engineering/cpu/README.md
+  --file docs/performance-engineering/cpu/index.md
 ```
 
 正式发送前，通过环境变量配置：
@@ -67,7 +67,7 @@ export TELEGRAM_BOT_TOKEN='...'
 export TELEGRAM_CHAT_ID='@FrogsAndDucks'
 
 pnpm telegram:publish -- \
-  --file docs/performance-engineering/cpu/README.md
+  --file docs/performance-engineering/cpu/index.md
 ```
 
 真实 Token 只能存放在本地环境变量或 GitHub Actions Secrets 中。

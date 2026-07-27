@@ -6,7 +6,7 @@ on:
       article:
         description: "docs/ 下的 Markdown 路径"
         required: true
-        default: "docs/performance-engineering/cpu/README.md"
+        default: "docs/performance-engineering/cpu/index.md"
         type: string
       dry_run:
         description: "仅预览，不发送"

@@ -6,10 +6,10 @@
 
 ## 学习模块
 
-- [CPU 性能排障手册](./cpu/README.md)
-- [内存性能排障手册](./memory/README.md)
-- [网络性能排障手册](./network/README.md)
-- [综合实战、加餐与面试手册](./practice-and-extras/README.md)
+- [CPU 性能排障手册](./cpu/index.md)
+- [内存性能排障手册](./memory/index.md)
+- [网络性能排障手册](./network/index.md)
+- [综合实战、加餐与面试手册](./practice-and-extras/index.md)
 
 ## 使用方法
 
