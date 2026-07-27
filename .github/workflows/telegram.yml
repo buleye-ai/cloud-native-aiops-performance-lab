@@ -1,0 +1,46 @@
+name: Publish Article to Telegram
+
+on:
+  workflow_dispatch:
+    inputs:
+      article:
+        description: "docs/ 下的 Markdown 路径"
+        required: true
+        default: "docs/performance-engineering/cpu/README.md"
+        type: string
+      dry_run:
+        description: "仅预览，不发送"
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.9.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Preview
+        if: ${{ inputs.dry_run }}
+        run: node automation/publish-telegram.mjs --file "$ARTICLE_PATH" --dry-run
+        env:
+          ARTICLE_PATH: ${{ inputs.article }}
+          BLOG_BASE_URL: https://buleye-ai.github.io/cloud-native-aiops-performance-lab
+      - name: Publish
+        if: ${{ !inputs.dry_run }}
+        run: node automation/publish-telegram.mjs --file "$ARTICLE_PATH"
+        env:
+          ARTICLE_PATH: ${{ inputs.article }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BLOG_BASE_URL: https://buleye-ai.github.io/cloud-native-aiops-performance-lab

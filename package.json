@@ -1,0 +1,19 @@
+{
+  "name": "cloud-native-aiops-performance-lab",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.9.0",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "articles": "node automation/article-index.mjs",
+    "telegram:preview": "node automation/publish-telegram.mjs --dry-run",
+    "telegram:publish": "node automation/publish-telegram.mjs",
+    "review:preview": "node automation/daily-review.mjs --dry-run",
+    "review:publish": "node automation/daily-review.mjs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
