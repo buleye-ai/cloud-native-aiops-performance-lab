@@ -1,0 +1,78 @@
+name: Sync Telegram Content
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: telegram-content
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    outputs:
+      content_changed: ${{ steps.commit.outputs.content_changed }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Poll Telegram and process approvals
+        run: node automation/poll-telegram.mjs
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_ADMIN_USER_ID: ${{ secrets.TELEGRAM_ADMIN_USER_ID }}
+      - name: Commit imported or approved content
+        id: commit
+        run: |
+          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "content_changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "telegram-content-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/thoughts docs/learning publication
+          git commit -m "content: sync Telegram updates"
+          git pull --rebase origin main
+          git push
+          echo "content_changed=true" >> "$GITHUB_OUTPUT"
+      - uses: pnpm/action-setup@v4
+        if: steps.commit.outputs.content_changed == 'true'
+        with:
+          version: 11.9.0
+      - uses: actions/setup-node@v4
+        if: steps.commit.outputs.content_changed == 'true'
+        with:
+          node-version: 22
+          cache: pnpm
+      - if: steps.commit.outputs.content_changed == 'true'
+        run: pnpm install --frozen-lockfile
+      - if: steps.commit.outputs.content_changed == 'true'
+        run: pnpm docs:build
+      - uses: actions/configure-pages@v5
+        if: steps.commit.outputs.content_changed == 'true'
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.commit.outputs.content_changed == 'true'
+        with:
+          path: docs/.vitepress/dist
+
+  deploy:
+    if: needs.sync.outputs.content_changed == 'true'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: sync
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

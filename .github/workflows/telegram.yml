@@ -35,7 +35,7 @@ jobs:
         run: node automation/publish-telegram.mjs --file "$ARTICLE_PATH" --dry-run
         env:
           ARTICLE_PATH: ${{ inputs.article }}
-          BLOG_BASE_URL: https://buleye-ai.github.io/cloud-native-aiops-performance-lab
+          BLOG_BASE_URL: https://ai.buleye.com
       - name: Publish
         if: ${{ !inputs.dry_run }}
         run: node automation/publish-telegram.mjs --file "$ARTICLE_PATH"
@@ -43,4 +43,4 @@ jobs:
           ARTICLE_PATH: ${{ inputs.article }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          BLOG_BASE_URL: https://buleye-ai.github.io/cloud-native-aiops-performance-lab
+          BLOG_BASE_URL: https://ai.buleye.com

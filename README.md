@@ -77,7 +77,11 @@ pnpm telegram:publish -- \
 - `pages.yml`：推送到 `main` 后构建并发布 GitHub Pages。
 - `telegram.yml`：手动选择文章，先预览或正式推送频道。
 - 正式博客域名：<https://ai.buleye.com>。
-- `worker/telegram-thoughts`：把频道中带 `#思考` 或 `#面试` 的新消息写入博客时间线。
+- `telegram-sync.yml`：轮询频道中的 `#思考`、`#面试`，并处理候选内容审批。
+- `industry-digest.yml`：每天 08:00 生成行业双语简报候选。
+- `english-lesson.yml`：每天 20:30 生成技术英语候选。
+
+候选内容先私聊发送到 `TELEGRAM_ADMIN_USER_ID`，只有点击“收录博客”后才会进入公开博客。
 
 第一阶段刻意不设置自动群发，避免提交测试时刷屏。发布格式稳定后，再增加间隔复习计划。
 

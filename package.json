@@ -14,7 +14,6 @@
     "review:publish": "node automation/daily-review.mjs"
   },
   "devDependencies": {
-    "vitepress": "^1.6.4",
-    "wrangler": "^4.114.0"
+    "vitepress": "^1.6.4"
   }
 }
