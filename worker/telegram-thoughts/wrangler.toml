@@ -1,0 +1,10 @@
+name = "telegram-thoughts"
+main = "src/index.js"
+compatibility_date = "2026-07-28"
+
+[vars]
+TELEGRAM_CHANNEL_USERNAME = "FrogsAndDucks"
+GITHUB_OWNER = "buleye-ai"
+GITHUB_REPO = "cloud-native-aiops-performance-lab"
+GITHUB_BRANCH = "main"
+THOUGHT_MARKER = "#思考"

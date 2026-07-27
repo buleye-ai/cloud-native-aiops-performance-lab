@@ -11,6 +11,7 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       { text: "性能工程", link: "/performance-engineering/" },
+      { text: "思考日志", link: "/thoughts/" },
       {
         text: "面试",
         link: "/performance-engineering/practice-and-extras/05-interview-handbook"
