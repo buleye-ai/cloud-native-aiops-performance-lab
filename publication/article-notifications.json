@@ -1,3 +1,11 @@
 {
-  "articles": {}
+  "articles": {
+    "docs/site-building-guide.md": {
+      "version": 1,
+      "telegram_message_id": 17,
+      "channel_url": "https://t.me/FrogsAndDucks/17",
+      "notified_at": "2026-07-28T06:33:24.426Z",
+      "content_sha256": "0089fec247d3aefb71f0585894115d9318fae3cfaf49bd91982f8ebaef2df3a7"
+    }
+  }
 }
