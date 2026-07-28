@@ -25,10 +25,17 @@ jobs:
       - name: Generate and send candidate
         run: node automation/generate-learning-card.mjs --kind english
         env:
+          AI_PRIMARY_API_KEY: ${{ secrets.AI_PRIMARY_API_KEY }}
+          AI_PRIMARY_BASE_URL: ${{ secrets.AI_PRIMARY_BASE_URL }}
+          AI_PRIMARY_MODEL: ${{ secrets.AI_PRIMARY_MODEL }}
+          AI_BACKUP_API_KEY: ${{ secrets.AI_BACKUP_API_KEY }}
+          AI_BACKUP_BASE_URL: ${{ secrets.AI_BACKUP_BASE_URL }}
+          AI_BACKUP_MODEL: ${{ secrets.AI_BACKUP_MODEL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_ADMIN_USER_ID: ${{ secrets.TELEGRAM_ADMIN_USER_ID }}
-          OPENAI_MODEL: gpt-5.6-terra
       - name: Save pending candidate
         run: |
           if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
