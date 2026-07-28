@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-07-28",
+  "next_lesson": 2,
+  "deliveries": {
+    "2026-07-28:morning": {
+      "lesson": 1,
+      "level": "A2",
+      "topic": "a calm morning routine",
+      "telegram_message_id": 11,
+      "sent_at": "2026-07-28T15:42:33.679Z"
+    }
+  }
+}
