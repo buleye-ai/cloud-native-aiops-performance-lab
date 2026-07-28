@@ -1,0 +1,52 @@
+{
+  "id": "ms4h4v8a-f5630d",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-07-28T09:49:20.794Z",
+  "title": "Kubeflow 与 Cilium 场景下的 Kubernetes GPU 空闲排障",
+  "english": "A CNCF Blog post examines a Kubernetes incident in which a distributed training job appeared healthy while 60% of GPUs were idle. The reported workload had been scheduled successfully: pods were running, with no crashes or OOMKills indicated in the provided summary. The article frames the problem at the intersection of Kubeflow and Cilium, highlighting that workload health signals alone may not reflect effective GPU utilization. For platform teams, this is a reminder to investigate the gap between scheduler-level success, pod-level status, and actual accelerator usage when operating distributed AI workloads.",
+  "chinese": "CNCF 的文章讨论了一个表面“健康”、但 GPU 利用率异常的 Kubernetes 分布式训练场景：训练任务已被调度，Pod 正在运行，且没有崩溃或 OOMKill，但仍有 60% 的 GPU 处于空闲状态。文章将问题置于 Kubeflow 与 Cilium 的交汇场景中，提示仅依赖调度成功、Pod Running 等状态，无法证明 AI 训练任务正在有效使用加速器资源。",
+  "why_it_matters": "这直接关系到云原生 AI 平台的可观测性与 AIOps 实践：运维开发需要把调度状态、Pod 生命周期信号与实际 GPU 利用情况关联起来，而不能将“工作负载正常运行”等同于“资源使用有效”。对 Agent Infra 而言，这也是构建自动诊断能力的重要输入：Agent 应识别健康信号与业务/资源效率信号之间的不一致。",
+  "interview_expression": "I would not treat a Running pod as proof of efficient AI workload execution. For distributed training, I would correlate scheduling results, pod health, and actual GPU utilization to identify hidden inefficiencies.",
+  "vocabulary": [
+    {
+      "term": "idle GPU",
+      "meaning": "空闲 GPU；已分配或可用但未被有效使用的图形处理器资源",
+      "example": "The training job was running, but many GPUs remained idle."
+    },
+    {
+      "term": "distributed training",
+      "meaning": "分布式训练；由多个计算进程或节点协同执行的模型训练",
+      "example": "Distributed training requires both healthy pods and effective resource utilization."
+    },
+    {
+      "term": "OOMKill",
+      "meaning": "因内存不足而被系统终止的容器或进程事件",
+      "example": "The pods showed no crashes or OOMKills in the reported incident."
+    }
+  ],
+  "sources": [
+    {
+      "source": "CNCF Blog",
+      "title": "When Kubeflow meets Cilium: Debugging 60% idle GPUs in Kubernetes",
+      "url": "https://www.cncf.io/blog/2026/07/23/when-kubeflow-meets-cilium-debugging-60-idle-gpus-in-kubernetes/",
+      "published_at": "2026-07-23T11:33:00.000Z",
+      "summary": "The symptom that made no sense The first time we saw it, we didn&#8217;t trust the dashboard. A distributed training job was scheduled and healthy — every pod was running, no crashes, no OOMKills, nothing in..."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "The future of AI is community driven and open",
+      "url": "https://www.cncf.io/blog/2026/07/23/the-future-of-ai-is-community-driven-and-open/",
+      "published_at": "2026-07-23T08:56:53.000Z",
+      "summary": "Kubernetes has become the de facto operating system for AI. In CNCF&#8217;s 2025 Annual Cloud Native Survey, 82% of container users now run Kubernetes in production, and 66% of organizations hosting generative AI use it to..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Launching Health in ChatGPT",
+      "url": "https://openai.com/index/health-in-chatgpt",
+      "published_at": "2026-07-23T00:00:00.000Z",
+      "summary": "Health in ChatGPT now lets eligible U.S. users securely connect medical records and Apple Health to get more personalized insights and better understand their health."
+    }
+  ],
+  "telegram_message_id": 10
+}
