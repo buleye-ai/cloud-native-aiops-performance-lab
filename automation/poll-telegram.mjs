@@ -90,15 +90,7 @@ ${body}
 
 async function processApproval(callback) {
   if (!adminUserId || String(callback.from?.id) !== String(adminUserId)) {
-    await telegramApi(
-      "answerCallbackQuery",
-      {
-        callback_query_id: callback.id,
-        text: "无权执行此操作",
-        show_alert: true
-      },
-      token
-    );
+    await answerCallback(callback, "无权执行此操作", true);
     return;
   }
 
@@ -110,20 +102,12 @@ async function processApproval(callback) {
   const pendingPath = `publication/pending/${id}.json`;
   const candidate = await readJson(pendingPath, null);
   if (!candidate) {
-    await telegramApi(
-      "answerCallbackQuery",
-      { callback_query_id: callback.id, text: "候选内容不存在或已经清理" },
-      token
-    );
+    await answerCallback(callback, "候选内容不存在或已经清理");
     return;
   }
 
   if (candidate.status !== "pending") {
-    await telegramApi(
-      "answerCallbackQuery",
-      { callback_query_id: callback.id, text: "这条内容已经处理" },
-      token
-    );
+    await answerCallback(callback, "这条内容已经处理");
     return;
   }
 
@@ -136,13 +120,9 @@ async function processApproval(callback) {
   }
 
   await writeJson(pendingPath, candidate);
-  await telegramApi(
-    "answerCallbackQuery",
-    {
-      callback_query_id: callback.id,
-      text: action === "approve" ? "已收录到博客" : "已忽略"
-    },
-    token
+  await answerCallback(
+    callback,
+    action === "approve" ? "已收录到博客" : "已忽略"
   );
   await telegramApi(
     "editMessageReplyMarkup",
@@ -153,6 +133,29 @@ async function processApproval(callback) {
     },
     token
   );
+}
+
+async function answerCallback(callback, text, showAlert = false) {
+  try {
+    await telegramApi(
+      "answerCallbackQuery",
+      {
+        callback_query_id: callback.id,
+        text,
+        show_alert: showAlert
+      },
+      token
+    );
+  } catch (error) {
+    if (
+      error.message.includes("query is too old") ||
+      error.message.includes("query ID is invalid")
+    ) {
+      console.warn("Telegram 回调提示已过期，继续处理内容状态");
+      return;
+    }
+    throw error;
+  }
 }
 
 async function publishLearningCard(candidate) {
