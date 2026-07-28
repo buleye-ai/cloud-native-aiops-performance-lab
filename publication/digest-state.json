@@ -1,3 +1,10 @@
 {
-  "used_urls": []
+  "used_urls": [
+    "https://www.cncf.io/blog/2026/07/27/federating-clusters-for-zero-downtime-kubernetes/",
+    "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
+    "https://www.cncf.io/blog/2026/07/24/my-lfx-mentorship-journey-with-kgateway/",
+    "https://www.cncf.io/blog/2026/07/24/opentelemetry-has-graduated-now-what/",
+    "https://www.cncf.io/blog/2026/07/23/launch-of-the-ai-infra-sig-under-the-cncf-japan-chapter-first-meetup-and-call-for-speakers/",
+    "https://www.cncf.io/blog/2026/07/23/sustaining-opentelemetry-what-a-10-week-contributor-cohort-actually-looks-like/"
+  ]
 }
