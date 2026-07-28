@@ -1,9 +1,20 @@
-name: Generate English Lesson
+name: Daily English Reading
 
 on:
   schedule:
+    # UTC+8 08:00
+    - cron: "0 0 * * *"
+    # UTC+8 20:30
     - cron: "30 12 * * *"
   workflow_dispatch:
+    inputs:
+      slot:
+        description: Reading time
+        required: true
+        type: choice
+        options:
+          - morning
+          - evening
 
 permissions:
   contents: write
@@ -22,8 +33,17 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Generate and send candidate
-        run: node automation/generate-learning-card.mjs --kind english
+      - name: Generate and send reading
+        run: |
+          SLOT="${{ inputs.slot }}"
+          if [ -z "$SLOT" ]; then
+            if [ "${{ github.event.schedule }}" = "0 0 * * *" ]; then
+              SLOT="morning"
+            else
+              SLOT="evening"
+            fi
+          fi
+          node automation/generate-english-reading.mjs --slot "$SLOT"
         env:
           AI_PRIMARY_API_KEY: ${{ secrets.AI_PRIMARY_API_KEY }}
           AI_PRIMARY_BASE_URL: ${{ secrets.AI_PRIMARY_BASE_URL }}
@@ -36,14 +56,14 @@ jobs:
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_ADMIN_USER_ID: ${{ secrets.TELEGRAM_ADMIN_USER_ID }}
-      - name: Save pending candidate
+      - name: Save learning progress
         run: |
           if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
             exit 0
           fi
-          git config user.name "learning-digest-bot"
+          git config user.name "english-reading-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add publication
-          git commit -m "content: queue English lesson"
+          git add publication/english-reading-state.json
+          git commit -m "content: record English reading progress"
           git pull --rebase origin main
           git push

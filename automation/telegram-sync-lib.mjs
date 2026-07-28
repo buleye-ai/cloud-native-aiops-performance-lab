@@ -30,6 +30,11 @@ export const FEATURE_HELP_TEXT = `<b>Cloud Native AI 学习助手</b>
 <b>机器人私聊</b>
 <code>/help</code> 或 <code>/features</code> — 随时查看本清单
 
+<b>每日英语阅读</b>
+08:00 — 日常、通勤和工作英语
+20:30 — 生活、文化和通识英语
+难度从 A2 逐步提升到 A2+、B1，直接发送到本私聊。
+
 使用方式：把以触发词开头的内容发到 @FrogsAndDucks。AI 内容会先发送到本私聊，由你选择“收录博客”或“忽略”。`;
 
 export async function telegramApi(method, payload, token) {
