@@ -1,4 +1,4 @@
-import { access, readFile } from "node:fs/promises";
+import { access, readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 
 import { projectRoot } from "./lib.mjs";
@@ -23,10 +23,15 @@ import {
 
 const token = process.env.TELEGRAM_BOT_TOKEN;
 const adminUserId = process.env.TELEGRAM_ADMIN_USER_ID;
+const channelChatId = process.env.TELEGRAM_CHAT_ID;
 const statePath = "publication/telegram-state.json";
 const state = await readJson(statePath, { offset: 0 });
 
 await configureBotMenu();
+if ((state.help_version ?? 0) < 1) {
+  await sendFeatureHelp();
+  state.help_version = 1;
+}
 const updates = await telegramApi(
   "getUpdates",
   {
@@ -45,6 +50,7 @@ for (const update of updates) {
   state.offset = Math.max(state.offset, update.update_id + 1);
 }
 
+await reconcileApprovedChannelPosts();
 await writeJson(statePath, state);
 console.log(`processed_updates=${updates.length} next_offset=${state.offset}`);
 
@@ -115,8 +121,15 @@ async function configureBotMenu() {
       "setMyCommands",
       {
         commands: BOT_COMMANDS,
-        scope: { type: "all_private_chats" },
-        language_code: "zh"
+        scope: { type: "all_private_chats" }
+      },
+      token
+    );
+    await telegramApi(
+      "setChatMenuButton",
+      {
+        chat_id: adminUserId,
+        menu_button: { type: "commands" }
       },
       token
     );
@@ -211,7 +224,7 @@ async function createAiCandidate(message, command, source) {
       reply_markup: {
         inline_keyboard: [
           [
-            { text: "✅ 收录博客", callback_data: `approve:${id}` },
+            { text: "✅ 博客 + Channel", callback_data: `approve:${id}` },
             { text: "❌ 忽略", callback_data: `reject:${id}` }
           ]
         ]
@@ -221,6 +234,86 @@ async function createAiCandidate(message, command, source) {
   );
   candidate.telegram_message_id = sent.message_id;
   await writeJson(pendingPath, candidate);
+}
+
+async function reconcileApprovedChannelPosts() {
+  if (!channelChatId) {
+    console.warn("缺少 TELEGRAM_CHAT_ID，跳过 Channel 补发");
+    return;
+  }
+  const eligibleKinds = new Set([
+    "summary",
+    "writing",
+    "retrospective",
+    "insight"
+  ]);
+  let names = [];
+  try {
+    names = await readdir(path.join(projectRoot, "publication/pending"));
+  } catch (error) {
+    if (error.code === "ENOENT") return;
+    throw error;
+  }
+
+  for (const name of names.filter((item) => item.endsWith(".json"))) {
+    const relativePath = `publication/pending/${name}`;
+    const candidate = await readJson(relativePath, null);
+    if (
+      !candidate ||
+      candidate.status !== "approved" ||
+      !candidate.blog_path ||
+      candidate.channel_message_id ||
+      !eligibleKinds.has(candidate.kind)
+    ) {
+      continue;
+    }
+    try {
+      const message = await publishCandidateToChannel(candidate);
+      candidate.channel_message_id = message.message_id;
+      candidate.channel_published_at = new Date().toISOString();
+      candidate.channel_url =
+        `https://t.me/${TELEGRAM_CHANNEL}/${message.message_id}`;
+      delete candidate.channel_publish_error;
+    } catch (error) {
+      candidate.channel_publish_error = error.message.slice(0, 500);
+      console.warn(`Channel 补发失败，保留待重试状态：${error.message}`);
+    }
+    await writeJson(relativePath, candidate);
+  }
+}
+
+async function publishCandidateToChannel(candidate) {
+  const typeLabels = {
+    summary: "总结",
+    writing: "文章",
+    retrospective: "复盘",
+    insight: "见解"
+  };
+  const blogUrl =
+    `https://ai.buleye.com/` +
+    candidate.blog_path
+      .replace(/^docs\//, "")
+      .replace(/\.md$/, "");
+  const text = [
+    `🧠 <b>${typeLabels[candidate.kind] ?? "学习"} · ${escapeHtml(candidate.title)}</b>`,
+    "",
+    escapeHtml(limit(candidate.chinese, 2200)),
+    "",
+    "<b>为什么值得关注</b>",
+    escapeHtml(limit(candidate.why_it_matters, 700)),
+    "",
+    `<a href="${escapeHtml(blogUrl)}">阅读全文与学习笔记</a>`
+  ].join("\n");
+  return telegramApi(
+    "sendMessage",
+    {
+      chat_id: channelChatId,
+      text,
+      parse_mode: "HTML",
+      disable_web_page_preview: false
+    },
+    token
+  );
 }
 
 function buildCommandPrompt(kind) {
