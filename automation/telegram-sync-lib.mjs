@@ -11,6 +11,26 @@ export const AI_COMMANDS = {
   "#复盘": "retrospective",
   "#见解": "insight"
 };
+export const BOT_COMMANDS = [
+  { command: "help", description: "查看全部功能和使用示例" },
+  { command: "features", description: "查看频道触发词" }
+];
+export const FEATURE_HELP_TEXT = `<b>Cloud Native AI 学习助手</b>
+
+<b>直接收录</b>
+<code>#思考 内容</code> — 记录到思考日志
+<code>#面试 内容</code> — 记录面试素材
+
+<b>生成候选（私聊审核后发布）</b>
+<code>#总结 URL或材料</code> — 提炼事实和结论
+<code>#写作 主题或材料</code> — 生成技术文章
+<code>#复盘 事故记录</code> — 整理根因、改进和 SOP
+<code>#见解 主题或材料</code> — 分析正反观点和生产影响
+
+<b>机器人私聊</b>
+<code>/help</code> 或 <code>/features</code> — 随时查看本清单
+
+使用方式：把以触发词开头的内容发到 @FrogsAndDucks。AI 内容会先发送到本私聊，由你选择“收录博客”或“忽略”。`;
 
 export async function telegramApi(method, payload, token) {
   if (!token) throw new Error("缺少 TELEGRAM_BOT_TOKEN");

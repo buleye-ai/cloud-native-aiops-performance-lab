@@ -13,6 +13,7 @@ export default defineConfig({
       { text: "性能工程", link: "/performance-engineering/" },
       { text: "思考日志", link: "/thoughts/" },
       { text: "行业与英语", link: "/learning/" },
+      { text: "使用指南", link: "/telegram-guide" },
       {
         text: "面试",
         link: "/performance-engineering/practice-and-extras/05-interview-handbook"

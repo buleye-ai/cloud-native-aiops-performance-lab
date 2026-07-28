@@ -8,6 +8,8 @@ import {
 } from "./ai-client.mjs";
 import {
   AI_COMMANDS,
+  BOT_COMMANDS,
+  FEATURE_HELP_TEXT,
   TELEGRAM_CHANNEL,
   TRIGGERS,
   escapeHtml,
@@ -24,18 +26,20 @@ const adminUserId = process.env.TELEGRAM_ADMIN_USER_ID;
 const statePath = "publication/telegram-state.json";
 const state = await readJson(statePath, { offset: 0 });
 
+await configureBotMenu();
 const updates = await telegramApi(
   "getUpdates",
   {
     offset: state.offset,
     limit: 100,
     timeout: 0,
-    allowed_updates: ["channel_post", "callback_query"]
+    allowed_updates: ["message", "channel_post", "callback_query"]
   },
   token
 );
 
 for (const update of updates) {
+  if (update.message) await handlePrivateMessage(update.message);
   if (update.channel_post) await importChannelPost(update.channel_post);
   if (update.callback_query) await processApproval(update.callback_query);
   state.offset = Math.max(state.offset, update.update_id + 1);
@@ -50,6 +54,10 @@ async function importChannelPost(message) {
   }
 
   const source = message.text ?? message.caption ?? "";
+  if (source.trimStart().startsWith("#帮助")) {
+    await sendFeatureHelp();
+    return;
+  }
   const command = Object.keys(AI_COMMANDS).find((candidate) =>
     source.trimStart().startsWith(candidate)
   );
@@ -98,6 +106,49 @@ ${body}
 
 [查看 Telegram 原文](${telegramUrl})
 `
+  );
+}
+
+async function configureBotMenu() {
+  try {
+    await telegramApi(
+      "setMyCommands",
+      {
+        commands: BOT_COMMANDS,
+        scope: { type: "all_private_chats" },
+        language_code: "zh"
+      },
+      token
+    );
+  } catch (error) {
+    console.warn(`配置 Telegram 菜单失败，继续同步：${error.message}`);
+  }
+}
+
+async function handlePrivateMessage(message) {
+  if (message.chat?.type !== "private") return;
+  if (!adminUserId || String(message.from?.id) !== String(adminUserId)) return;
+  const command = String(message.text ?? "")
+    .trim()
+    .split(/\s+/)[0]
+    .split("@")[0]
+    .toLowerCase();
+  if (["/start", "/help", "/features"].includes(command)) {
+    await sendFeatureHelp(message.chat.id);
+  }
+}
+
+async function sendFeatureHelp(chatId = adminUserId) {
+  if (!chatId) throw new Error("缺少 TELEGRAM_ADMIN_USER_ID");
+  await telegramApi(
+    "sendMessage",
+    {
+      chat_id: chatId,
+      text: FEATURE_HELP_TEXT,
+      parse_mode: "HTML",
+      disable_web_page_preview: true
+    },
+    token
   );
 }
 
