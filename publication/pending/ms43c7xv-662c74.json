@@ -1,7 +1,9 @@
 {
   "id": "ms43c7xv-662c74",
   "kind": "industry",
-  "status": "pending",
+  "status": "approved",
+  "reviewed_at": "2026-07-28T03:43:04.000Z",
+  "blog_path": "docs/learning/2026/07/2026-07-28-industry-ms43c7xv-662c74.md",
   "created_at": "2026-07-28T03:23:09.235Z",
   "title": "集群联邦、可观测性与 AI 基础设施成为云原生焦点",
   "english": "Recent CNCF and OpenAI updates highlight converging priorities for cloud native operations and AI-enabled work. A CNCF post discusses federating clusters for zero-downtime Kubernetes in multi-region environments, where an identical service in another region is insufficient without mechanisms that connect it to failure handling. OpenTelemetry has achieved CNCF graduated status, reinforcing its role in the cloud native ecosystem. CNCF Japan has launched an AI Infra SIG as demand grows for scalable and efficient infrastructure supporting generative AI and agents. Separately, OpenAI research reports that ChatGPT users are taking on tasks across roles, reshaping job boundaries.",
