@@ -5,6 +5,12 @@ import { projectRoot } from "./lib.mjs";
 
 export const TELEGRAM_CHANNEL = "FrogsAndDucks";
 export const TRIGGERS = ["#思考", "#面试"];
+export const AI_COMMANDS = {
+  "#总结": "summary",
+  "#写作": "writing",
+  "#复盘": "retrospective",
+  "#见解": "insight"
+};
 
 export async function telegramApi(method, payload, token) {
   if (!token) throw new Error("缺少 TELEGRAM_BOT_TOKEN");

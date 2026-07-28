@@ -3,8 +3,14 @@ import path from "node:path";
 
 import { projectRoot } from "./lib.mjs";
 import {
+  generateJsonWithFallback,
+  loadAiProviders
+} from "./ai-client.mjs";
+import {
+  AI_COMMANDS,
   TELEGRAM_CHANNEL,
   TRIGGERS,
+  escapeHtml,
   readJson,
   shanghaiDateParts,
   telegramApi,
@@ -44,6 +50,13 @@ async function importChannelPost(message) {
   }
 
   const source = message.text ?? message.caption ?? "";
+  const command = Object.keys(AI_COMMANDS).find((candidate) =>
+    source.trimStart().startsWith(candidate)
+  );
+  if (command) {
+    await createAiCandidate(message, command, source);
+    return;
+  }
   const trigger = TRIGGERS.find((candidate) => source.includes(candidate));
   if (!trigger) return;
 
@@ -86,6 +99,163 @@ ${body}
 [查看 Telegram 原文](${telegramUrl})
 `
   );
+}
+
+async function createAiCandidate(message, command, source) {
+  const id = `tg-${message.message_id}`;
+  const pendingPath = `publication/pending/${id}.json`;
+  if (await exists(pendingPath)) return;
+
+  const request = source.trimStart().slice(command.length).trim();
+  if (!request) {
+    console.warn(`${command} 缺少需要处理的内容`);
+    return;
+  }
+
+  const kind = AI_COMMANDS[command];
+  const material = await expandUrlMaterial(request);
+  const generated = await generateJsonWithFallback({
+    providers: loadAiProviders(),
+    developerPrompt: buildCommandPrompt(kind),
+    userInput: material
+  });
+  validateAiCandidate(generated);
+
+  const createdAt = new Date(message.date * 1000).toISOString();
+  const telegramUrl =
+    `https://t.me/${TELEGRAM_CHANNEL}/${message.message_id}`;
+  const candidate = {
+    id,
+    kind,
+    status: "pending",
+    created_at: createdAt,
+    title: limit(generated.title, 100),
+    english: limit(generated.english, 1200),
+    chinese: limit(generated.chinese, 3000),
+    why_it_matters: limit(generated.why_it_matters, 1200),
+    interview_expression: limit(generated.interview_expression, 700),
+    vocabulary: generated.vocabulary.map((item) => ({
+      term: limit(item.term, 80),
+      meaning: limit(item.meaning, 140),
+      example: limit(item.example, 260)
+    })),
+    sources: [
+      {
+        source: "Telegram Channel",
+        title: `${command} 原始指令`,
+        url: telegramUrl,
+        published_at: createdAt
+      }
+    ],
+    telegram_source_message_id: message.message_id
+  };
+
+  const sent = await telegramApi(
+    "sendMessage",
+    {
+      chat_id: adminUserId,
+      text: renderAiCandidate(candidate, command),
+      parse_mode: "HTML",
+      disable_web_page_preview: true,
+      reply_markup: {
+        inline_keyboard: [
+          [
+            { text: "✅ 收录博客", callback_data: `approve:${id}` },
+            { text: "❌ 忽略", callback_data: `reject:${id}` }
+          ]
+        ]
+      }
+    },
+    token
+  );
+  candidate.telegram_message_id = sent.message_id;
+  await writeJson(pendingPath, candidate);
+}
+
+function buildCommandPrompt(kind) {
+  const objectives = {
+    summary: "总结材料，区分事实、观点和待验证信息，提炼核心结论",
+    writing: "将材料写成结构清晰、可复习的技术文章",
+    retrospective:
+      "将材料整理成生产复盘，覆盖现象、影响、时间线、根因、处置、改进和 SOP",
+    insight:
+      "给出有依据的独立见解，包含正反观点、关键假设、生产影响和可执行建议"
+  };
+  return `你是资深云原生、性能工程与 AIOps 编辑。任务：${objectives[kind]}。
+面向有多年运维开发经验的读者，不讲空话；明确说明问题、原理、失败方式、生产取舍，以及与云原生 AI 职业能力的联系。
+不得把推测写成事实，不得虚构来源、版本、日期、数据或案例。
+只返回合法 JSON：
+{"title":"标题","english":"80-140词英文摘要","chinese":"中文正文","why_it_matters":"生产价值与职业联系","vocabulary":[{"term":"英文术语","meaning":"中文含义","example":"英文例句"}],"interview_expression":"1-2句可用于面试的英文表达"}
+vocabulary 必须恰好为 3 项。`;
+}
+
+async function expandUrlMaterial(request) {
+  const url = request.match(/https?:\/\/[^\s]+/)?.[0];
+  if (!url) return request.slice(0, 12000);
+  try {
+    const response = await fetch(url, {
+      headers: { "user-agent": "cloud-native-aiops-performance-lab/1.0" },
+      signal: AbortSignal.timeout(15000),
+      redirect: "follow"
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const contentType = response.headers.get("content-type") ?? "";
+    if (!contentType.includes("text/")) {
+      throw new Error(`不支持的内容类型 ${contentType}`);
+    }
+    const text = (await response.text())
+      .replace(/<script\b[\s\S]*?<\/script>/gi, " ")
+      .replace(/<style\b[\s\S]*?<\/style>/gi, " ")
+      .replace(/<[^>]+>/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 30000);
+    return `用户要求：${request}\n\n链接正文：${text}`;
+  } catch (error) {
+    console.warn(`读取链接失败，改用原始指令：${error.message}`);
+    return request.slice(0, 12000);
+  }
+}
+
+function validateAiCandidate(value) {
+  for (const field of [
+    "title",
+    "english",
+    "chinese",
+    "why_it_matters",
+    "interview_expression"
+  ]) {
+    if (typeof value[field] !== "string" || !value[field].trim()) {
+      throw new Error(`AI 输出缺少字段：${field}`);
+    }
+  }
+  if (!Array.isArray(value.vocabulary) || value.vocabulary.length !== 3) {
+    throw new Error("AI 输出 vocabulary 必须包含 3 项");
+  }
+}
+
+function renderAiCandidate(candidate, command) {
+  const words = candidate.vocabulary
+    .map((item) => `• <b>${escapeHtml(item.term)}</b>：${escapeHtml(item.meaning)}`)
+    .join("\n");
+  return [
+    `🧠 <b>${escapeHtml(command)} 候选</b>`,
+    "",
+    `<b>${escapeHtml(candidate.title)}</b>`,
+    "",
+    escapeHtml(limit(candidate.chinese, 1200)),
+    "",
+    `<b>为什么值得关注</b>`,
+    escapeHtml(limit(candidate.why_it_matters, 600)),
+    "",
+    `<b>术语</b>`,
+    words
+  ].join("\n");
+}
+
+function limit(value, maximum) {
+  const text = String(value).trim();
+  return text.length <= maximum ? text : `${text.slice(0, maximum - 1)}…`;
 }
 
 async function processApproval(callback) {
@@ -179,7 +349,15 @@ async function publishLearningCard(candidate) {
         (source.published_at ? `（${source.published_at}）` : "")
     )
     .join("\n");
-  const tag = candidate.kind === "industry" ? "行业" : "英语";
+  const tags = {
+    industry: "行业",
+    english: "英语",
+    summary: "总结",
+    writing: "写作",
+    retrospective: "复盘",
+    insight: "见解"
+  };
+  const tag = tags[candidate.kind] ?? "学习";
 
   await writeMarkdown(
     relativePath,
