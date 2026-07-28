@@ -28,6 +28,7 @@ export default withMermaid(defineConfig({
   themeConfig: {
     nav: [
       { text: "首页", link: "/" },
+      { text: "云原生基础", link: "/cloud-native-foundation/" },
       { text: "性能工程", link: "/performance-engineering/" },
       { text: "思考日志", link: "/thoughts/" },
       { text: "行业与英语", link: "/learning/" },
@@ -43,6 +44,21 @@ export default withMermaid(defineConfig({
       }
     ],
     sidebar: {
+      "/cloud-native-foundation/": [
+        {
+          text: "云原生基础",
+          items: [
+            {
+              text: "基础平台",
+              link: "/cloud-native-foundation/"
+            },
+            {
+              text: "CrashLoop 实战",
+              link: "/cloud-native-foundation/crashloop-incident"
+            }
+          ]
+        }
+      ],
       "/performance-engineering/": [
         {
           text: "性能工程",

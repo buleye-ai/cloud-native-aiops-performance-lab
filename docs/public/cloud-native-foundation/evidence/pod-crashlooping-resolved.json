@@ -1,0 +1,28 @@
+{
+  "receiver": "local-webhook",
+  "status": "resolved",
+  "alerts": [
+    {
+      "status": "resolved",
+      "labels": {
+        "alertname": "PodCrashLooping",
+        "container": "app",
+        "namespace": "demo",
+        "pod": "<pod>",
+        "severity": "warning"
+      },
+      "annotations": {
+        "description": "demo/<pod> 的 app 容器处于 CrashLoopBackOff。",
+        "summary": "Demo Pod 持续崩溃"
+      },
+      "startsAt": "2026-07-28T14:57:19.641Z",
+      "endsAt": "2026-07-28T15:04:19.641Z",
+      "fingerprint": "<redacted-fingerprint>"
+    }
+  ],
+  "notification_reason": "all alerts resolved",
+  "groupLabels": {
+    "alertname": "PodCrashLooping",
+    "namespace": "demo"
+  }
+}

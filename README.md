@@ -13,6 +13,7 @@
 
 ## 当前内容
 
+- k3s、GitOps、监控、告警与日志基础实验室
 - Linux CPU 性能
 - Linux 内存性能
 - Linux 网络性能

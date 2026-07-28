@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "trace_id": "<redacted-trace-id>",
+  "event_status": "firing",
+  "generated_at": "2026-07-28T14:57:24Z",
+  "alert": {
+    "name": "PodCrashLooping",
+    "fingerprint": "<fingerprint>",
+    "labels": {
+      "alertname": "PodCrashLooping",
+      "container": "app",
+      "namespace": "demo",
+      "pod": "<pod>",
+      "severity": "warning"
+    }
+  },
+  "summary": "PodCrashLooping 已完成只读诊断：容器可能引用了不存在的文件、配置或依赖。",
+  "evidence": [
+    {
+      "source": "alertmanager",
+      "observation": "PodCrashLooping 当前为 firing。",
+      "collected_at": "2026-07-28T14:57:24Z",
+      "query_ref": "alert:<fingerprint>"
+    },
+    {
+      "source": "kubernetes",
+      "observation": "app restartCount=5 state=terminated。",
+      "collected_at": "2026-07-28T14:57:24Z",
+      "query_ref": "kubernetes.get"
+    },
+    {
+      "source": "prometheus",
+      "observation": "最近十分钟容器重启增量合计为 4.381980952380952。",
+      "collected_at": "2026-07-28T14:57:24Z",
+      "query_ref": "prometheus.query"
+    },
+    {
+      "source": "loki",
+      "observation": "最近十分钟发现 6 条匹配日志；样例：fatal: required config /config/app.yaml not found",
+      "collected_at": "2026-07-28T14:57:24Z",
+      "query_ref": "loki.query_range"
+    }
+  ],
+  "hypotheses": [
+    {
+      "cause": "容器可能引用了不存在的文件、配置或依赖。",
+      "confidence": 0.82,
+      "evidence_refs": [
+        3
+      ]
+    }
+  ],
+  "recommended_actions": [
+    "根据证据检查 Deployment 的 command、args、volumeMounts 和探针。",
+    "修复通过 Git 提交，由 Argo CD 同步并观察告警是否 resolved。"
+  ],
+  "tool_calls": [
+    {
+      "tool": "kubernetes.get",
+      "status": "succeeded",
+      "started_at": "2026-07-28T14:57:24Z",
+      "duration_ms": 83
+    },
+    {
+      "tool": "prometheus.query",
+      "status": "succeeded",
+      "started_at": "2026-07-28T14:57:24Z",
+      "duration_ms": 19
+    },
+    {
+      "tool": "loki.query_range",
+      "status": "succeeded",
+      "started_at": "2026-07-28T14:57:24Z",
+      "duration_ms": 19
+    }
+  ],
+  "safety": {
+    "mode": "read-only",
+    "automatic_action_taken": false,
+    "writes_allowed": false
+  }
+}
