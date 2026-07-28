@@ -3,10 +3,12 @@ name: Deploy GitHub Pages
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - publication/article-notifications.json
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -45,3 +47,34 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+
+  notify:
+    concurrency:
+      group: telegram-content
+      cancel-in-progress: false
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Notify Telegram Channel about new articles
+        run: node automation/notify-new-articles.mjs
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BLOG_BASE_URL: https://ai.buleye.com
+      - name: Save notification state
+        run: |
+          if git diff --quiet publication/article-notifications.json; then
+            exit 0
+          fi
+          git config user.name "article-notification-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add publication/article-notifications.json
+          git commit -m "content: record Telegram article notification"
+          git pull --rebase origin main
+          git push

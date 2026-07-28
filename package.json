@@ -10,6 +10,7 @@
     "articles": "node automation/article-index.mjs",
     "telegram:preview": "node automation/publish-telegram.mjs --dry-run",
     "telegram:publish": "node automation/publish-telegram.mjs",
+    "telegram:notify:preview": "node automation/notify-new-articles.mjs --dry-run",
     "review:preview": "node automation/daily-review.mjs --dry-run",
     "review:publish": "node automation/daily-review.mjs"
   },

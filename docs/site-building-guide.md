@@ -1,6 +1,8 @@
 ---
 title: 从零搭建 GitHub Pages、Telegram 与 AI 联动的个人技术博客
 description: 基于 VitePress、GitHub Actions、自定义域名、Telegram Bot 和主备 AI API 的完整建站教程
+telegram_publish: true
+telegram_version: 1
 ---
 
 # 从零搭建 GitHub Pages、Telegram 与 AI 联动的个人技术博客
@@ -28,6 +30,10 @@ Telegram AI 指令 → 人工审核 ┘  GitHub Actions
 
 AI 生成内容不会直接公开。所有内容先进入 Telegram 私聊审核，再根据按钮
 决定是否进入博客和公开 Channel。
+
+- 从零完成 VitePress、GitHub Actions、GitHub Pages 和自定义域名上线；
+- 接入 Telegram 移动端输入、私聊审核、Channel 摘要与博客全文发布；
+- 用幂等、主备降级和补偿任务解决并发、回调过期与跨系统部分失败。
 
 ## 1. 为什么选择这套架构
 
@@ -593,6 +599,33 @@ git push
 
 这是为了处理定时任务、本地提交和其他工作流同时更新 `main` 时的
 non-fast-forward 冲突。
+
+### 12.1 让本地新文章通知 Channel
+
+通过 Telegram AI 流程批准的文章会直接发布 Channel；本地或 Codex 编写
+的 Markdown 则使用 Frontmatter 显式声明：
+
+```yaml
+telegram_publish: true
+telegram_version: 1
+```
+
+Pages 部署成功后，`automation/notify-new-articles.mjs` 扫描这些标记，
+发布文章摘要和公网链接，并把结果写入：
+
+```text
+publication/article-notifications.json
+```
+
+普通修改不会重复通知。如果文章重大更新需要再次推送，只需增加版本：
+
+```yaml
+telegram_version: 2
+```
+
+通知状态提交通过 `paths-ignore` 排除，不会形成“状态提交再次触发通知”的
+无限循环。这里刻意要求显式标记，避免配置文件、导航调整或每次小修订都
+打扰 Channel 订阅者。
 
 ## 13. 让用户随时知道有哪些功能
 
