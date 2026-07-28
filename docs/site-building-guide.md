@@ -14,18 +14,18 @@ telegram_version: 1
 最终得到的不是一个只能手工上传 Markdown 的静态站，而是一套个人内容
 平台：
 
-```text
-本地 Markdown ───────────────┐
-                            │
-Telegram 频道记录 ──────────┼→ GitHub 仓库
-                            │       ↓
-Telegram AI 指令 → 人工审核 ┘  GitHub Actions
-                                    ↓
-                              VitePress Build
-                                    ↓
-                              GitHub Pages
-                                    ↓
-                              ai.buleye.com
+```mermaid
+flowchart TD
+  Local["本地 Markdown"] --> Repo["GitHub 仓库"]
+  Channel["Telegram 频道记录"] --> Repo
+  Command["Telegram AI 指令"] --> AI["主备 AI API"]
+  AI --> Review["Telegram 私聊人工审核"]
+  Review --> Repo
+  Repo --> Actions["GitHub Actions"]
+  Actions --> Build["VitePress Build"]
+  Build --> Pages["GitHub Pages"]
+  Pages --> Site["ai.buleye.com"]
+  Review --> Publish["Channel 发布摘要"]
 ```
 
 AI 生成内容不会直接公开。所有内容先进入 Telegram 私聊审核，再根据按钮

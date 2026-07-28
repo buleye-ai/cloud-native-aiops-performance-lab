@@ -1,12 +1,30 @@
 import { defineConfig } from "vitepress";
+import { withMermaid } from "vitepress-plugin-mermaid";
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   lang: "zh-CN",
   title: "Cloud Native AIOps Performance Lab",
   description: "Linux 性能、云原生、可观测性与 AIOps 实战知识库",
   base: "/",
   cleanUrls: true,
   lastUpdated: true,
+  mermaid: {
+    securityLevel: "strict",
+    theme: "base",
+    fontFamily:
+      "Inter, ui-sans-serif, system-ui, -apple-system, sans-serif",
+    flowchart: {
+      useMaxWidth: true,
+      htmlLabels: true,
+      curve: "basis"
+    },
+    sequence: {
+      useMaxWidth: true
+    }
+  },
+  mermaidPlugin: {
+    class: "mermaid"
+  },
   themeConfig: {
     nav: [
       { text: "首页", link: "/" },
@@ -100,4 +118,4 @@ export default defineConfig({
       copyright: "Cloud Native AIOps Performance Lab"
     }
   }
-});
+}));
