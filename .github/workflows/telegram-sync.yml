@@ -20,10 +20,10 @@ jobs:
       content_changed: ${{ steps.commit.outputs.content_changed }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
       - name: Poll Telegram and process approvals
@@ -55,11 +55,11 @@ jobs:
           git pull --rebase origin main
           git push
           echo "content_changed=true" >> "$GITHUB_OUTPUT"
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
         if: steps.commit.outputs.content_changed == 'true'
         with:
           version: 11.9.0
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         if: steps.commit.outputs.content_changed == 'true'
         with:
           node-version: 22
@@ -68,9 +68,9 @@ jobs:
         run: pnpm install --frozen-lockfile
       - if: steps.commit.outputs.content_changed == 'true'
         run: pnpm docs:build
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
         if: steps.commit.outputs.content_changed == 'true'
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         if: steps.commit.outputs.content_changed == 'true'
         with:
           path: docs/.vitepress/dist
@@ -85,4 +85,4 @@ jobs:
     steps:
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
