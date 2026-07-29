@@ -2,10 +2,10 @@ name: Daily English Reading
 
 on:
   schedule:
-    # UTC+8 08:00
-    - cron: "0 0 * * *"
-    # UTC+8 20:30
-    - cron: "30 12 * * *"
+    # UTC+8 08:17; stagger from the industry digest.
+    - cron: "17 0 * * *"
+    # UTC+8 20:37; avoid GitHub Actions load at the top/half hour.
+    - cron: "37 12 * * *"
   workflow_dispatch:
     inputs:
       slot:
@@ -37,7 +37,7 @@ jobs:
         run: |
           SLOT="${{ inputs.slot }}"
           if [ -z "$SLOT" ]; then
-            if [ "${{ github.event.schedule }}" = "0 0 * * *" ]; then
+            if [ "${{ github.event.schedule }}" = "17 0 * * *" ]; then
               SLOT="morning"
             else
               SLOT="evening"
