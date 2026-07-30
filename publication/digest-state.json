@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://kubernetes.io/blog/2026/07/29/controller-runtime-cache-explained/",
+    "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+    "https://www.cncf.io/blog/2026/07/29/your-kubernetes-health-checks-are-accidentally-waking-your-services-heres-the-fix/",
+    "https://openai.com/index/chatgpt-for-academic-researchers",
+    "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+    "https://openai.com/index/scientific-computing-agentic-ai",
     "https://www.cncf.io/announcements/2026/07/28/cncf-and-slashdata-report-finds-japans-cloud-native-community-reaches-nearly-1-million-developers/",
     "https://www.cncf.io/announcements/2026/07/28/subaru-wins-cncf-end-user-case-study-contest-for-accelerating-ai-development-with-cloud-native-infrastructure/",
     "https://www.cncf.io/blog/2026/07/28/lima-v2-2-windows-guests-and-tpm-2-0-emulation/",
