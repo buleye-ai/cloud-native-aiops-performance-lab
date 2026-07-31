@@ -1,0 +1,52 @@
+{
+  "id": "ms8s1hna-50d209",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-07-31T10:05:43.702Z",
+  "title": "云原生运行时验证与企业级 AI 治理并进",
+  "english": "Recent updates highlight a converging operational agenda. CNCF describes runtime supply-chain verification through the Node Resource Interface, alongside established Kubernetes API-layer admission approaches that validate signatures and attestations at pod creation. Kubernetes also shows how custom metrics exporters can expose queue depth, batch duration, or active WebSocket connections to Prometheus and, ultimately, the HorizontalPodAutoscaler. On the AI side, OpenAI emphasizes safety, security, transparency, and provenance for responsible AI governance in Europe, while enterprise adoption examples stress leadership, governance, and employee-led innovation. A retail deployment using GPT-Realtime also illustrates multilingual, always-on agent support at operational scale.",
+  "chinese": "本期信号集中在两条主线：其一，Kubernetes 安全控制正从准入阶段的签名与证明校验，延伸到基于 NRI 的运行时供应链验证；其二，弹性治理不能只看 CPU 和内存，队列积压、批任务耗时、活跃 WebSocket 连接等业务指标可经自定义 exporter 暴露给 Prometheus，并供 HPA 使用。AI 侧则强调安全、安全性、透明度、来源可追溯性，以及组织治理和员工参与。对运维团队而言，Agent 的上线也需要同时具备可观测性、扩缩容能力与责任治理。",
+  "why_it_matters": "对云原生与 AIOps 而言，运行时验证补强了容器供应链控制面，而自定义指标让扩缩容能够跟随真实业务负载。对 Agent Infra 而言，24/7、多语言服务会放大容量、监控与治理要求；AI 治理实践则提示平台团队应把安全、透明度和来源追溯纳入交付流程。职业上，能够连接 Kubernetes 安全、Prometheus 指标、自动扩缩容与 AI 治理的人才，更适合承担 AI 平台和生产级 Agent 运维职责。",
+  "interview_expression": "I would treat AI agents as production workloads: they need observable business metrics, scalable infrastructure, and clear governance controls. For Kubernetes, I would combine supply-chain verification with metrics-driven autoscaling rather than relying only on CPU and memory.",
+  "vocabulary": [
+    {
+      "term": "attestation",
+      "meaning": "证明材料；在容器供应链中用于声明或验证构建、来源等信息。",
+      "example": "The controller checks signatures and attestations before a pod is created."
+    },
+    {
+      "term": "metrics exporter",
+      "meaning": "指标导出器；将外部或业务指标转换为监控系统可采集格式的组件。",
+      "example": "A custom metrics exporter can expose queue depth to Prometheus."
+    },
+    {
+      "term": "provenance",
+      "meaning": "来源追溯；用于说明数据、模型或工件的来源与流转信息。",
+      "example": "Provenance is an important part of responsible AI governance."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "Advancing responsible AI across Europe",
+      "url": "https://openai.com/index/advancing-responsible-ai-across-europe",
+      "published_at": "2026-07-31T15:00:00.000Z",
+      "summary": "OpenAI shares how its safety, security, transparency, and provenance practices support responsible AI governance in Europe. The work will continue as the EU AI Act advances."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Univé builds an AI-ready workforce",
+      "url": "https://openai.com/index/unive",
+      "published_at": "2026-07-31T07:00:00.000Z",
+      "summary": "See how Univé built an AI-ready workforce with ChatGPT Enterprise by combining leadership, responsible governance, and employee-led innovation to transform work at scale."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "Runtime Supply Chain Verification using the Node Resource Interface (NRI)",
+      "url": "https://www.cncf.io/blog/2026/07/30/runtime-supply-chain-verification-using-the-node-resource-interface-nri/",
+      "published_at": "2026-07-30T11:09:11.000Z",
+      "summary": "The widely used container supply chain verification tools today operate at the Kubernetes API layer as admission webhooks (such as Kyverno, OPA Gatekeeper, and Sigstore Policy Controller). They intercept pod creation, check signatures and attestations, and..."
+    }
+  ],
+  "telegram_message_id": 19
+}
