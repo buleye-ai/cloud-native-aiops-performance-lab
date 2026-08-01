@@ -1,0 +1,52 @@
+{
+  "id": "msa2v928-17f264",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-08-01T07:56:34.593Z",
+  "title": "Kubernetes v1.37 变更预览与事件驱动扩缩容信号",
+  "english": "Kubernetes v1.37 is approaching release, and the project has outlined planned changes that operators should track for ongoing environment maintenance. The preview notes that features can be deprecated, removed, or replaced before the final release. Separately, a CNCF article highlights a common event-driven scaling problem: CPU and memory utilization may not reflect real pressure when Amazon SQS messages accumulate while worker pods appear idle. It presents KEDA-based scaling using SQS queue depth as an alternative signal. Together, these updates reinforce two operational priorities: manage Kubernetes lifecycle changes proactively, and select autoscaling metrics that represent actual workload demand.",
+  "chinese": "Kubernetes v1.37 的预览内容提醒运维团队：在正式发布前，功能仍可能被弃用、移除或替换，因此需要持续跟踪变更并评估环境维护影响。与此同时，CNCF 的案例指出，在基于消息队列的事件驱动架构中，CPU 和内存利用率未必能体现真实压力：Worker Pod 看似空闲时，Amazon SQS 中可能已积压大量消息。文章讨论了依据 SQS 队列深度，通过 KEDA 扩缩 Kubernetes Pod 的方式。",
+  "why_it_matters": "这直接关联云原生平台治理与 AIOps：一方面，集群升级需要将弃用和替换风险纳入变更管理；另一方面，自动扩缩容应使用能够反映业务积压和实际需求的信号，而非只依赖资源利用率。对 Agent Infra 和 AI/ML 平台而言，Kubernetes 上的异步任务、推理队列和流水线同样需要可观测、可解释的调度与容量策略。",
+  "interview_expression": "I treat Kubernetes upgrades as an operational change-management process, especially when deprecations or removals are involved. For event-driven workloads, I prefer scaling signals such as queue depth when resource utilization does not represent actual demand.",
+  "vocabulary": [
+    {
+      "term": "deprecation",
+      "meaning": "弃用；功能仍可存在，但不建议继续使用，并可能在后续版本移除。",
+      "example": "Operators should assess the impact of a deprecation before upgrading a cluster."
+    },
+    {
+      "term": "queue depth",
+      "meaning": "队列深度；队列中等待处理的消息数量。",
+      "example": "Queue depth can be a better scaling signal than CPU utilization for event-driven workers."
+    },
+    {
+      "term": "event-driven",
+      "meaning": "事件驱动的；系统行为由消息、请求或其他事件触发。",
+      "example": "An event-driven workload may need to scale when messages accumulate."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "Ten advances in mathematics and theoretical computer science",
+      "url": "https://openai.com/index/ten-advances-in-mathematics",
+      "published_at": "2026-08-01T00:00:00.000Z",
+      "summary": "OpenAI shares new results on long-standing open problems in mathematics and theoretical computer science, including advances in geometry, cryptography, and complexity."
+    },
+    {
+      "source": "Kubernetes Blog",
+      "title": "Kubernetes v1.37 Sneak Peek",
+      "url": "https://kubernetes.io/blog/2026/07/31/kubernetes-v1-37-sneak-peek/",
+      "published_at": "2026-07-31T16:00:00.000Z",
+      "summary": "<p>As we get closer to the release date for Kubernetes v1.37, the project develops and matures, features may be deprecated, removed, or replaced with better ones for the project's overall health. This blog outlines some of the planned changes for the Kubernetes v1.37 release that the release team feels you should be aware of for the continued maintenance of your Kubernetes environment and keeping up to date with the latest changes. The information below reflects the current status of the v1.37 release and may change before the actual release date.</p> <h2 id=\"deprecations-and-removals-for-kubernetes-v1-37\">Deprecations and removals for Kubernetes v1.37<a class=\"td-heading-self-link\" href=\"#deprecations-and-removals-for-kubernetes-v1-37\" aria-label=\"Heading self-link\"></a></h2><h3 id=\"kubectl-kubectl-run-filename-f-to-be-deprecated\">Kubectl: <code>kubectl run --filename/-f</code> to be de"
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Building abundant intelligence",
+      "url": "https://openai.com/index/building-abundant-intelligence",
+      "published_at": "2026-07-31T15:00:00.000Z",
+      "summary": "A full-stack approach to making advanced AI more capable, more affordable, and more widely useful."
+    }
+  ],
+  "telegram_message_id": 22
+}

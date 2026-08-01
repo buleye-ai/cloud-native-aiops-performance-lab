@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://openai.com/index/ten-advances-in-mathematics",
+    "https://kubernetes.io/blog/2026/07/31/kubernetes-v1-37-sneak-peek/",
+    "https://openai.com/index/building-abundant-intelligence",
+    "https://www.cncf.io/blog/2026/07/31/scaling-kubernetes-pods-with-keda-based-on-amazon-sqs-queue-depth/",
+    "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
+    "https://kubernetes.io/blog/2026/07/13/introducing-headlamp-plugin-for-kubeflow/",
     "https://openai.com/index/advancing-responsible-ai-across-europe",
     "https://openai.com/index/unive",
     "https://www.cncf.io/blog/2026/07/30/runtime-supply-chain-verification-using-the-node-resource-interface-nri/",
