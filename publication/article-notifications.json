@@ -6,6 +6,20 @@
       "channel_url": "https://t.me/FrogsAndDucks/17",
       "notified_at": "2026-07-28T06:33:24.426Z",
       "content_sha256": "0089fec247d3aefb71f0585894115d9318fae3cfaf49bd91982f8ebaef2df3a7"
+    },
+    "docs/ai-engineering/index.md": {
+      "version": 1,
+      "telegram_message_id": 19,
+      "channel_url": "https://t.me/FrogsAndDucks/19",
+      "notified_at": "2026-08-02T16:48:33.768Z",
+      "content_sha256": "8e38a8cee91bd78b52162dd10bd159f0fb1c3b8f3f9bf2fb351b85cb31fd1e49"
+    },
+    "docs/ai-engineering/mainstream-ai-guide.md": {
+      "version": 1,
+      "telegram_message_id": 20,
+      "channel_url": "https://t.me/FrogsAndDucks/20",
+      "notified_at": "2026-08-02T16:48:34.120Z",
+      "content_sha256": "d80ea0b0f3294422bebb6e475b9561c9153d90f6a27f5df4c5162d83bedfaa08"
     }
   }
 }
