@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 11,
+  "next_lesson": 12,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -71,6 +71,13 @@
       "topic": "why sleep helps the brain",
       "telegram_message_id": 24,
       "sent_at": "2026-08-01T16:13:20.691Z"
+    },
+    "2026-08-02:morning": {
+      "lesson": 11,
+      "level": "A2",
+      "topic": "making plans with family",
+      "telegram_message_id": 26,
+      "sent_at": "2026-08-02T08:59:21.123Z"
     }
   }
 }
