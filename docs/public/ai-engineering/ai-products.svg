@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+  <title id="title">AI 产品生态分类地图</title><desc id="desc">将热门 AI 名称分为模型、聊天研究、Coding Agent、个人通用 Agent、工作流与框架、本地推理与网关、协议技能、生产治理和辅助工具。</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071426"/><stop offset="1" stop-color="#15243a"/></linearGradient><filter id="sh"><feDropShadow dx="0" dy="5" stdDeviation="8" flood-opacity=".22"/></filter><style>.t{font:700 37px Inter,"PingFang SC",sans-serif;fill:#f8fafc}.s{font:400 17px Inter,"PingFang SC",sans-serif;fill:#a5b4fc}.h{font:700 21px Inter,"PingFang SC",sans-serif;fill:#f8fafc}.p{font:500 16px Inter,"PingFang SC",sans-serif;fill:#e2e8f0}.d{font:400 14px Inter,"PingFang SC",sans-serif;fill:#cbd5e1}.warn{font:600 16px Inter,"PingFang SC",sans-serif;fill:#fde68a}</style></defs>
+  <rect width="1600" height="1100" rx="30" fill="url(#bg)"/><text x="65" y="68" class="t">AI 产品生态：名字不同，是因为它们处在不同岗位</text><text x="65" y="104" class="s">不要横向比较所有名称；先看它是“大脑、应用、员工、工厂、插座，还是监控系统”</text>
+  <g filter="url(#sh)">
+    <rect x="55" y="150" width="470" height="180" rx="24" fill="#172554" stroke="#818cf8"/><text x="85" y="190" class="h">模型｜像“大脑”</text><text x="85" y="225" class="p">GPT · Claude · Gemini</text><text x="85" y="255" class="p">Llama · Qwen · DeepSeek · Mistral</text><text x="85" y="292" class="d">提供推理与生成能力，本身通常不会直接操作电脑。</text>
+    <rect x="565" y="150" width="470" height="180" rx="24" fill="#0c4a6e" stroke="#38bdf8"/><text x="595" y="190" class="h">聊天与研究产品｜像“窗口”</text><text x="595" y="225" class="p">ChatGPT · Claude · Gemini</text><text x="595" y="255" class="p">Perplexity · NotebookLM</text><text x="595" y="292" class="d">把模型、搜索、文件和 UI 组合给普通用户。</text>
+    <rect x="1075" y="150" width="470" height="180" rx="24" fill="#134e4a" stroke="#2dd4bf"/><text x="1105" y="190" class="h">Coding Agent｜像“软件工程员工”</text><text x="1105" y="225" class="p">Codex · Claude Code · Pi · Aider</text><text x="1105" y="255" class="p">Cursor · Copilot · Windsurf · Cline · Roo</text><text x="1105" y="285" class="p">OpenCode · Goose · OpenHands · Devin</text><text x="1105" y="312" class="d">读仓库、改文件、运行命令和测试。</text>
+    <rect x="55" y="370" width="470" height="180" rx="24" fill="#4c1d45" stroke="#f472b6"/><text x="85" y="410" class="h">个人 / 通用 Agent｜像“长期助理”</text><text x="85" y="445" class="p">Hermes Agent · OpenClaw · Manus</text><text x="85" y="475" class="p">Goose（也覆盖通用工作流）</text><text x="85" y="512" class="d">跨会话记忆、消息入口、定时任务和多种工具。</text>
+    <rect x="565" y="370" width="470" height="180" rx="24" fill="#3f3f16" stroke="#eab308"/><text x="595" y="410" class="h">Agent 框架与工作流｜像“装配工厂”</text><text x="595" y="445" class="p">LangGraph · Agents SDK · CrewAI · AutoGen</text><text x="595" y="475" class="p">n8n · Dify · Flowise · Coze</text><text x="595" y="512" class="d">让开发者定义流程、状态、工具和多 Agent 协作。</text>
+    <rect x="1075" y="370" width="470" height="180" rx="24" fill="#431407" stroke="#fb923c"/><text x="1105" y="410" class="h">本地推理与模型网关｜像“发动机房”</text><text x="1105" y="445" class="p">Ollama · LM Studio · llama.cpp · vLLM</text><text x="1105" y="475" class="p">LiteLLM · OpenRouter</text><text x="1105" y="512" class="d">运行模型，或统一不同模型供应商的 API。</text>
+    <rect x="55" y="590" width="470" height="180" rx="24" fill="#3b1764" stroke="#c084fc"/><text x="85" y="630" class="h">协议、规范与能力包｜像“插座和手册”</text><text x="85" y="665" class="p">MCP · A2A · Agent Skills</text><text x="85" y="695" class="p">AGENTS.md · Function Calling · ACP</text><text x="85" y="732" class="d">让工具、Agent 和操作方法可以跨产品复用。</text>
+    <rect x="565" y="590" width="470" height="180" rx="24" fill="#243244" stroke="#94a3b8"/><text x="595" y="630" class="h">生产治理与观测｜像“仪表盘和质检”</text><text x="595" y="665" class="p">Evals · OpenTelemetry · Guardrails</text><text x="595" y="695" class="p">Langfuse · LangSmith · Phoenix · LLMOps</text><text x="595" y="732" class="d">回答是否正确、安全、稳定、经济和可追踪。</text>
+    <rect x="1075" y="590" width="470" height="180" rx="24" fill="#26303c" stroke="#64748b"/><text x="1105" y="630" class="h">辅助 UI 与配置工具｜像“遥控器”</text><text x="1105" y="665" class="p">CC Switch · Open WebUI</text><text x="1105" y="695" class="p">各类模型选择器与 Provider Manager</text><text x="1105" y="732" class="d">改善使用体验，不创造模型或 Agent 能力。</text>
+  </g>
+  <rect x="125" y="830" width="1350" height="190" rx="30" fill="#0f172a" stroke="#475569"/>
+  <text x="165" y="877" class="h">看到新名字时，用替换法判断</text>
+  <text x="165" y="920" class="p">“它使用哪个模型？” → 能回答：它大概率不是模型，而是产品、Agent 或 Harness。</text>
+  <text x="165" y="957" class="p">“换一个模型还能运行吗？” → 能：说明模型与产品层已经解耦。</text>
+  <text x="165" y="994" class="warn">Hermes、Pi、Codex、Claude Code 都可以使用模型，但它们本身不是新的基础模型。</text>
+  <text x="65" y="1062" class="d">名称按主要定位归类；部分产品横跨多个区域。分类的目标是建立心智模型，不是给产品贴永久标签。</text>
+  <style>
+    .t,.h,.p{fill:#1f2933}.s{fill:#66717a}.d{fill:#3f4a52}.warn{fill:#874a36}
+    rect{filter:none;rx:8px}[filter]{filter:none}
+    stop[stop-color="#071426"]{stop-color:#f7f3eb} stop[stop-color="#15243a"]{stop-color:#ebe6dc}
+    [fill="#172554"],[fill="#0c4a6e"],[fill="#134e4a"],[fill="#4c1d45"],[fill="#3f3f16"],[fill="#431407"],[fill="#3b1764"],[fill="#243244"],[fill="#26303c"],[fill="#0f172a"]{fill:#fffdf8}
+    [stroke="#818cf8"],[stroke="#38bdf8"],[stroke="#2dd4bf"],[stroke="#f472b6"],[stroke="#eab308"],[stroke="#fb923c"],[stroke="#c084fc"],[stroke="#94a3b8"],[stroke="#64748b"],[stroke="#475569"]{stroke:#9aa4a8}
+  </style>
+</svg>

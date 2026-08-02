@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
+  <title id="title">主流 AI 产品定位地图</title><desc id="desc">将 ChatGPT、Claude、Gemini、Kimi、Grok、Perplexity、Claude Code、Codex、DeepSeek 和 Qwen 按通用工作台、研究搜索、Coding Agent、开放模型生态分类。</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071426"/><stop offset="1" stop-color="#172554"/></linearGradient><filter id="sh"><feDropShadow dx="0" dy="5" stdDeviation="8" flood-opacity=".24"/></filter><style>.t{font:700 37px Inter,"PingFang SC",sans-serif;fill:#f8fafc}.s{font:400 17px Inter,"PingFang SC",sans-serif;fill:#a5b4fc}.h{font:700 23px Inter,"PingFang SC",sans-serif;fill:#f8fafc}.name{font:700 20px Inter,"PingFang SC",sans-serif;fill:#f1f5f9}.p{font:400 15px Inter,"PingFang SC",sans-serif;fill:#cbd5e1}.note{font:500 16px Inter,"PingFang SC",sans-serif;fill:#fde68a}</style></defs>
+  <rect width="1600" height="980" rx="30" fill="url(#bg)"/><text x="65" y="68" class="t">主流 AI 产品地图：不要把不同岗位放在同一张排行榜</text><text x="65" y="104" class="s">产品边界会继续变化；先理解主要工作方式，再根据实际任务选择</text>
+  <g filter="url(#sh)">
+    <rect x="55" y="150" width="720" height="300" rx="26" fill="#0c4a6e" stroke="#38bdf8"/><text x="88" y="195" class="h">通用 AI 工作台</text><text x="88" y="228" class="p">聊天、文件、写作、分析、图像、语音与工具的综合入口</text>
+    <rect x="95" y="260" width="200" height="135" rx="20" fill="#172554" stroke="#818cf8"/><text x="125" y="302" class="name">ChatGPT</text><text x="125" y="335" class="p">覆盖面广</text><text x="125" y="361" class="p">工具与交付物生态</text>
+    <rect x="315" y="260" width="200" height="135" rx="20" fill="#3b1764" stroke="#c084fc"/><text x="345" y="302" class="name">Claude</text><text x="345" y="335" class="p">写作与长文理解</text><text x="345" y="361" class="p">谨慎的知识工作</text>
+    <rect x="535" y="260" width="200" height="135" rx="20" fill="#123f57" stroke="#67e8f9"/><text x="565" y="302" class="name">Gemini</text><text x="565" y="335" class="p">Google 生态</text><text x="565" y="361" class="p">多模态与 Live</text>
+
+    <rect x="825" y="150" width="720" height="300" rx="26" fill="#134e4a" stroke="#2dd4bf"/><text x="858" y="195" class="h">研究、搜索与中文知识工作</text><text x="858" y="228" class="p">强调联网资料、引用、长文档、中文场景或大规模检索</text>
+    <rect x="865" y="260" width="200" height="135" rx="20" fill="#431407" stroke="#fb923c"/><text x="895" y="302" class="name">Kimi</text><text x="895" y="335" class="p">中文与长上下文</text><text x="895" y="361" class="p">文档、Agent、Slides</text>
+    <rect x="1085" y="260" width="200" height="135" rx="20" fill="#4c1d45" stroke="#f472b6"/><text x="1115" y="302" class="name">Grok</text><text x="1115" y="335" class="p">实时信息与 X 语境</text><text x="1115" y="361" class="p">工程、语音、Agent</text>
+    <rect x="1305" y="260" width="200" height="135" rx="20" fill="#3f3f16" stroke="#eab308"/><text x="1335" y="302" class="name">Perplexity</text><text x="1335" y="335" class="p">Web-first Answer Engine</text><text x="1335" y="361" class="p">引用与研究入口</text>
+
+    <rect x="55" y="495" width="720" height="300" rx="26" fill="#431407" stroke="#fb923c"/><text x="88" y="540" class="h">Coding Agent</text><text x="88" y="573" class="p">真正读取仓库、修改文件、运行命令和测试；不是普通聊天产品</text>
+    <rect x="145" y="615" width="245" height="135" rx="20" fill="#172554" stroke="#818cf8"/><text x="175" y="657" class="name">Codex</text><text x="175" y="690" class="p">OpenAI Coding Agent</text><text x="175" y="716" class="p">本地、IDE、云端与并行任务</text>
+    <rect x="430" y="615" width="245" height="135" rx="20" fill="#3b1764" stroke="#c084fc"/><text x="460" y="657" class="name">Claude Code</text><text x="460" y="690" class="p">Anthropic Coding Agent</text><text x="460" y="716" class="p">终端、仓库与工具链</text>
+
+    <rect x="825" y="495" width="720" height="300" rx="26" fill="#3b1764" stroke="#c084fc"/><text x="858" y="540" class="h">开放模型与自部署生态</text><text x="858" y="573" class="p">既有聊天产品，也提供模型/API；适合控制成本、部署与二次开发</text>
+    <rect x="915" y="615" width="245" height="135" rx="20" fill="#0f4a47" stroke="#2dd4bf"/><text x="945" y="657" class="name">DeepSeek</text><text x="945" y="690" class="p">推理与代码能力</text><text x="945" y="716" class="p">API 与开放生态</text>
+    <rect x="1200" y="615" width="245" height="135" rx="20" fill="#3f3f16" stroke="#eab308"/><text x="1230" y="657" class="name">Qwen</text><text x="1230" y="690" class="p">中文、多模态、模型谱系</text><text x="1230" y="716" class="p">Qwen Studio 与 Qwen Code</text>
+  </g>
+  <rect x="155" y="845" width="1290" height="80" rx="24" fill="#0f172a" stroke="#475569"/><text x="240" y="895" class="note">同一品牌可能同时拥有模型、聊天产品和 Agent。本文比较的是“产品体验与主要用途”，不是只比较底层模型。</text>
+  <style>
+    .t,.h,.name{fill:#1f2933}.s{fill:#66717a}.p{fill:#3f4a52}.note{fill:#874a36}
+    rect{filter:none;rx:8px}[filter]{filter:none}
+    stop[stop-color="#071426"]{stop-color:#f7f3eb} stop[stop-color="#172554"]{stop-color:#ebe6dc}
+    [fill="#0c4a6e"],[fill="#172554"],[fill="#3b1764"],[fill="#123f57"],[fill="#134e4a"],[fill="#431407"],[fill="#4c1d45"],[fill="#3f3f16"],[fill="#0f4a47"],[fill="#0f172a"]{fill:#fffdf8}
+    [stroke="#38bdf8"],[stroke="#818cf8"],[stroke="#c084fc"],[stroke="#67e8f9"],[stroke="#2dd4bf"],[stroke="#fb923c"],[stroke="#f472b6"],[stroke="#eab308"],[stroke="#475569"]{stroke:#9aa4a8}
+  </style>
+</svg>

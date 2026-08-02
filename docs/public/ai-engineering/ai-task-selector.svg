@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">按任务选择 AI 产品</title><desc id="desc">从综合日常工作、严肃写作长文、Google 生态、多来源研究、中文长文档、实时舆情、代码仓库执行和本地自部署八种需求选择 AI 产品。</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071426"/><stop offset="1" stop-color="#1e1b4b"/></linearGradient><filter id="sh"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-opacity=".22"/></filter><style>.t{font:700 37px Inter,"PingFang SC",sans-serif;fill:#f8fafc}.s{font:400 17px Inter,"PingFang SC",sans-serif;fill:#a5b4fc}.q{font:700 23px Inter,"PingFang SC",sans-serif;fill:#f8fafc}.h{font:700 19px Inter,"PingFang SC",sans-serif;fill:#f8fafc}.p{font:400 14px Inter,"PingFang SC",sans-serif;fill:#cbd5e1}.foot{font:500 16px Inter,"PingFang SC",sans-serif;fill:#fde68a}</style></defs>
+  <rect width="1600" height="900" rx="30" fill="url(#bg)"/><text x="65" y="68" class="t">先问“我要完成什么”，再问“该用哪个 AI”</text><text x="65" y="104" class="s">推荐代表主要适配方向，不代表唯一选择；重要任务仍需用真实材料进行小规模对比</text>
+  <rect x="590" y="145" width="420" height="82" rx="41" fill="#312e81" stroke="#818cf8"/><text x="695" y="195" class="q">你现在的主要任务？</text>
+  <g filter="url(#sh)">
+    <rect x="65" y="285" width="340" height="180" rx="23" fill="#0c4a6e" stroke="#38bdf8"/><text x="95" y="327" class="h">综合日常工作</text><text x="95" y="360" class="p">写作、文件、图像、语音、工具</text><text x="95" y="407" class="h">优先看：ChatGPT</text><text x="95" y="437" class="p">也可比较 Claude、Gemini、Kimi</text>
+    <rect x="440" y="285" width="340" height="180" rx="23" fill="#3b1764" stroke="#c084fc"/><text x="470" y="327" class="h">严肃写作与长文理解</text><text x="470" y="360" class="p">报告、润色、结构和材料分析</text><text x="470" y="407" class="h">优先比较：Claude</text><text x="470" y="437" class="p">再用 ChatGPT / Gemini 交叉检查</text>
+    <rect x="815" y="285" width="340" height="180" rx="23" fill="#123f57" stroke="#67e8f9"/><text x="845" y="327" class="h">Google 工作生态</text><text x="845" y="360" class="p">Drive、Gmail、搜索、Android、Live</text><text x="845" y="407" class="h">优先看：Gemini</text><text x="845" y="437" class="p">价值取决于账号和生态集成</text>
+    <rect x="1190" y="285" width="340" height="180" rx="23" fill="#3f3f16" stroke="#eab308"/><text x="1220" y="327" class="h">多来源 Web 研究</text><text x="1220" y="360" class="p">快速查资料、找来源、追踪问题</text><text x="1220" y="407" class="h">优先看：Perplexity</text><text x="1220" y="437" class="p">深度交付再比较各家 Research</text>
+    <rect x="65" y="510" width="340" height="180" rx="23" fill="#431407" stroke="#fb923c"/><text x="95" y="552" class="h">中文长文档与内容交付</text><text x="95" y="585" class="p">资料、Slides、表格、网站和 Agent</text><text x="95" y="632" class="h">优先看：Kimi</text><text x="95" y="662" class="p">大任务注意 credits、时间和验收</text>
+    <rect x="440" y="510" width="340" height="180" rx="23" fill="#4c1d45" stroke="#f472b6"/><text x="470" y="552" class="h">实时舆情、X 与语音 Agent</text><text x="470" y="585" class="p">热点语境、工程问答、实时交互</text><text x="470" y="632" class="h">优先看：Grok</text><text x="470" y="662" class="p">实时内容仍需核验来源质量</text>
+    <rect x="815" y="510" width="340" height="180" rx="23" fill="#134e4a" stroke="#2dd4bf"/><text x="845" y="552" class="h">直接修改真实代码仓库</text><text x="845" y="585" class="p">跨文件编辑、Shell、测试与 Git</text><text x="845" y="632" class="h">Codex / Claude Code</text><text x="845" y="662" class="p">按仓库、验证和安全边界实测</text>
+    <rect x="1190" y="510" width="340" height="180" rx="23" fill="#263244" stroke="#94a3b8"/><text x="1220" y="552" class="h">本地部署与开放生态</text><text x="1220" y="585" class="p">私有化、模型实验、成本控制</text><text x="1220" y="632" class="h">DeepSeek / Qwen</text><text x="1220" y="662" class="p">能力之外还要承担推理运维</text>
+  </g>
+  <path d="M800 227V255M235 255H1360M235 255V275M610 255V275M985 255V275M1360 255V275" stroke="#818cf8" stroke-width="3" fill="none"/>
+  <rect x="175" y="760" width="1250" height="75" rx="24" fill="#0f172a" stroke="#475569"/><text x="270" y="806" class="foot">不要按一次回答判断胜负：用自己的 5 个真实任务，固定材料和验收标准，重复测试后再选择。</text>
+  <style>
+    .t,.q,.h{fill:#1f2933}.s{fill:#66717a}.p{fill:#3f4a52}.foot{fill:#874a36}
+    rect{filter:none;rx:8px}[filter]{filter:none}
+    stop[stop-color="#071426"]{stop-color:#f7f3eb} stop[stop-color="#1e1b4b"]{stop-color:#ebe6dc}
+    [fill="#312e81"],[fill="#0c4a6e"],[fill="#3b1764"],[fill="#123f57"],[fill="#3f3f16"],[fill="#431407"],[fill="#4c1d45"],[fill="#134e4a"],[fill="#263244"],[fill="#0f172a"]{fill:#fffdf8}
+    [stroke="#818cf8"],[stroke="#38bdf8"],[stroke="#c084fc"],[stroke="#67e8f9"],[stroke="#eab308"],[stroke="#fb923c"],[stroke="#f472b6"],[stroke="#2dd4bf"],[stroke="#94a3b8"],[stroke="#475569"]{stroke:#9aa4a8}
+  </style>
+</svg>

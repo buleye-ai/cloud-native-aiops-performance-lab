@@ -29,6 +29,7 @@ export default withMermaid(defineConfig({
     nav: [
       { text: "首页", link: "/" },
       { text: "云原生基础", link: "/cloud-native-foundation/" },
+      { text: "AI 工程", link: "/ai-engineering/" },
       { text: "性能工程", link: "/performance-engineering/" },
       { text: "思考日志", link: "/thoughts/" },
       { text: "行业与英语", link: "/learning/" },
@@ -44,6 +45,21 @@ export default withMermaid(defineConfig({
       }
     ],
     sidebar: {
+      "/ai-engineering/": [
+        {
+          text: "AI 工程",
+          items: [
+            {
+              text: "AI Agent 演进与实践",
+              link: "/ai-engineering/"
+            },
+            {
+              text: "主流 AI 能力与选型",
+              link: "/ai-engineering/mainstream-ai-guide"
+            }
+          ]
+        }
+      ],
       "/cloud-native-foundation/": [
         {
           text: "云原生基础",
