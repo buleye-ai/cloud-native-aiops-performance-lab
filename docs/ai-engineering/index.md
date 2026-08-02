@@ -3,6 +3,8 @@ title: 从会聊天到会交付：AI Agent 工程的演进、工具地图与实�
 description: 从问题驱动的视角理解 LLM、Agent、MCP、Skills、Harness 与主流 AI 产品，并完成可验证的实践路线
 telegram_publish: true
 telegram_version: 1
+rss_publish: true
+date: 2026-08-02T00:00:00+08:00
 ---
 
 # 从会聊天到会交付：AI Agent 工程的演进、工具地图与实践路线

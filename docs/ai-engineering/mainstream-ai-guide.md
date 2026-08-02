@@ -3,6 +3,8 @@ title: 主流 AI 怎么选：ChatGPT、Claude、Claude Code、Gemini、Kimi、Gr
 description: 用产品定位、能力边界和真实任务评测选择主流 AI，而不是追逐容易过时的排行榜
 telegram_publish: true
 telegram_version: 1
+rss_publish: true
+date: 2026-08-02T00:10:00+08:00
 ---
 
 # 主流 AI 怎么选：ChatGPT、Claude、Claude Code、Gemini、Kimi、Grok 等能力地图

@@ -8,6 +8,17 @@ export default withMermaid(defineConfig({
   base: "/",
   cleanUrls: true,
   lastUpdated: true,
+  head: [
+    [
+      "link",
+      {
+        rel: "alternate",
+        type: "application/rss+xml",
+        title: "Cloud Native AIOps Performance Lab RSS",
+        href: "https://ai.buleye.com/feed.xml"
+      }
+    ]
+  ],
   mermaid: {
     securityLevel: "strict",
     theme: "base",
@@ -35,6 +46,7 @@ export default withMermaid(defineConfig({
       { text: "行业与英语", link: "/learning/" },
       { text: "使用指南", link: "/telegram-guide" },
       { text: "建站教程", link: "/site-building-guide" },
+      { text: "RSS", link: "/feed.xml" },
       {
         text: "面试",
         link: "/performance-engineering/practice-and-extras/05-interview-handbook"

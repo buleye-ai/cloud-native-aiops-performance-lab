@@ -5,7 +5,7 @@
   "packageManager": "pnpm@11.9.0",
   "scripts": {
     "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
+    "docs:build": "node automation/generate-rss.mjs && vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "articles": "node automation/article-index.mjs",
     "telegram:preview": "node automation/publish-telegram.mjs --dry-run",

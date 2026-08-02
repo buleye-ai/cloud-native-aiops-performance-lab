@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud Native AIOps Performance Lab</title>
+    <link>https://ai.buleye.com</link>
+    <description>Linux 性能、云原生、可观测性与 AI 工程实战文章</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 01 Aug 2026 16:10:00 GMT</lastBuildDate>
+    <atom:link href="https://ai.buleye.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>主流 AI 怎么选：ChatGPT、Claude、Claude Code、Gemini、Kimi、Grok 等能力地图</title>
+      <link>https://ai.buleye.com/ai-engineering/mainstream-ai-guide</link>
+      <guid isPermaLink="true">https://ai.buleye.com/ai-engineering/mainstream-ai-guide</guid>
+      <pubDate>Sat, 01 Aug 2026 16:10:00 GMT</pubDate>
+      <description>用产品定位、能力边界和真实任务评测选择主流 AI，而不是追逐容易过时的排行榜</description>
+    </item>
+    <item>
+      <title>从会聊天到会交付：AI Agent 工程的演进、工具地图与实践路线</title>
+      <link>https://ai.buleye.com/ai-engineering/</link>
+      <guid isPermaLink="true">https://ai.buleye.com/ai-engineering/</guid>
+      <pubDate>Sat, 01 Aug 2026 16:00:00 GMT</pubDate>
+      <description>从问题驱动的视角理解 LLM、Agent、MCP、Skills、Harness 与主流 AI 产品，并完成可验证的实践路线</description>
+    </item>
+    <item>
+      <title>从零搭建 GitHub Pages、Telegram 与 AI 联动的个人技术博客</title>
+      <link>https://ai.buleye.com/site-building-guide</link>
+      <guid isPermaLink="true">https://ai.buleye.com/site-building-guide</guid>
+      <pubDate>Tue, 28 Jul 2026 16:00:00 GMT</pubDate>
+      <description>基于 VitePress、GitHub Actions、自定义域名、Telegram Bot 和主备 AI API 的完整建站教程</description>
+    </item>
+    <item>
+      <title>运维工程师如何利用 AI：从执行者升级为可靠性与自动化决策者</title>
+      <link>https://ai.buleye.com/learning/2026/07/2026-07-28-insight-tg-12</link>
+      <guid isPermaLink="true">https://ai.buleye.com/learning/2026/07/2026-07-28-insight-tg-12</guid>
+      <pubDate>Tue, 28 Jul 2026 04:12:51 GMT</pubDate>
+      <description>AI is unlikely to replace experienced operations engineers who understand systems, risk, and production constraints. It will automate parts of triage, documentation, query generation, alert summarization, and routine remediation. The durable advantage of an SRE or platform engineer is not typing commands faster; it is defining safe operating boundaries, validating AI-generated actions, designing observability, and converting incident knowledge into reliable automation. Engineers should treat AI as a probabilistic copilot, not an autonomous authority. Build skills in data quality, telemetry, Kubernetes and cloud control planes, policy-as-code, incident analysis, and AI evaluation. The goal is to move from repetitive execution toward system design, risk control, and operational learning.</description>
+    </item>
+    <item>
+      <title>集群联邦、可观测性与 AI 基础设施成为云原生焦点</title>
+      <link>https://ai.buleye.com/learning/2026/07/2026-07-28-industry-ms43c7xv-662c74</link>
+      <guid isPermaLink="true">https://ai.buleye.com/learning/2026/07/2026-07-28-industry-ms43c7xv-662c74</guid>
+      <pubDate>Tue, 28 Jul 2026 03:23:09 GMT</pubDate>
+      <description>Recent CNCF and OpenAI updates highlight converging priorities for cloud native operations and AI-enabled work. A CNCF post discusses federating clusters for zero-downtime Kubernetes in multi-region environments, where an identical service in another region is insufficient without mechanisms that connect it to failure handling. OpenTelemetry has achieved CNCF graduated status, reinforcing its role in the cloud native ecosystem. CNCF Japan has launched an AI Infra SIG as demand grows for scalable and efficient infrastructure supporting generative AI and agents. Separately, OpenAI research reports that ChatGPT users are taking on tasks across roles, reshaping job boundaries.</description>
+    </item>
+  </channel>
+</rss>
