@@ -3,6 +3,8 @@ title: 从零搭建 GitHub Pages、Telegram 与 AI 联动的个人技术博客
 description: 基于 VitePress、GitHub Actions、自定义域名、Telegram Bot 和主备 AI API 的完整建站教程
 telegram_publish: true
 telegram_version: 1
+rss_publish: true
+date: 2026-07-29T00:00:00+08:00
 ---
 
 # 从零搭建 GitHub Pages、Telegram 与 AI 联动的个人技术博客

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="760" viewBox="0 0 1440 760" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Harness 分层架构</title><desc id="desc">模型位于 Harness 上方，Harness 包含上下文、循环、安全、运行保障、可观测评测，并连接工具和真实环境。</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071426"/><stop offset="1" stop-color="#16263b"/></linearGradient><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#7dd3fc"/></marker><style>.t{font:700 35px Inter,"PingFang SC",sans-serif;fill:#f8fafc}.s{font:400 17px Inter,"PingFang SC",sans-serif;fill:#94a3b8}.h{font:700 20px Inter,"PingFang SC",sans-serif;fill:#f8fafc}.p{font:400 15px Inter,"PingFang SC",sans-serif;fill:#cbd5e1}.l{stroke:#7dd3fc;stroke-width:3;fill:none;marker-end:url(#a)}</style></defs>
+  <rect width="1440" height="760" rx="28" fill="url(#bg)"/><text x="65" y="68" class="t">Harness：把不确定的模型装进可控系统</text><text x="65" y="104" class="s">决定 Agent 看见什么、能做什么、何时停止，以及失败后如何恢复</text>
+  <rect x="510" y="135" width="420" height="90" rx="45" fill="#312e81" stroke="#818cf8"/><text x="585" y="173" class="h">LLM / Local Model</text><text x="585" y="203" class="p">负责判断与生成，不直接拥有系统权限</text>
+  <path class="l" d="M720 225V270"/>
+  <rect x="90" y="270" width="1260" height="280" rx="30" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/><text x="135" y="318" class="h">Agent Harness</text>
+  <g><rect x="135" y="355" width="210" height="140" rx="20" fill="#0c4a6e" stroke="#38bdf8"/><text x="164" y="397" class="h">上下文工程</text><text x="164" y="433" class="p">检索 · 压缩</text><text x="164" y="463" class="p">Memory · Prompt</text>
+  <rect x="375" y="355" width="210" height="140" rx="20" fill="#134e4a" stroke="#2dd4bf"/><text x="404" y="397" class="h">执行循环</text><text x="404" y="433" class="p">计划 · 工具 · 重试</text><text x="404" y="463" class="p">预算 · 停止条件</text>
+  <rect x="615" y="355" width="210" height="140" rx="20" fill="#431407" stroke="#fb923c"/><text x="644" y="397" class="h">安全边界</text><text x="644" y="433" class="p">权限 · 沙箱 · 审批</text><text x="644" y="463" class="p">Guardrails</text>
+  <rect x="855" y="355" width="210" height="140" rx="20" fill="#4c1d45" stroke="#f472b6"/><text x="884" y="397" class="h">运行保障</text><text x="884" y="433" class="p">状态 · 队列 · 超时</text><text x="884" y="463" class="p">幂等 · 恢复</text>
+  <rect x="1095" y="355" width="210" height="140" rx="20" fill="#3b0764" stroke="#c084fc"/><text x="1124" y="397" class="h">观测与评测</text><text x="1124" y="433" class="p">Trace · Token · Cost</text><text x="1124" y="463" class="p">日志 · Evals</text></g>
+  <path class="l" d="M720 550V595"/>
+  <rect x="220" y="595" width="1000" height="75" rx="25" fill="#3f3f16" stroke="#facc15"/><text x="315" y="640" class="h">Shell　Browser　MCP　API　文件系统　代码仓库　真实业务系统</text>
+  <text x="360" y="715" class="s">模型可以替换；真正决定可靠性上限的，往往是 Harness 的工程质量。</text>
+  <style>
+    .t,.h{fill:#1f2933}.s{fill:#66717a}.p{fill:#3f4a52}.l{stroke:#365b73}
+    rect{filter:none;rx:8px}
+    stop[stop-color="#071426"]{stop-color:#f7f3eb} stop[stop-color="#16263b"]{stop-color:#ebe6dc}
+    [fill="#312e81"],[fill="#0f172a"],[fill="#0c4a6e"],[fill="#134e4a"],[fill="#431407"],[fill="#4c1d45"],[fill="#3b0764"],[fill="#3f3f16"]{fill:#fffdf8}
+    [stroke="#818cf8"],[stroke="#38bdf8"],[stroke="#2dd4bf"],[stroke="#fb923c"],[stroke="#f472b6"],[stroke="#c084fc"],[stroke="#facc15"]{stroke:#9aa4a8}[fill="#7dd3fc"]{fill:#365b73}
+  </style>
+</svg>

@@ -8,6 +8,17 @@ export default withMermaid(defineConfig({
   base: "/",
   cleanUrls: true,
   lastUpdated: true,
+  head: [
+    [
+      "link",
+      {
+        rel: "alternate",
+        type: "application/rss+xml",
+        title: "Cloud Native AIOps Performance Lab RSS",
+        href: "https://ai.buleye.com/feed.xml"
+      }
+    ]
+  ],
   mermaid: {
     securityLevel: "strict",
     theme: "base",
@@ -29,11 +40,13 @@ export default withMermaid(defineConfig({
     nav: [
       { text: "首页", link: "/" },
       { text: "云原生基础", link: "/cloud-native-foundation/" },
+      { text: "AI 工程", link: "/ai-engineering/" },
       { text: "性能工程", link: "/performance-engineering/" },
       { text: "思考日志", link: "/thoughts/" },
       { text: "行业与英语", link: "/learning/" },
       { text: "使用指南", link: "/telegram-guide" },
       { text: "建站教程", link: "/site-building-guide" },
+      { text: "RSS", link: "/feed.xml" },
       {
         text: "面试",
         link: "/performance-engineering/practice-and-extras/05-interview-handbook"
@@ -44,6 +57,21 @@ export default withMermaid(defineConfig({
       }
     ],
     sidebar: {
+      "/ai-engineering/": [
+        {
+          text: "AI 工程",
+          items: [
+            {
+              text: "AI Agent 演进与实践",
+              link: "/ai-engineering/"
+            },
+            {
+              text: "主流 AI 能力与选型",
+              link: "/ai-engineering/mainstream-ai-guide"
+            }
+          ]
+        }
+      ],
       "/cloud-native-foundation/": [
         {
           text: "云原生基础",

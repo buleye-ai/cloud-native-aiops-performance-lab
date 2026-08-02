@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="620" viewBox="0 0 1440 620" role="img" aria-labelledby="title desc">
+  <title id="title">AI Agent 工程演进路线</title>
+  <desc id="desc">从大语言模型、上下文、工具、MCP、Agent、Skill 到 Harness 和产品宿主的演进路线。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071426"/><stop offset="1" stop-color="#12243f"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity=".24"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L8 3L0 6Z" fill="#7dd3fc"/></marker>
+    <style>
+      .title{font:700 36px Inter,"PingFang SC","Microsoft YaHei",sans-serif;fill:#f8fafc}.sub{font:400 17px Inter,"PingFang SC","Microsoft YaHei",sans-serif;fill:#94a3b8}.h{font:700 20px Inter,"PingFang SC","Microsoft YaHei",sans-serif;fill:#f8fafc}.p{font:400 14px Inter,"PingFang SC","Microsoft YaHei",sans-serif;fill:#cbd5e1}.tag{font:600 14px Inter,"PingFang SC","Microsoft YaHei",sans-serif;fill:#bae6fd}.line{stroke:#7dd3fc;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1440" height="620" rx="28" fill="url(#bg)"/>
+  <text x="72" y="72" class="title">从“会回答”到“可交付”</text>
+  <text x="72" y="108" class="sub">每一层都由上一层暴露出的工程问题推动</text>
+  <g filter="url(#shadow)">
+    <rect x="72" y="180" width="160" height="150" rx="20" fill="#172554" stroke="#818cf8"/><text x="92" y="220" class="h">LLM</text><text x="92" y="252" class="p">生成与推理</text><text x="92" y="284" class="tag">问题：只会回答</text>
+    <rect x="270" y="180" width="160" height="150" rx="20" fill="#0c4a6e" stroke="#38bdf8"/><text x="290" y="220" class="h">Context</text><text x="290" y="252" class="p">RAG · Memory</text><text x="290" y="284" class="tag">补充私有知识</text>
+    <rect x="468" y="180" width="160" height="150" rx="20" fill="#134e4a" stroke="#2dd4bf"/><text x="488" y="220" class="h">Tool Use</text><text x="488" y="252" class="p">API · Shell · Browser</text><text x="488" y="284" class="tag">从说到做</text>
+    <rect x="666" y="180" width="160" height="150" rx="20" fill="#3f3f16" stroke="#facc15"/><text x="686" y="220" class="h">MCP</text><text x="686" y="252" class="p">统一工具协议</text><text x="686" y="284" class="tag">避免重复接入</text>
+    <rect x="864" y="180" width="160" height="150" rx="20" fill="#4c1d45" stroke="#f472b6"/><text x="884" y="220" class="h">Agent + Loop</text><text x="884" y="252" class="p">观察 · 决策 · 行动</text><text x="884" y="284" class="tag">推进多步目标</text>
+    <rect x="1062" y="180" width="160" height="150" rx="20" fill="#431407" stroke="#fb923c"/><text x="1082" y="220" class="h">Skills</text><text x="1082" y="252" class="p">可复用工作方法</text><text x="1082" y="284" class="tag">减少流程漂移</text>
+    <rect x="1260" y="180" width="120" height="150" rx="20" fill="#3b0764" stroke="#c084fc"/><text x="1280" y="220" class="h">Harness</text><text x="1280" y="252" class="p">安全与控制</text><text x="1280" y="284" class="tag">走向生产</text>
+  </g>
+  <path class="line" d="M232 255H260"/><path class="line" d="M430 255H458"/><path class="line" d="M628 255H656"/><path class="line" d="M826 255H854"/><path class="line" d="M1024 255H1052"/><path class="line" d="M1222 255H1250"/>
+  <rect x="175" y="408" width="1090" height="126" rx="24" fill="#0f172a" stroke="#334155"/>
+  <text x="215" y="451" class="h">最终组合成 Agent 产品</text>
+  <text x="215" y="492" class="p">Coding Agent：Codex · Claude Code · Pi</text><text x="660" y="492" class="p">通用长期 Agent：Hermes</text><text x="1000" y="492" class="p">本地模型层：Ollama</text>
+  <text x="215" y="570" class="sub">CC Switch 位于配置辅助层：管理多个宿主和供应商，而不是模型或 Agent。</text>
+  <style>
+    .title,.h{fill:#1f2933}.sub{fill:#66717a}.p{fill:#3f4a52}.tag{fill:#874a36}.line{stroke:#365b73}.line marker path{fill:#365b73}
+    rect{filter:none;rx:8px} [filter]{filter:none}
+    stop[stop-color="#071426"]{stop-color:#f7f3eb} stop[stop-color="#12243f"]{stop-color:#ebe6dc}
+    [fill="#172554"],[fill="#0c4a6e"],[fill="#134e4a"],[fill="#3f3f16"],[fill="#4c1d45"],[fill="#431407"],[fill="#3b0764"],[fill="#0f172a"]{fill:#fffdf8}
+    [stroke="#818cf8"],[stroke="#38bdf8"],[stroke="#2dd4bf"],[stroke="#facc15"],[stroke="#f472b6"],[stroke="#fb923c"],[stroke="#c084fc"],[stroke="#334155"]{stroke:#9aa4a8}[fill="#7dd3fc"]{fill:#365b73}
+  </style>
+</svg>

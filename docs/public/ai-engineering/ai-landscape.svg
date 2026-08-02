@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1180" viewBox="0 0 1600 1180" role="img" aria-labelledby="title desc">
+  <title id="title">2026 AI 全局分层地图</title>
+  <desc id="desc">从算力、模型、推理服务、知识上下文、协议、Agent 核心、Harness、产品到生产治理的九层 AI 技术地图。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071426"/><stop offset="1" stop-color="#172554"/></linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#38bdf8"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="5" stdDeviation="8" flood-opacity=".22"/></filter>
+    <marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="3.5" orient="auto"><path d="M0 0L9 3.5L0 7Z" fill="#7dd3fc"/></marker>
+    <style>
+      .title{font:700 38px Inter,"PingFang SC","Microsoft YaHei",sans-serif;fill:#f8fafc}.subtitle{font:400 18px Inter,"PingFang SC","Microsoft YaHei",sans-serif;fill:#a5b4fc}.layer{font:700 21px Inter,"PingFang SC","Microsoft YaHei",sans-serif;fill:#f8fafc}.en{font:500 14px Inter,"PingFang SC","Microsoft YaHei",sans-serif;fill:#94a3b8}.name{font:600 18px Inter,"PingFang SC","Microsoft YaHei",sans-serif;fill:#f1f5f9}.small{font:400 15px Inter,"PingFang SC","Microsoft YaHei",sans-serif;fill:#cbd5e1}.problem{font:500 17px Inter,"PingFang SC","Microsoft YaHei",sans-serif;fill:#e0f2fe}.badge{font:600 14px Inter,"PingFang SC","Microsoft YaHei",sans-serif;fill:#bae6fd}.line{stroke:#7dd3fc;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1600" height="1180" rx="30" fill="url(#bg)"/>
+  <text x="68" y="68" class="title">2026 AI 全局地图：名词很多，系统只有九层</text>
+  <text x="68" y="104" class="subtitle">从下向上看：基础设施提供能力，Agent 组织能力，产品交付能力，治理保证它长期可信</text>
+  <text x="68" y="153" class="en">层次</text><text x="300" y="153" class="en">概念与热门名称</text><text x="1260" y="153" class="en">这一层解决什么问题</text>
+
+  <g filter="url(#shadow)">
+    <rect x="55" y="175" width="1490" height="92" rx="18" fill="#172554" stroke="#6366f1"/>
+    <rect x="55" y="285" width="1490" height="92" rx="18" fill="#0c3a60" stroke="#38bdf8"/>
+    <rect x="55" y="395" width="1490" height="92" rx="18" fill="#0f4a47" stroke="#2dd4bf"/>
+    <rect x="55" y="505" width="1490" height="92" rx="18" fill="#3c3a18" stroke="#eab308"/>
+    <rect x="55" y="615" width="1490" height="92" rx="18" fill="#3f1d3d" stroke="#f472b6"/>
+    <rect x="55" y="725" width="1490" height="92" rx="18" fill="#451a0b" stroke="#fb923c"/>
+    <rect x="55" y="835" width="1490" height="92" rx="18" fill="#3b1764" stroke="#c084fc"/>
+    <rect x="55" y="945" width="1490" height="92" rx="18" fill="#233044" stroke="#94a3b8"/>
+  </g>
+
+  <g>
+    <text x="82" y="211" class="layer">⑧ 产品与入口</text><text x="82" y="240" class="en">Products</text>
+    <text x="300" y="213" class="name">聊天：ChatGPT · Claude · Gemini</text><text x="300" y="243" class="small">编程：Codex · Claude Code · Cursor · Copilot · Pi · OpenCode · Aider</text>
+    <text x="1260" y="218" class="problem">让人直接完成任务</text><text x="1260" y="246" class="small">不是新的基础原理</text>
+
+    <text x="82" y="321" class="layer">⑦ Harness</text><text x="82" y="350" class="en">运行控制层</text>
+    <text x="300" y="323" class="name">OpenAI Agents SDK · Claude Agent SDK · LangGraph · CrewAI · AutoGen</text><text x="300" y="353" class="small">状态 · 权限 · 沙箱 · 重试 · 编排 · 人工介入</text>
+    <text x="1260" y="328" class="problem">让 Agent 可控运行</text><text x="1260" y="356" class="small">产品可靠性的核心</text>
+
+    <text x="82" y="431" class="layer">⑥ Agent 核心</text><text x="82" y="460" class="en">Decision &amp; Action</text>
+    <text x="300" y="433" class="name">Agent · Tool Use · ReAct · Planning · Loop · Memory · Multi-Agent</text><text x="300" y="463" class="small">观察环境 → 判断下一步 → 调用工具 → 用结果继续</text>
+    <text x="1260" y="438" class="problem">完成多步骤目标</text><text x="1260" y="466" class="small">从“回答”走向“行动”</text>
+
+    <text x="82" y="541" class="layer">⑤ 能力与协议</text><text x="82" y="570" class="en">Capability &amp; Protocol</text>
+    <text x="300" y="543" class="name">MCP：Agent ↔ 工具　·　A2A：Agent ↔ Agent　·　Skills：可复用工作方法</text><text x="300" y="573" class="small">AGENTS.md · Hooks · Plugins · Function Calling</text>
+    <text x="1260" y="548" class="problem">统一连接和方法</text><text x="1260" y="576" class="small">减少重复集成与教学</text>
+
+    <text x="82" y="651" class="layer">④ 知识与上下文</text><text x="82" y="680" class="en">Context Layer</text>
+    <text x="300" y="653" class="name">Prompt · Context Window · RAG · Embedding · Vector DB · Memory</text><text x="300" y="683" class="small">Pinecone · Milvus · Weaviate · pgvector（只是不同存储选择）</text>
+    <text x="1260" y="658" class="problem">补充私有与最新知识</text><text x="1260" y="686" class="small">模型参数外的上下文</text>
+
+    <text x="82" y="761" class="layer">③ 推理与服务</text><text x="82" y="790" class="en">Inference &amp; Serving</text>
+    <text x="300" y="763" class="name">云 API：OpenAI · Anthropic · Google　　自托管：Ollama · vLLM · llama.cpp</text><text x="300" y="793" class="small">Quantization · KV Cache · Batching · GPU Scheduling</text>
+    <text x="1260" y="768" class="problem">让模型可调用、可扩展</text><text x="1260" y="796" class="small">成本、延迟和吞吐</text>
+
+    <text x="82" y="871" class="layer">② 模型</text><text x="82" y="900" class="en">Foundation Models</text>
+    <text x="300" y="873" class="name">GPT · Claude · Gemini · Llama · Qwen · DeepSeek · Mistral</text><text x="300" y="903" class="small">LLM · 多模态模型 · Embedding 模型 · Reranker</text>
+    <text x="1260" y="878" class="problem">提供理解与生成能力</text><text x="1260" y="906" class="small">能力上限的主要来源</text>
+
+    <text x="82" y="981" class="layer">① 算力与训练</text><text x="82" y="1010" class="en">Compute &amp; Training</text>
+    <text x="300" y="983" class="name">GPU · CUDA · PyTorch · Transformers · Pretraining · Fine-tuning · LoRA</text><text x="300" y="1013" class="small">Kubernetes · Ray · Slurm · Object Storage · 高速网络</text>
+    <text x="1260" y="988" class="problem">训练和运行模型</text><text x="1260" y="1016" class="small">云原生能力的落点</text>
+  </g>
+
+  <path d="M28 1008V200" class="line"/><text x="12" y="590" class="badge" transform="rotate(-90 12 590)">能力逐层组合，越往上越接近用户价值</text>
+  <rect x="55" y="1068" width="1490" height="68" rx="22" fill="#0f172a" stroke="#475569"/>
+  <text x="86" y="1110" class="problem">横跨所有层：安全 · Evals · Observability · LLMOps · 成本治理 · 数据治理 · Human-in-the-loop</text>
+  <style>
+    .title,.layer,.name{fill:#1f2933}.subtitle,.en{fill:#66717a}.small{fill:#3f4a52}.problem,.badge{fill:#874a36}.line{stroke:#365b73}
+    rect{filter:none;rx:8px}[filter]{filter:none}
+    stop[stop-color="#071426"]{stop-color:#f7f3eb} stop[stop-color="#172554"]{stop-color:#ebe6dc}
+    [fill="#172554"],[fill="#0c3a60"],[fill="#0f4a47"],[fill="#3c3a18"],[fill="#3f1d3d"],[fill="#451a0b"],[fill="#3b1764"],[fill="#233044"],[fill="#0f172a"]{fill:#fffdf8}
+    [stroke="#6366f1"],[stroke="#38bdf8"],[stroke="#2dd4bf"],[stroke="#eab308"],[stroke="#f472b6"],[stroke="#fb923c"],[stroke="#c084fc"],[stroke="#94a3b8"],[stroke="#475569"]{stroke:#9aa4a8}[fill="#7dd3fc"]{fill:#365b73}
+  </style>
+</svg>
