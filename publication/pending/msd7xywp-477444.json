@@ -1,0 +1,38 @@
+{
+  "id": "msd7xywp-477444",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-08-03T12:41:58.010Z",
+  "title": "Cortex 完成 OSTIF 安全审计",
+  "english": "The Open Source Technology Improvement Fund (OSTIF) has shared the results of a security audit of Cortex. Cortex is an open source, long-term, multi-tenant, scalable storage system for Prometheus and OpenTelemetry. The audit was conducted with support from Quarkslab, according to the CNCF Blog summary. For senior operations and platform engineers, the announcement provides a concrete security signal for an observability data platform that serves shared, long-retention telemetry workloads. The supplied source does not include audit findings, remediation status, scope details, or version-specific conclusions; those should be verified in the original audit materials before being used in production-risk decisions.",
+  "chinese": "OSTIF 公布了对 Cortex 的安全审计结果。Cortex 是面向 Prometheus 和 OpenTelemetry 的开源长期存储系统，具备多租户与可扩展特性；来源摘要提到 Quarkslab 参与支持。该信息表明 Cortex 的安全性经过了外部审计流程，但现有来源未提供具体漏洞、审计范围、修复状态或版本结论，因此不能仅凭该公告推导生产环境风险已经消除。",
+  "why_it_matters": "对云原生可观测性平台而言，多租户指标和遥测数据存储是重要的共享基础设施。外部安全审计可作为选型、供应链评估和风险沟通的输入，但 AIOps 场景仍应结合租户隔离、访问控制、数据保留策略及审计报告原文进行验证。对资深运维开发而言，这也是将安全审计证据纳入平台组件准入标准的实践案例。",
+  "interview_expression": "I treat an external security audit as an important input, not as a substitute for production validation. For a multi-tenant observability platform, I would still verify isolation controls, access paths, and the audit scope before adoption.",
+  "vocabulary": [
+    {
+      "term": "multi-tenant",
+      "meaning": "多租户的；由多个彼此隔离的租户共享同一系统。",
+      "example": "A multi-tenant observability platform must enforce strong tenant isolation."
+    },
+    {
+      "term": "security audit",
+      "meaning": "安全审计；对系统安全设计、实现或配置进行系统性评估。",
+      "example": "We review the security audit before approving a platform component for production."
+    },
+    {
+      "term": "telemetry",
+      "meaning": "遥测数据；系统自动采集并上报的指标、日志或追踪等运行数据。",
+      "example": "The storage layer retains telemetry from Prometheus and OpenTelemetry."
+    }
+  ],
+  "sources": [
+    {
+      "source": "CNCF Blog",
+      "title": "Cortex completes OSTIF security audit",
+      "url": "https://www.cncf.io/blog/2026/08/03/cortex-completes-ostif-security-audit/",
+      "published_at": "2026-08-03T11:30:00.000Z",
+      "summary": "The Open Source Technology Improvement Fund is proud to share the results of our security audit of Cortex. Cortex functions as a long-term, multi-tenant scalable open source storage for Prometheus and OpenTelemetry. Thanks to Quarkslab and..."
+    }
+  ],
+  "telegram_message_id": 28
+}
