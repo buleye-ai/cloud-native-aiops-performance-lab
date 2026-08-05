@@ -1,0 +1,52 @@
+{
+  "id": "msfxisbp-f4c32b",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-08-05T10:13:32.006Z",
+  "title": "AI Agent 可观测性与模型安全评估成为生产化重点",
+  "english": "Recent updates from CNCF and OpenAI highlight two operational priorities for production AI systems: observability and security evaluation. CNCF notes that traditional APM may not explain why an agent repeats a question or incurs unusually high cost, emphasizing the need to understand agent behavior in production. OpenAI describes third-party cybersecurity evaluation incidents involving its models and new safeguards for model testing and evaluation. Separately, OpenAI introduces education plugins for ChatGPT Work and Codex that support learning, teaching, research, and building. Together, these developments point to growing operational requirements around traceability, evaluation, and governed AI adoption.",
+  "chinese": "CNCF 将 AI Agent 的运行可见性列为关键难题：传统 APM 未必能解释 Agent 为何重复提问或产生异常成本。OpenAI 则说明了涉及其模型的第三方网络安全评估事件，并提出强化模型测试与评估的新保障措施。同时，ChatGPT Work 与 Codex 的教育插件扩展了 AI 在学习、教学、研究和构建场景中的使用。",
+  "why_it_matters": "对云原生与 AIOps 团队而言，Agent Infra 不应只关注部署和可用性，还需要能够追踪行为、识别重复调用与成本异常，并将模型测试和安全评估纳入治理流程。这也要求资深运维开发者具备可观测性设计、评估流程和跨团队 AI 平台运营能力。",
+  "interview_expression": "For production AI agents, I treat observability as an operational requirement, not an optional dashboard. I would connect behavior tracing, cost signals, and evaluation safeguards to the platform's governance process.",
+  "vocabulary": [
+    {
+      "term": "observability",
+      "meaning": "可观测性；通过信号理解系统内部行为的能力",
+      "example": "Observability helps teams understand why an AI agent behaves unexpectedly."
+    },
+    {
+      "term": "evaluation",
+      "meaning": "评估；对模型或系统能力与风险进行检验的过程",
+      "example": "Model evaluation should be part of an AI system's operational process."
+    },
+    {
+      "term": "safeguard",
+      "meaning": "保障措施；用于降低风险的保护机制",
+      "example": "The team added safeguards to strengthen model testing and evaluation."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "Third-party cyber evaluations involving OpenAI models",
+      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+      "published_at": "2026-08-04T19:00:00.000Z",
+      "summary": "OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "You can&#8217;t debug what you can&#8217;t see — Observability for AI Agents",
+      "url": "https://www.cncf.io/blog/2026/08/04/you-cant-debug-what-you-cant-see-observability-for-ai-agents/",
+      "published_at": "2026-08-04T11:00:00.000Z",
+      "summary": "Traditional APM can’t tell you why your agent spent far more than usual asking the same question three times. We’ve been running AI agents in production for months. The hardest part isn’t building them, it’s understanding..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "New ways to learn and teach with ChatGPT Work and Codex",
+      "url": "https://openai.com/index/learn-teach-chatgpt-work-codex",
+      "published_at": "2026-08-04T00:00:00.000Z",
+      "summary": "Explore new education plugins for ChatGPT Work and Codex that help K–12 teachers, college educators, and students learn, teach, research, and build."
+    }
+  ],
+  "telegram_message_id": 34
+}
