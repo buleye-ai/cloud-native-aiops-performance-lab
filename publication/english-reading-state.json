@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 21,
+  "next_lesson": 22,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -141,6 +141,13 @@
       "topic": "morning exercise",
       "telegram_message_id": 40,
       "sent_at": "2026-08-07T05:55:45.977Z"
+    },
+    "2026-08-07:evening": {
+      "lesson": 21,
+      "level": "A2",
+      "topic": "a small lesson from travel",
+      "telegram_message_id": 41,
+      "sent_at": "2026-08-07T15:39:24.994Z"
     }
   }
 }
