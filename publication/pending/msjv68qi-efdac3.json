@@ -1,0 +1,52 @@
+{
+  "id": "msjv68qi-efdac3",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-08-08T04:18:52.218Z",
+  "title": "云原生 GPU 资源管理与 AI 供应链安全进入基础设施议程",
+  "english": "Recent OpenAI and CNCF updates point to a converging operational agenda: AI capability adoption is expanding while security and infrastructure controls must catch up. OpenAI shared preliminary cybersecurity evaluations for Astra and described efforts to strengthen safeguards and security controls. CNCF highlighted Shadow AI across the CI/CD path from developer laptops to Kubernetes, where AI tools and agents may be adopted before security architecture is in place. A separate CNCF discussion examines whether Kubernetes Dynamic Resource Allocation can address GPU-sharing limitations associated with the device plugin interface. Together, these topics connect AI governance, software delivery security, and GPU resource management.",
+  "chinese": "近期信息显示，AI 的使用正在同时改变安全治理、交付链路和集群资源管理。OpenAI 表示正在分享 Astra 的初步网络安全评估，并加强防护措施与安全控制。CNCF 将“影子 AI”定义为在安全架构纳入前，已被用于软件交付的 AI 工具、模型、Agent、扩展或集成，其风险路径覆盖开发者笔记本电脑到 Kubernetes。另一篇 CNCF 文章讨论 Kubernetes Dynamic Resource Allocation（DRA）是否能够解决 GPU 共享场景中设备插件接口的限制。对于平台团队，这意味着 AI 工作负载的资源调度、CI/CD 中的 AI 使用，以及模型与 Agent 的安全控制，需要在同一套平台治理中被审视。",
+  "why_it_matters": "对云原生和 AIOps 团队而言，GPU 共享与资源声明方式会影响集群调度、隔离和容量规划；影子 AI 则将软件供应链治理从代码、镜像和依赖扩展到模型、Agent 与开发工具。对 Agent Infra 从业者，安全评估和控制机制应成为 Agent 接入与运行时设计的一部分。职业发展上，能够同时理解 Kubernetes 资源模型、CI/CD 威胁建模与 AI 安全控制的运维开发人员，将更适合承担平台工程和 AI 基础设施治理职责。",
+  "interview_expression": "I would treat AI tools and agents in CI/CD as part of the software supply chain, with explicit ownership, threat modeling, and security controls. For GPU platforms, I would evaluate resource-allocation mechanisms based on scheduling, isolation, and operational visibility requirements.",
+  "vocabulary": [
+    {
+      "term": "Shadow AI",
+      "meaning": "影子 AI，指在安全架构正式覆盖前已被使用的 AI 工具、模型、Agent、扩展或集成。",
+      "example": "Shadow AI can introduce unreviewed tools into the CI/CD workflow."
+    },
+    {
+      "term": "Dynamic Resource Allocation",
+      "meaning": "动态资源分配，Kubernetes 中用于资源请求和分配的一种机制，常简称 DRA。",
+      "example": "Dynamic Resource Allocation may change how teams request shared GPU resources."
+    },
+    {
+      "term": "threat modeling",
+      "meaning": "威胁建模，即系统化识别资产、攻击路径、威胁与缓解措施的过程。",
+      "example": "The platform team is threat modeling the path from developer laptops to Kubernetes."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "Responding to the next frontier of critical cyber capabilities",
+      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+      "published_at": "2026-08-07T15:20:00.000Z",
+      "summary": "OpenAI is sharing preliminary cybersecurity evaluations for Astra and the steps we’re taking to strengthen safeguards and security controls."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "Does Kubernetes DRA Replace HAMi?",
+      "url": "https://www.cncf.io/blog/2026/08/07/does-kubernetes-dra-replace-hami/",
+      "published_at": "2026-08-07T11:30:00.000Z",
+      "summary": "Projects that want to share a GPU on Kubernetes have to work around an API instead of with it. The device plugin interface could count devices, and that was the whole vocabulary:&#160;nvidia.com/gpu: 1. It meant one..."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "Shadow AI in CI/CD: Threat-modeling the path from developer laptop to Kubernetes",
+      "url": "https://www.cncf.io/blog/2026/08/07/shadow-ai-in-ci-cd-threat-modeling-the-path-from-developer-laptop-to-kubernetes/",
+      "published_at": "2026-08-07T11:00:00.000Z",
+      "summary": "Artificial intelligence is becoming part of daily software delivery, often before it becomes part of the security architecture. That gap has a name: Shadow AI. It is any AI tool, model, agent, extension, or integration used..."
+    }
+  ],
+  "telegram_message_id": 42
+}
