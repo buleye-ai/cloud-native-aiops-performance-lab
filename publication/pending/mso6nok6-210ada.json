@@ -1,0 +1,52 @@
+{
+  "id": "mso6nok6-210ada",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-08-11T04:51:26.359Z",
+  "title": "云原生与 AI 基础设施：从实践学习到生产级 Agentic 系统",
+  "english": "Recent updates point to a converging cloud-native and AI infrastructure agenda. A CNCF LFX mentorship account describes hands-on work deploying OpenTelemetry Collectors on AWS EC2 and debugging inter-machine networking. CNCF also announced that KubeCon + CloudNativeCon North America will add an AI Inference + Agentic track, alongside sessions on production AI, platform engineering, and cloud native security. OpenAI reported lessons from building an AI-native finance function, including automated forecasting, stronger controls, and AI ROI. Its updates also describe traceable finance outputs and a cybersecurity-specific model for authorized vulnerability research, exploit validation, and security testing.",
+  "chinese": "这组信息显示，云原生能力正从教程式学习转向真实环境中的部署、可观测性与网络排障；同时，AI 推理、Agentic 系统、平台工程和安全正在成为同一基础设施议题的一部分。AI 在财务场景中的应用强调自动化预测、控制能力、ROI，以及可编辑、可追溯的交付物。安全侧则出现面向授权漏洞研究、利用验证和安全测试的专用模型方向。",
+  "why_it_matters": "对资深运维开发而言，重点不只是运行 Kubernetes 或接入模型，而是构建可观测、可调试、可治理的生产系统：管理 OpenTelemetry Collector 等遥测组件，处理跨机器网络问题，并为 AI 推理与 Agent 工作流建立控制、追溯和安全测试机制。这也对应平台工程、AIOps 与 Agent Infra 的能力交集。",
+  "interview_expression": "I focus on operating AI-enabled platforms as production systems, with observability, traceability, and security controls built into the workflow. My cloud-native experience helps me connect telemetry, networking, and platform engineering requirements to AI inference and agent workloads.",
+  "vocabulary": [
+    {
+      "term": "observability",
+      "meaning": "可观测性；通过遥测数据理解系统运行状态的能力。",
+      "example": "Observability helps engineers debug networking problems between machines."
+    },
+    {
+      "term": "traceable",
+      "meaning": "可追溯的；能够追踪输出、过程或来源。",
+      "example": "The workflow produces editable and traceable finance outputs."
+    },
+    {
+      "term": "exploit validation",
+      "meaning": "利用验证；在授权范围内验证漏洞利用是否可行的安全测试活动。",
+      "example": "The model is available for authorized exploit validation and security testing."
+    }
+  ],
+  "sources": [
+    {
+      "source": "CNCF Blog",
+      "title": "Learning Cloud-Native Engineering Beyond Tutorials Through LFX",
+      "url": "https://www.cncf.io/blog/2026/08/10/learning-cloud-native-engineering-beyond-tutorials-through-lfx/",
+      "published_at": "2026-08-10T23:43:00.000Z",
+      "summary": "I joined the LFX mentorship expecting to spend three months writing documentation. A few weeks later, I was deploying OpenTelemetry Collectors across AWS EC2 instances, debugging networking problems between machines, and trying to understand why a..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "What building an AI-native finance function taught me",
+      "url": "https://openai.com/index/building-an-ai-native-finance-function",
+      "published_at": "2026-08-10T17:00:00.000Z",
+      "summary": "OpenAI CFO Sarah Friar shares five lessons for building an AI-native finance function, from automated forecasting to stronger controls and AI ROI."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "CNCF Reveals KubeCon + CloudNativeCon North America 2026 Schedule, Adds New AI Inference + Agentic Track",
+      "url": "https://www.cncf.io/announcements/2026/08/10/cncf-reveals-kubecon-cloudnativecon-north-america-2026-schedule-adds-new-ai-inference-agentic-track/",
+      "published_at": "2026-08-10T16:00:00.000Z",
+      "summary": "Flagship event returns November 9–12 with sessions on production AI, platform engineering and cloud native security Key Highlights SAN FRANCISCO, Aug. 7, 2026 – The Cloud Native Computing Foundation® (CNCF®), which builds sustainable ecosystems for cloud..."
+    }
+  ],
+  "telegram_message_id": 48
+}
