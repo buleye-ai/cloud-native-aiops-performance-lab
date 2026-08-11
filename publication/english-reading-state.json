@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 28,
+  "next_lesson": 29,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -190,6 +190,13 @@
       "topic": "Morning planning",
       "telegram_message_id": 49,
       "sent_at": "2026-08-11T04:52:31.325Z"
+    },
+    "2026-08-11:evening": {
+      "lesson": 28,
+      "level": "A2",
+      "topic": "A simple idea from science",
+      "telegram_message_id": 50,
+      "sent_at": "2026-08-11T15:44:59.585Z"
     }
   }
 }
