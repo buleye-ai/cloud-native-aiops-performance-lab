@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://kubernetes.io/blog/2026/08/11/how-to-pretty-print-kubernetes-yaml-as-kyaml/",
+    "https://www.cncf.io/announcements/2026/08/11/cncf-announces-graduation-of-cloud-native-buildpacks-advancing-the-standard-for-container-builds/",
+    "https://www.cncf.io/blog/2026/08/11/a-practical-guide-to-solving-when-zerozerotwo-in-mesh-observability/",
+    "https://openai.com/index/testing-ads-in-chatgpt",
+    "https://openai.com/index/daybreak-models-are-now-available-on-aws",
+    "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
     "https://www.cncf.io/blog/2026/08/10/learning-cloud-native-engineering-beyond-tutorials-through-lfx/",
     "https://openai.com/index/building-an-ai-native-finance-function",
     "https://www.cncf.io/announcements/2026/08/10/cncf-reveals-kubecon-cloudnativecon-north-america-2026-schedule-adds-new-ai-inference-agentic-track/",

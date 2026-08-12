@@ -1,0 +1,52 @@
+{
+  "id": "mspo3a67-af259e",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-08-12T05:47:13.855Z",
+  "title": "云原生构建标准化与可信 AI 安全能力同步推进",
+  "english": "Kubernetes SIG CLI introduced KYAML, a stricter and more consistent subset of YAML intended to reduce ambiguity in Kubernetes manifests. CNCF announced the graduation of Cloud Native Buildpacks, citing broad production adoption for turning application source code into OCI-compliant container images across cloud environments. A CNCF observability guide also examines gaps that can remain when service-mesh telemetry is available through Istio, Kiali, and Prometheus. In AI infrastructure, OpenAI is making Daybreak cybersecurity capabilities available through Amazon Bedrock, while approved partners may provide authorized and governed cybersecurity services. OpenAI also began testing clearly labeled ChatGPT ads with stated answer independence, privacy protections, and user control.",
+  "chinese": "本组信息反映出两条并行趋势：云原生侧正在收紧配置与构建链路的标准化边界，AI 侧则在将网络安全能力引入企业云平台和受治理的服务交付流程。KYAML聚焦 Kubernetes 实际需要的 YAML 子集，以提升清晰度和一致性；Cloud Native Buildpacks 的毕业强调从源代码到 OCI 兼容镜像的跨云构建实践。服务网格可观测性文章则提示，即使已有 Istio、Kiali 和 Prometheus，指标可用不等于观测问题已被完全解决。",
+  "why_it_matters": "对资深运维开发而言，KYAML、Buildpacks 与 OCI 镜像意味着应把配置规范、构建可重复性和供应链接口作为平台工程的核心控制点。服务网格场景需要继续验证遥测数据的完整性、关联性和可操作性，而不只关注是否部署了监控组件。Daybreak 通过 Amazon Bedrock 提供企业安全工作流能力，以及面向获批伙伴的授权与治理交付，说明 AIOps 和 Agent Infra 的落地需要同时设计权限边界、审计治理和云服务集成。",
+  "interview_expression": "I treat manifest consistency and reproducible image builds as platform controls, not merely developer conveniences. For AI-enabled security workflows, I would design governance, authorization, and auditability into the integration from the start.",
+  "vocabulary": [
+    {
+      "term": "manifest",
+      "meaning": "声明式配置清单；此处指 Kubernetes 资源定义文件。",
+      "example": "A Kubernetes manifest should use a consistent and readable format."
+    },
+    {
+      "term": "OCI-compliant",
+      "meaning": "符合 Open Container Initiative 容器镜像规范的。",
+      "example": "The build process produces OCI-compliant container images from application source code."
+    },
+    {
+      "term": "governed",
+      "meaning": "处于明确治理、授权和控制机制之下的。",
+      "example": "The partners provide governed cybersecurity services to their customers."
+    }
+  ],
+  "sources": [
+    {
+      "source": "Kubernetes Blog",
+      "title": "How to Pretty-Print Your Kubernetes YAML as KYAML and Why You'd Want To",
+      "url": "https://kubernetes.io/blog/2026/08/11/how-to-pretty-print-kubernetes-yaml-as-kyaml/",
+      "published_at": "2026-08-11T18:00:00.000Z",
+      "summary": "<p>YAML has been the standard way to write Kubernetes manifests for years. Every example, tutorial, and configuration file you come across is written in it. The problem isn't that YAML is a bad format. It's that YAML gives you a lot of choices, and not all of them are equally good for writing Kubernetes manifests. Some features make files harder to read, some are easy to misuse and others can lead to surprising behavior.</p> <p>The interesting part is that Kubernetes doesn't actually need most of those features. It only relies on a small subset of YAML. This led to a simple question: if Kubernetes only needs a small part of YAML, why not <em>standardize</em> on that part and avoid the rest? Instead of introducing a new configuration language, <a href=\"https://github.com/kubernetes/community/tree/main/sig-cli\">SIG CLI</a> introduced <strong>KYAML</strong>, a stricter, more consistent way "
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "CNCF Announces Graduation of Cloud Native Buildpacks, Advancing the Standard for Container Builds",
+      "url": "https://www.cncf.io/announcements/2026/08/11/cncf-announces-graduation-of-cloud-native-buildpacks-advancing-the-standard-for-container-builds/",
+      "published_at": "2026-08-11T16:00:00.000Z",
+      "summary": "Project reaches broad production adoption for transforming application source code into OCI-compliant container images across cloud environments Key Highlights: SAN FRANCISCO — Aug. 11, 2026 — The Cloud Native Computing Foundation® (CNCF®), which builds sustainable ecosystems..."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "A practical guide to solving when zero+zero=two in mesh observability",
+      "url": "https://www.cncf.io/blog/2026/08/11/a-practical-guide-to-solving-when-zerozerotwo-in-mesh-observability/",
+      "published_at": "2026-08-11T11:00:00.000Z",
+      "summary": "A Service Mesh like Istio, together with Kiali gives you a lot on day one. You install the mesh, point Prometheus at it, and suddenly you have request rate, latency, error rate, and a fairly good..."
+    }
+  ],
+  "telegram_message_id": 51
+}
