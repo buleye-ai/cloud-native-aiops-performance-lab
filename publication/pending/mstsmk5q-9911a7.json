@@ -1,0 +1,38 @@
+{
+  "id": "mstsmk5q-9911a7",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-08-15T03:05:16.430Z",
+  "title": "在 Kairos 上构建自愈 Kubernetes 升级流水线",
+  "english": "The CNCF Blog describes “Eleven minutes, zero humans,” a self-healing Kubernetes upgrade pipeline built on Kairos. It contrasts this approach with the traditional control-plane upgrade process, which required engineers to stay awake, SSH into every node, run upgrades manually, and continuously monitor etcd health while hoping quorum survived each reboot. For senior operations and development engineers, the article highlights a shift from manual, operator-dependent maintenance toward automated recovery-oriented infrastructure. The source does not provide further implementation details in the supplied summary, so conclusions should remain limited to the stated focus on Kubernetes control-plane upgrades, Kairos, self-healing automation, and reduced human intervention.",
+  "chinese": "CNCF Blog 的标题介绍了一个基于 Kairos 的自愈 Kubernetes 升级流水线，标题强调“11 分钟、零人工”。提供的摘要将其与传统控制平面升级流程进行对比：工程师需要保持在线，逐台通过 SSH 登录节点，手动执行升级，并持续观察 etcd 健康状况，同时关注每次重启期间集群仲裁是否能够维持。现有来源支持的核心信息是 Kubernetes 控制平面升级、Kairos、自愈自动化以及减少人工介入。由于摘要不完整，不能据此推断具体实现、性能指标或版本信息。",
+  "why_it_matters": "这与云原生运维中的自动化升级、故障恢复和降低人工操作依赖直接相关，也体现了 AIOps 与 Agent Infra 所关注的自愈基础设施方向。对职业发展而言，资深运维开发需要理解如何把升级流程、健康检查和恢复机制组织成可自动运行的流水线，同时审慎评估 etcd 仲裁和重启过程中的风险。",
+  "interview_expression": "I have been exploring how self-healing automation can reduce manual intervention in Kubernetes operations. A key concern is preserving etcd health and quorum throughout control-plane upgrades.",
+  "vocabulary": [
+    {
+      "term": "self-healing",
+      "meaning": "自愈的；能够自动恢复的",
+      "example": "The team is building a self-healing Kubernetes upgrade pipeline."
+    },
+    {
+      "term": "quorum",
+      "meaning": "仲裁；维持分布式系统正常工作的多数节点条件",
+      "example": "Engineers must monitor whether quorum holds during each reboot."
+    },
+    {
+      "term": "control plane",
+      "meaning": "控制平面；负责管理 Kubernetes 集群的核心组件",
+      "example": "The upgrade process targets the Kubernetes control plane."
+    }
+  ],
+  "sources": [
+    {
+      "source": "CNCF Blog",
+      "title": "Eleven minutes, zero humans: Building a self-healing Kubernetes upgrade pipeline on Kairos",
+      "url": "https://www.cncf.io/blog/2026/08/14/eleven-minutes-zero-humans-building-a-self-healing-kubernetes-upgrade-pipeline-on-kairos/",
+      "published_at": "2026-08-14T11:14:00.000Z",
+      "summary": "Once upon a time, upgrading a Kubernetes control plane meant staying awake for it. SSH into every node. Run the upgrade by hand. Watch etcd health the whole time, hoping quorum holds through every reboot. This..."
+    }
+  ],
+  "telegram_message_id": 60
+}
