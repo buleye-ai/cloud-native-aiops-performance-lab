@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 37,
+  "next_lesson": 38,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -253,6 +253,13 @@
       "topic": "A surprising fact about nature",
       "telegram_message_id": 62,
       "sent_at": "2026-08-15T13:50:03.634Z"
+    },
+    "2026-08-16:morning": {
+      "lesson": 37,
+      "level": "A2",
+      "topic": "a calm morning routine",
+      "telegram_message_id": 63,
+      "sent_at": "2026-08-16T03:29:43.020Z"
     }
   }
 }
