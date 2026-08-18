@@ -1,0 +1,52 @@
+{
+  "id": "msy36mwz-c3d79d",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-08-18T03:11:53.987Z",
+  "title": "Kubeflow 毕业：云原生 AI 运维标准化的重要里程碑",
+  "english": "The Cloud Native Computing Foundation announced Kubeflow’s graduation on August 17, 2026, describing the milestone as evidence of widespread enterprise adoption for automating end-to-end artificial intelligence and machine learning lifecycles on Kubernetes. For senior operations and development professionals, the announcement connects Kubernetes platform engineering with the operationalization of AI workloads. It suggests that cloud native AI operations are becoming an important area for standardization and enterprise adoption. The source does not provide detailed technical changes, version information, or quantitative adoption data, so the practical takeaway should remain focused on the announced milestone: Kubeflow is positioned within CNCF’s ecosystem as a graduated project associated with AI and machine learning lifecycle automation on Kubernetes.",
+  "chinese": "CNCF 于 2026 年 8 月 17 日宣布 Kubeflow 毕业，并将其描述为企业广泛采用 Kubernetes、自动化端到端 AI 和机器学习生命周期的里程碑。对资深运维开发人员而言，这一消息把 Kubernetes 平台工程与 AI 工作负载运营连接起来。但来源未提供具体版本、技术变更或采用数量，因此应将结论限定为项目毕业及其在云原生 AI 运维中的定位。",
+  "why_it_matters": "它体现了云原生平台正在承载端到端 AI 与机器学习生命周期自动化，关联 Kubernetes 平台工程、AI 运维和未来 Agent Infra 的基础能力建设。对职业发展而言，理解 Kubernetes 上的 AI 工作负载运营，有助于连接传统运维开发与 AI 平台工程；但本来源未直接讨论 AIOps、Agent Infra 或岗位要求。",
+  "interview_expression": "I follow how Kubernetes is being used to automate end-to-end AI and machine learning lifecycles. Kubeflow’s graduation is a relevant milestone because it connects cloud native platform operations with enterprise AI adoption.",
+  "vocabulary": [
+    {
+      "term": "graduation",
+      "meaning": "项目毕业；在 CNCF 语境中表示项目达到相应成熟度里程碑",
+      "example": "Kubeflow’s graduation marks an important milestone for cloud native AI operations."
+    },
+    {
+      "term": "end-to-end lifecycle",
+      "meaning": "端到端生命周期",
+      "example": "The platform automates the end-to-end lifecycle of AI and machine learning workloads."
+    },
+    {
+      "term": "enterprise adoption",
+      "meaning": "企业采用",
+      "example": "The announcement links Kubeflow’s graduation with widespread enterprise adoption."
+    }
+  ],
+  "sources": [
+    {
+      "source": "CNCF Blog",
+      "title": "Welcome Falkey the Falco and Ky the Kyverno Pyrenees",
+      "url": "https://www.cncf.io/blog/2026/08/17/welcome-falkey-the-falco-and-ky-the-kyverno-pyrenees/",
+      "published_at": "2026-08-17T17:50:06.000Z",
+      "summary": "If you have yet to meet Phippy, she’s a friendly PHP app exploring the cloud native world with her pals. Over the last decade, Phippy’s circle has grown to include eighteen friends, with the newest members..."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "CNCF Announces Kubeflow’s Graduation, Solidifying a Standard for Cloud Native AI Operations",
+      "url": "https://www.cncf.io/announcements/2026/08/17/cncf-announces-kubeflows-graduation-solidifying-the-standard-for-cloud-native-ai-operations/",
+      "published_at": "2026-08-17T16:00:00.000Z",
+      "summary": "Milestone marks widespread enterprise adoption for automating end-to-end AI and machine learning lifecycles on Kubernetes Key Highlights SAN FRANCISCO — August 17, 2026 — The Cloud Native Computing Foundation® (CNCF®), which builds sustainable ecosystems for cloud..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "The Defender’s Window",
+      "url": "https://openai.com/index/the-defenders-window",
+      "published_at": "2026-08-17T05:30:00.000Z",
+      "summary": "AI is reshaping cybersecurity for attackers and defenders alike. Learn how OpenAI is strengthening its defenses and what security teams can do now."
+    }
+  ],
+  "telegram_message_id": 67
+}
