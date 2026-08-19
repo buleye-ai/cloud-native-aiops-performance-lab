@@ -1,0 +1,52 @@
+{
+  "id": "mszipyho-ff0758",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-08-19T03:14:35.868Z",
+  "title": "CNCF：多平面架构与云原生平台主权",
+  "english": "A CNCF Blog post examines cloud native platform sovereignty through a multi-plane architecture. It notes that cloud sovereignty discussions often begin with the region where workloads run and where data is stored, but argues that regional choice is only part of the picture. For senior operations and platform engineers, the topic frames sovereignty as an architectural concern for cloud native platforms, not solely a deployment-location decision. The post is relevant to teams designing platforms that must consider workload placement, data location, and broader platform architecture together.",
+  "chinese": "CNCF 文章讨论如何通过多平面架构理解云原生平台主权。文章指出，云主权讨论通常从工作负载运行区域和数据存储位置开始，但区域选择只是其中一部分。对平台与运维开发团队而言，主权不应只被视为部署地点问题，还应在云原生平台架构层面进行评估。",
+  "why_it_matters": "这与云原生平台工程直接相关：资深运维开发需要将工作负载位置、数据位置和平台架构放在同一治理视角中考虑。对 AIOps 和 Agent Infra 而言，若相关系统运行在受主权要求约束的环境中，平台设计需要能够支持相应的架构与治理讨论。职业上，这强化了从基础设施运维走向平台架构和治理能力的价值。",
+  "interview_expression": "I treat cloud sovereignty as a platform architecture concern, not only a workload placement decision. I would evaluate workload location, data location, and the broader cloud native platform design together.",
+  "vocabulary": [
+    {
+      "term": "cloud sovereignty",
+      "meaning": "云主权；围绕云环境控制、位置与治理的议题",
+      "example": "Cloud sovereignty discussions often begin with regions and data location."
+    },
+    {
+      "term": "workload",
+      "meaning": "工作负载；在计算平台上运行的应用或任务",
+      "example": "The region where a workload runs is only part of the story."
+    },
+    {
+      "term": "architecture",
+      "meaning": "架构；系统组件及其关系的设计方式",
+      "example": "Platform sovereignty can be considered through architecture."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "Strengthening democratic oversight in national security",
+      "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+      "published_at": "2026-08-18T19:00:00.000Z",
+      "summary": "OpenAI launches an initiative to strengthen democratic oversight of AI in national security, supporting government institutions with tools, training, and expertise."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "Cloud Native platform sovereignty through multi-plane architecture",
+      "url": "https://www.cncf.io/blog/2026/08/18/cloud-native-platform-sovereignty-through-multi-plane-architecture/",
+      "published_at": "2026-08-18T11:30:00.000Z",
+      "summary": "When people talk about cloud sovereignty, the conversation often starts with regions: where a workload runs and where its data is stored. But choosing a region is only part of the story. The architecture of the..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Partnering with CodeAI to prepare the first AI generation",
+      "url": "https://openai.com/index/partnering-with-codeai",
+      "published_at": "2026-08-18T11:00:00.000Z",
+      "summary": "OpenAI and CodeAI are partnering to help students build AI literacy, think critically about AI, and develop the skills to use and shape it responsibly."
+    }
+  ],
+  "telegram_message_id": 70
+}
