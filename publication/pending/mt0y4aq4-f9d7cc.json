@@ -1,0 +1,52 @@
+{
+  "id": "mt0y4aq4-f9d7cc",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-08-20T03:13:25.324Z",
+  "title": "云原生治理、数据隐私与 AI 工作流的行业简报",
+  "english": "Recent updates point to a common operating concern: scaling AI capabilities while preserving governance and privacy. OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety. CNCF presents Kyverno as a platform primitive rather than only a security tool, raising questions about organizational ownership and budget. Replit expands software creation through Free Mode powered by GPT-5.6 Luna. OpenAI also reports ChatGPT Ads expanding to 31 European markets and describes NVIDIA teams using ChatGPT Work to reduce manual tasks, connect fast-moving signals, and scale workflows globally. For senior operations and development professionals, these developments connect platform governance, privacy-aware AI usage, policy management, and workflow automation.",
+  "chinese": "这些来源共同指向一个核心问题：如何在扩大 AI 能力的同时保持治理与隐私。OpenAI 重申，符合条件的 API 客户可使用零数据保留，并预览用于高级 AI 安全的 Private Safety Processing。CNCF 将 Kyverno 定位为平台原语，而不只是安全工具，强调其组织归属和预算责任。Replit 通过由 GPT-5.6 Luna 驱动的 Free Mode 扩大软件创建的使用范围。OpenAI 还介绍了 ChatGPT Ads 在欧洲 31 个市场扩展，以及 NVIDIA 团队使用 ChatGPT Work 减少手工任务、连接快速变化的信号并扩大工作流。对资深运维开发人员而言，重点在于平台治理、隐私保护、策略管理和工作流自动化之间的结合。",
+  "why_it_matters": "这与云原生平台治理、AIOps 和 Agent Infra 直接相关：Kyverno 的平台化定位提示策略管理需要明确的组织责任；Zero Data Retention 和 Private Safety Processing 提供了评估 AI 工作负载数据边界的背景；NVIDIA 的案例体现了 AI 工作流自动化与规模化运营的方向。职业发展上，能够同时理解 Kubernetes 策略、数据隐私、AI 安全和自动化工作流的工程师，更适合承担平台工程与 AI 基础设施之间的协作职责。",
+  "interview_expression": "I see AI infrastructure as a combination of platform governance, privacy controls, and workflow automation. For senior operations roles, I would focus on making these controls usable and accountable across teams.",
+  "vocabulary": [
+    {
+      "term": "Zero Data Retention",
+      "meaning": "零数据保留",
+      "example": "Eligible API customers can use Zero Data Retention to support privacy-aware AI operations."
+    },
+    {
+      "term": "platform primitive",
+      "meaning": "平台原语",
+      "example": "The article describes Kyverno as a platform primitive rather than only a security tool."
+    },
+    {
+      "term": "workflow automation",
+      "meaning": "工作流自动化",
+      "example": "NVIDIA teams use ChatGPT Work to reduce manual tasks through workflow automation."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "Offering Zero Data Retention for frontier models",
+      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+      "published_at": "2026-08-19T19:00:00.000Z",
+      "summary": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "Kyverno is a platform primitive, not a security tool",
+      "url": "https://www.cncf.io/blog/2026/08/19/kyverno-is-a-platform-primitive-not-a-security-tool/",
+      "published_at": "2026-08-19T11:21:00.000Z",
+      "summary": "Where does Kyverno live in your organization? I don&#8217;t mean which cluster! On which team&#8217;s slide deck does it show up? Whose budget line?&#160; For most companies I&#8217;ve talked to, the answer is security. Kyverno is..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Replit expands access to software creation with GPT-5.6 Luna",
+      "url": "https://openai.com/index/replit",
+      "published_at": "2026-08-19T07:00:00.000Z",
+      "summary": "Replit introduces Free Mode, powered by GPT-5.6 Luna, so anyone can turn ideas into working software without worrying about token costs."
+    }
+  ],
+  "telegram_message_id": 73
+}
