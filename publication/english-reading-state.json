@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 48,
+  "next_lesson": 49,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -330,6 +330,13 @@
       "topic": "Making plans with family",
       "telegram_message_id": 77,
       "sent_at": "2026-08-21T03:33:59.032Z"
+    },
+    "2026-08-21:evening": {
+      "lesson": 48,
+      "level": "A2",
+      "topic": "How honeybees find food",
+      "telegram_message_id": 78,
+      "sent_at": "2026-08-21T14:20:42.413Z"
     }
   }
 }
