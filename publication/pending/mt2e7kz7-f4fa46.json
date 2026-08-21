@@ -1,0 +1,52 @@
+{
+  "id": "mt2e7kz7-f4fa46",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-08-21T03:31:38.611Z",
+  "title": "Stampli 借助 ChatGPT Work 压缩发布周期",
+  "english": "OpenAI reports that Stampli used Codex and ChatGPT Work to compress weeks of launch production into days. The case describes a fixed deadline and design resources already committed elsewhere, creating a constrained delivery environment. Rather than presenting product details beyond the source, the key operational signal is that AI-assisted work was applied to launch production under resource pressure. For senior operations and platform engineers, this is a practical example of evaluating AI tooling against delivery throughput, team capacity, and deadline risk.",
+  "chinese": "OpenAI 的案例称，Stampli 在截止日期固定、设计资源已投入其他工作的条件下，使用 Codex 和 ChatGPT Work，将数周的发布生产工作压缩到数天。该信息未说明具体实施流程或技术架构，因此不应据此推断自动化范围、质量指标或成本结果。",
+  "why_it_matters": "这与 AIOps 和 Agent Infra 的关系在于：AI 工具的价值需要放在受限交付场景中评估，例如交付吞吐、跨职能资源可用性和截止日期风险。对资深运维开发而言，重点是建立可观测、可审计的人机协作流程，而非仅以生成速度衡量效果。",
+  "interview_expression": "I assess AI-assisted workflows in terms of delivery throughput, operational risk, and auditability. Under fixed deadlines and constrained capacity, the goal is to improve execution while preserving accountable human review.",
+  "vocabulary": [
+    {
+      "term": "delivery throughput",
+      "meaning": "交付吞吐量，指团队在一定时间内完成并交付工作的能力。",
+      "example": "We evaluate AI tooling by its impact on delivery throughput and operational risk."
+    },
+    {
+      "term": "resource constraint",
+      "meaning": "资源约束，指人员、时间或预算等可用资源受限。",
+      "example": "The team operated under a resource constraint because design capacity was committed elsewhere."
+    },
+    {
+      "term": "auditability",
+      "meaning": "可审计性，指过程、决策和结果能够被追溯与核查的能力。",
+      "example": "AI-assisted production workflows need auditability before they are used at scale."
+    }
+  ],
+  "sources": [
+    {
+      "source": "CNCF Blog",
+      "title": "Announcing H1 2027 KCDs",
+      "url": "https://www.cncf.io/blog/2026/08/20/announcing-h1-2027-kcds/",
+      "published_at": "2026-08-20T16:00:00.000Z",
+      "summary": "Get ready to connect, learn, and innovate right in your backyard. Kubernetes Community Days (KCDs) are officially kicking off for H1! Supported by the Cloud Native Computing Foundation (CNCF), these community-organized events bring open source adopters..."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "German ciphers, telegrams, and cloud native data sovereignty",
+      "url": "https://www.cncf.io/blog/2026/08/20/german-ciphers-telegrams-and-cloud-native-data-sovereignty/",
+      "published_at": "2026-08-20T13:00:00.000Z",
+      "summary": "A lesson from 1917 In January 1917, Germany sent a secret telegram. It went to Mexico. The offer: join the war against the United States, and you can have Texas, Arizona and New Mexico back. The..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Introducing AI Futures",
+      "url": "https://openai.com/index/introducing-ai-futures",
+      "published_at": "2026-08-20T07:00:00.000Z",
+      "summary": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom."
+    }
+  ],
+  "telegram_message_id": 76
+}
