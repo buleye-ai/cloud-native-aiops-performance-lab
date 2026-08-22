@@ -1,0 +1,38 @@
+{
+  "id": "mt3svash-5986f5",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-08-22T03:09:45.954Z",
+  "title": "用OpenTelemetry将慢查询转化为可操作可靠性指标",
+  "english": "This CNCF blog post from August 21, 2026 discusses how slow SQL queries can degrade user experience, cause cascading failures, and turn simple operations into production incidents. The traditional approach of collecting more telemetry is questioned—more data does not necessarily mean better understanding. Instead, the post suggests a shift toward turning slow queries into actionable reliability metrics using OpenTelemetry. This aligns with the growing need for intelligent observability in cloud-native environments, where engineers must focus on insights rather than raw data volume.",
+  "chinese": "该CNCF博客文章（发布于2026年8月21日）指出，慢SQL查询会降低用户体验、引发级联故障，并将简单操作变成生产事故。传统修复方式是收集更多遥测数据，但更多数据不一定带来更多理解。文章提出，应利用OpenTelemetry将慢查询转化为可操作的可靠性指标，从而帮助工程师聚焦于真正的洞察，而非数据量本身。",
+  "why_it_matters": "在云原生和AIOps领域，可观测性正从“收集数据”转向“生成洞察”。这篇文章通过OpenTelemetry将慢查询转化为可靠性指标，体现了用标准化工具（如OpenTelemetry）驱动智能运维的趋势，也与Agent Infra中自动化根因分析的需求直接相关。对于运维开发者而言，这强调了从海量遥测中提取业务关键指标的能力，是职业发展的重要方向。",
+  "interview_expression": "In my experience, simply increasing telemetry volume often hides the real issues. What matters is translating signals like slow SQL queries into actionable reliability metrics, for instance with OpenTelemetry, so we can proactively prevent cascading failures and improve system resilience.",
+  "vocabulary": [
+    {
+      "term": "OpenTelemetry",
+      "meaning": "开源可观测性框架，用于生成、收集和导出遥测数据（指标、日志、链路）。",
+      "example": "We use OpenTelemetry to standardize the collection of trace data across our microservices."
+    },
+    {
+      "term": "actionable reliability metrics",
+      "meaning": "可操作的可靠性指标，指能直接驱动决策或修复动作的度量值。",
+      "example": "Turning raw slow query logs into actionable reliability metrics helped us prioritize database optimizations."
+    },
+    {
+      "term": "cascading failures",
+      "meaning": "级联故障，指一个组件失败引发连锁反应导致更大范围故障。",
+      "example": "The slow database queries triggered cascading failures that took down the entire checkout service."
+    }
+  ],
+  "sources": [
+    {
+      "source": "CNCF Blog",
+      "title": "How to turn slow queries into actionable reliability metrics with OpenTelemetry",
+      "url": "https://www.cncf.io/blog/2026/08/21/how-to-turn-slow-queries-into-actionable-reliability-metrics-with-opentelemetry/",
+      "published_at": "2026-08-21T11:00:00.000Z",
+      "summary": "Slow SQL queries degrade user experience, cause cascading failures, and turn simple operations into production incidents. The traditional fix? Collect more telemetry. But more telemetry means more things to look at, not necessarily more understanding. Instead..."
+    }
+  ],
+  "telegram_message_id": 79
+}
