@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://www.cncf.io/blog/2026/08/25/the-lazy-developers-guide-to-observing-your-own-code/",
+    "https://www.cncf.io/blog/2026/08/25/stop-trying-to-learn-all-of-kubernetes-at-once/",
+    "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
+    "https://openai.com/index/jalapeno-first-results",
+    "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+    "https://openai.com/index/introducing-admin-plugin",
     "https://openai.com/index/gpt-5-6-in-kiro",
     "https://www.cncf.io/blog/2026/08/24/automating-root-cause-analysis-at-scale-multi-signal-correlation-for-cloud-native-incident-response/",
     "https://www.cncf.io/blog/2026/08/21/how-to-turn-slow-queries-into-actionable-reliability-metrics-with-opentelemetry/",
