@@ -1,0 +1,52 @@
+{
+  "id": "mtcunuja-c58793",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-08-28T11:09:53.110Z",
+  "title": "Kubernetes Metrics API 晋级稳定版：为云原生运维与 AI 平台提供更稳定的资源度量接口",
+  "english": "Kubernetes v1.37 promotes the metrics.k8s.io API to stable as v1. The API provides CPU and memory usage for nodes and Pods and supports commands such as kubectl top and resource-metrics-based autoscaling. The v1 API contains the same resource types and fields as v1beta1, so this is an API-version graduation rather than a change in the metrics collected or returned. For senior operations and development engineers, the change strengthens the stability expectations around a long-lived resource metrics interface. It is also relevant to AI platform work because Kubernetes teams are increasingly being asked to support AI workloads, while AI factories may need shared infrastructure for fine-tuning, inference, and evaluation.",
+  "chinese": "Kubernetes v1.37 将 metrics.k8s.io API 从 v1beta1 晋级为稳定的 v1。该 API 提供节点和 Pod 的 CPU、内存使用数据，并支撑 kubectl top 以及基于资源指标的自动扩缩容。此次变化是 API 版本稳定性提升，v1 与 v1beta1 的资源类型和字段保持一致，并不改变采集或返回的指标。对于资深运维开发人员，这意味着资源度量接口具备更明确的稳定性保障。该主题也与 AI 基础设施相关，因为 Kubernetes 平台团队正在承担 AI 支持工作，而 AI 工厂需要让多个团队共享基础设施，执行微调、推理和评估等任务。",
+  "why_it_matters": "它直接关联云原生平台的资源观测、自动扩缩容和运维稳定性，也为 AIOps 的资源分析提供基础指标。随着平台团队支持 AI 工作负载，掌握稳定的 Kubernetes 指标 API，有助于理解共享基础设施上的资源使用与运行管理。对职业发展而言，Kubernetes 运维能力正在与 AI 平台工程、推理服务和评估基础设施结合。",
+  "interview_expression": "I have been following how Kubernetes is evolving to support AI workloads. The stable Metrics API is useful because it provides consistent CPU and memory usage data for Pods and nodes without changing the underlying metrics.",
+  "vocabulary": [
+    {
+      "term": "stable API",
+      "meaning": "稳定版 API",
+      "example": "The metrics API has graduated to a stable API."
+    },
+    {
+      "term": "resource metrics",
+      "meaning": "资源指标",
+      "example": "Resource metrics support CPU- and memory-based autoscaling."
+    },
+    {
+      "term": "fine-tuning",
+      "meaning": "模型微调",
+      "example": "One team may use shared infrastructure for fine-tuning."
+    }
+  ],
+  "sources": [
+    {
+      "source": "CNCF Blog",
+      "title": "Your Kubernetes platform is ready for containers. Is it ready for AI?",
+      "url": "https://www.cncf.io/blog/2026/08/28/your-kubernetes-platform-is-ready-for-containers-is-it-ready-for-ai/",
+      "published_at": "2026-08-28T11:00:00.000Z",
+      "summary": "Kubernetes has given platform teams a consistent way to deploy, scale, and operate containerized applications. Now, many of those same teams are being asked to support AI. The transition is already underway. According to the CNCF..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Supporting Thailand’s next generation of AI startups",
+      "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
+      "published_at": "2026-08-28T02:00:00.000Z",
+      "summary": "OpenAI and Thailand’s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI prototypes into trusted products."
+    },
+    {
+      "source": "Kubernetes Blog",
+      "title": "Kubernetes v1.37: Metrics API graduates to stable",
+      "url": "https://kubernetes.io/blog/2026/08/27/kubernetes-v1-37-metrics-api-ga/",
+      "published_at": "2026-08-27T18:30:00.000Z",
+      "summary": "<p>Kubernetes v1.37 promotes the <code>metrics.k8s.io</code> API to stable (<code>v1</code>). This API provides CPU and memory usage for nodes and Pods, and is the API behind commands such as <code>kubectl top</code> and resource-metrics-based autoscaling.</p> <p>For cluster operators and application developers, this graduation means that the API now has the stability guarantees associated with a Kubernetes stable API. The <code>v1</code> API has the same resource types and fields as <code>v1beta1</code>; this is an API-version graduation, not a change to the metrics that are collected or returned.</p> <h2 id=\"a-long-lived-api-reaches-stable\">A long-lived API reaches stable<a class=\"td-heading-self-link\" href=\"#a-long-lived-api-reaches-stable\" aria-label=\"Heading self-link\"></a></h2><p>The resource Metrics API was introduced as alpha in Kubernetes v1.6 and became beta in v1.8. It has rem"
+    }
+  ],
+  "telegram_message_id": 95
+}
