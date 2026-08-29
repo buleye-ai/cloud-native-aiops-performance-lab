@@ -1,0 +1,52 @@
+{
+  "id": "mte0z7cx-20f86b",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-08-29T06:54:26.818Z",
+  "title": "云原生与 AI 行业简报：身份、GPU 弹性与模型供应决策",
+  "english": "Three developments highlight operational concerns for senior cloud-native and AI infrastructure engineers. The Kubernetes Blog presents Kubernetes v1.37 topics including Pod Certificates and Cluster Trust Bundles, focusing on production identity and how workloads authenticate to other systems. It contrasts these mechanisms with service account JWTs, described as the primary built-in production identity mechanism up to now. A CNCF Blog post discusses predictive autoscaling for GPU workloads on Kubernetes and describes an incident involving hundreds of pending pods and reported user error rates of 15–20%. OpenAI News announces a decision to wind down its contract providing OpenAI models to Cursor following Cursor’s acquisition by SpaceX. Together, the sources connect workload identity, GPU capacity planning, and model-provider dependency.",
+  "chinese": "本期信息覆盖三个与高级运维开发相关的主题。Kubernetes Blog 介绍 Kubernetes v1.37 中的 Pod Certificates 与 Cluster Trust Bundles，重点是生产环境身份以及工作负载如何向其他系统进行身份验证；文章同时指出，服务账号 JWT 此前是 Kubernetes 内置的主要生产身份机制。CNCF Blog 讨论 Kubernetes 上 GPU 工作负载的预测性自动扩缩，并描述了一起包含大量待调度 Pod、用户错误率达到 15–20% 的生产事件。OpenAI News 则宣布，在 Cursor 被 SpaceX 收购后，OpenAI 将逐步结束向 Cursor 提供模型的合同。",
+  "why_it_matters": "这些信息分别对应云原生安全身份、AIOps 驱动的容量预测、GPU 基础设施治理以及 Agent 或 AI 工具对模型供应商的依赖。对职业发展而言，资深工程师需要同时理解工作负载身份、Kubernetes 调度与弹性、生产事件分析和供应商变更带来的架构影响。",
+  "interview_expression": "I would evaluate workload identity, GPU capacity planning, and model-provider dependency as connected operational concerns. In a production review, I would also examine how these dependencies affect reliability and future architecture decisions.",
+  "vocabulary": [
+    {
+      "term": "production identity",
+      "meaning": "生产环境身份",
+      "example": "Production identity determines how a workload authenticates to other systems."
+    },
+    {
+      "term": "predictive autoscaling",
+      "meaning": "预测性自动扩缩",
+      "example": "Predictive autoscaling is discussed for GPU workloads on Kubernetes."
+    },
+    {
+      "term": "wind down a contract",
+      "meaning": "逐步结束合同",
+      "example": "OpenAI announced a decision to wind down its contract providing models to Cursor."
+    }
+  ],
+  "sources": [
+    {
+      "source": "Kubernetes Blog",
+      "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
+      "url": "https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/",
+      "published_at": "2026-08-28T18:30:00.000Z",
+      "summary": "<h2 id=\"pod-certificate-cluster-trust-bundles-blog-post\">Pod Certificate / Cluster Trust Bundles Blog Post<a class=\"td-heading-self-link\" href=\"#pod-certificate-cluster-trust-bundles-blog-post\" aria-label=\"Heading self-link\"></a></h2><p>Kubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits are probably at the front of your mind, one other important feature of Kubernetes is production identity — how your workload can authenticate to other systems in order to do its job.</p> <p>Up until now, the primary production identity mechanism built into Kubernetes has been service account JWTs (JSON Web Tokens). These are cryptographically-signed tokens, issued by the control plane of your cluster, that let anyone in the world understand who is calling when your workload uses t"
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "Scale before the spike: Predictive autoscaling for GPU workloads on Kubernetes",
+      "url": "https://www.cncf.io/blog/2026/08/28/scale-before-the-spike-predictive-autoscaling-for-gpu-workloads-on-kubernetes/",
+      "published_at": "2026-08-28T11:30:00.000Z",
+      "summary": "The 3 AM Call We got paged one Tuesday morning. A critical production service had crashed under traffic—not gradually degraded, but crashed. Hundreds of pending pods. Users were seeing 15–20% error rates. The incident postmortem was..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Our decision on Cursor following its acquisition by SpaceX",
+      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+      "published_at": "2026-08-28T06:00:00.000Z",
+      "summary": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX."
+    }
+  ],
+  "telegram_message_id": 98
+}
