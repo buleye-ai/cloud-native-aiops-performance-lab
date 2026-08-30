@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 65,
+  "next_lesson": 66,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -449,6 +449,13 @@
       "topic": "How soap removes dirt",
       "telegram_message_id": 100,
       "sent_at": "2026-08-29T16:51:30.386Z"
+    },
+    "2026-08-30:morning": {
+      "lesson": 65,
+      "level": "A2+",
+      "topic": "Talking about the weather",
+      "telegram_message_id": 101,
+      "sent_at": "2026-08-30T05:30:42.068Z"
     }
   }
 }
