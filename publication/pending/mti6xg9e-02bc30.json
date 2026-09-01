@@ -1,0 +1,52 @@
+{
+  "id": "mti6xg9e-02bc30",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-09-01T04:52:07.442Z",
+  "title": "云原生可观测性成熟与 AI 基础设施扩展",
+  "english": "Kubernetes v1.37 enables the stable StorageVersionMigration API and control plane controller by default, addressing the need to update stored API resources to the latest storage version. OpenTelemetry has achieved CNCF graduated status. In AI infrastructure, Polimill uses OpenAI GPT models and Codex to help Japanese municipalities search and use administrative knowledge while accelerating development. Separately, OpenAI states that ChatGPT Ads has reached a $1 billion annualized revenue run rate and is expanding globally through free and affordable options. Together, these updates highlight continuing maturation in platform operations, observability, and AI deployment.",
+  "chinese": "Kubernetes v1.37 将存储版本迁移（SVM）设为默认启用，并使 StorageVersionMigration API 与控制平面控制器进入稳定状态。这与集群中 API 资源需迁移至最新存储版本的运维问题直接相关。OpenTelemetry 已达到 CNCF 毕业项目状态，表明其在云原生可观测性生态中的成熟度进一步提升。AI 侧，Polimill 正使用 OpenAI GPT 模型和 Codex 支持日本地方政府检索及使用行政知识，并加快开发；OpenAI 则披露 ChatGPT Ads 达到 10 亿美元年化收入运行率并全球扩展。",
+  "why_it_matters": "对资深运维开发而言，SVM 默认启用意味着升级和存储 schema 演进需要纳入集群变更管理与验证流程；OpenTelemetry 的毕业状态强化了以统一遥测数据支撑 AIOps 的基础。Polimill 的案例显示，Agent Infra 可落在知识检索与开发加速等公共服务场景，而 AI 产品的全球扩展会继续提高对可靠平台、成本治理和可观测性的需求。",
+  "interview_expression": "I treat Kubernetes upgrades as data-migration events as well as control-plane upgrades, especially when storage-version behavior changes. For AIOps, I would use standardized telemetry as the operational foundation before introducing automated analysis or agent workflows.",
+  "vocabulary": [
+    {
+      "term": "storage version migration",
+      "meaning": "存储版本迁移：将已存储的 API 资源迁移到最新的存储 schema 表示。",
+      "example": "Storage version migration helps keep stored API resources aligned with the latest storage version."
+    },
+    {
+      "term": "graduated status",
+      "meaning": "毕业项目状态：CNCF 对成熟开源项目授予的项目阶段。",
+      "example": "OpenTelemetry has achieved CNCF graduated status."
+    },
+    {
+      "term": "annualized revenue run rate",
+      "meaning": "年化收入运行率：根据当前收入节奏推算的年度化收入指标。",
+      "example": "ChatGPT Ads reached a one billion dollar annualized revenue run rate."
+    }
+  ],
+  "sources": [
+    {
+      "source": "Kubernetes Blog",
+      "title": "Kubernetes v1.37: Storage Version Migration Enabled by Default",
+      "url": "https://kubernetes.io/blog/2026/08/31/kubernetes-v1-37-storage-version-migration-ga/",
+      "published_at": "2026-08-31T18:30:00.000Z",
+      "summary": "<p>I am excited that <em>storage version migration</em> (SVM) has graduated to General Availability (GA) in Kubernetes v1.37!</p> <p>After a number of releases of work and testing, the built-in StorageVersionMigration API (<code>storagemigration.k8s.io/v1</code>) and control plane controller are now fully stable and enabled by default across all v1.37 Kubernetes clusters.</p> <h2 id=\"the-problem-with-stale-storage-versions\">The problem with stale storage versions<a class=\"td-heading-self-link\" href=\"#the-problem-with-stale-storage-versions\" aria-label=\"Heading self-link\"></a></h2><p>In Kubernetes, stored API resources are written using a specific <em>storage version</em> (schema representation). The way Kubernetes interacts with object storage fundamentally requires mutation of a resource in order to ensure that the latest storage version is used for all resources. This creates problems "
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "OpenTelemetry has graduated… now what?",
+      "url": "https://www.cncf.io/blog/2026/08/31/opentelemetry-has-graduated-now-what-2/",
+      "published_at": "2026-08-31T11:30:00.000Z",
+      "summary": "In case you missed it: OpenTelemetry (OTel) has officially achieved CNCF graduated status! It now stands proudly alongside amazing open source projects such as Kubernetes and Prometheus, to name just a few. It’s been a long..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Polimill builds Japan's next-generation public AI infrastructure",
+      "url": "https://openai.com/index/polimill",
+      "published_at": "2026-08-31T07:00:00.000Z",
+      "summary": "Polimill uses OpenAI GPT models and Codex to help municipalities search and use administrative knowledge while accelerating development."
+    }
+  ],
+  "telegram_message_id": 105
+}

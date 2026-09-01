@@ -1,5 +1,9 @@
 {
   "used_urls": [
+    "https://kubernetes.io/blog/2026/08/31/kubernetes-v1-37-storage-version-migration-ga/",
+    "https://www.cncf.io/blog/2026/08/31/opentelemetry-has-graduated-now-what-2/",
+    "https://openai.com/index/polimill",
+    "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
     "https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/",
     "https://www.cncf.io/blog/2026/08/28/scale-before-the-spike-predictive-autoscaling-for-gpu-workloads-on-kubernetes/",
     "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
