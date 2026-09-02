@@ -1,0 +1,52 @@
+{
+  "id": "mtjkyth4-3ac9b6",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-09-02T04:12:52.025Z",
+  "title": "云原生与 AI 行业双语简报：从大规模读取优化到 AI 治理与平台自服务",
+  "english": "Kubernetes v1.37 promotes etcd RangeStream to beta, paired with etcd v3.7, to reduce the memory required by the API server and etcd when reading large collections and to make peak usage more predictable. The Kubernetes API server already paginates reads, but key-count limits do not account for object size. In parallel, AI-native companies such as Basis, Clay, and Exa Labs use agents across onboarding, account management, and developer integrations. OpenAI also describes Astra as meeting the Critical cybersecurity capability threshold under its Preparedness Framework, while ChatGPT can connect to trusted healthcare data. CNCF highlights platform engineering maturity moving from toolchains toward self-service, and Gilbert + Tobin combines leadership, governance, and human accountability to scale AI.",
+  "chinese": "本期信息集中体现了云原生基础设施效率、AI Agent 工作流、平台工程和治理能力的结合。Kubernetes v1.37 中，etcd RangeStream 晋级 beta，并与 etcd v3.7 配合，降低 API server 与 etcd 读取大型集合时的内存需求，使峰值使用量更可预测。AI-native 企业正在将 Agent 应用于入职、客户管理和开发者集成；同时，Astra 达到 Preparedness Framework 下的 Critical cybersecurity capability threshold，并采用更强的发布安全措施。ChatGPT 可连接可信医疗数据。CNCF 讨论平台工程从工具链走向自服务，Gilbert + Tobin 则强调领导层承诺、严格治理和人工问责。",
+  "why_it_matters": "对资深运维开发而言，这些信息共同指向几类重要能力：理解 Kubernetes 与 etcd 在大规模资源读取中的内存行为，设计更可预测的平台运行方式；把 Agent 纳入实际业务工作流，而不是只关注模型本身；建设面向开发者的自服务平台；并在网络安全、医疗数据和企业 AI 使用中落实治理与人工问责。这些方向直接关联云原生平台、AIOps、Agent Infra 以及平台工程职业发展。",
+  "interview_expression": "I see a clear connection between platform engineering and AI operations: reliable self-service infrastructure must be paired with governance and human accountability. I would evaluate both system behavior, such as memory usage during large reads, and the controls required for safe Agent adoption.",
+  "vocabulary": [
+    {
+      "term": "peak usage",
+      "meaning": "峰值使用量",
+      "example": "RangeStream makes peak usage more predictable when reading large collections."
+    },
+    {
+      "term": "self-service",
+      "meaning": "自服务",
+      "example": "Platform engineering maturity can move from a toolchain toward self-service."
+    },
+    {
+      "term": "human accountability",
+      "meaning": "人工问责",
+      "example": "The firm combines governance with human accountability when scaling AI."
+    }
+  ],
+  "sources": [
+    {
+      "source": "Kubernetes Blog",
+      "title": "Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads",
+      "url": "https://kubernetes.io/blog/2026/09/01/kubernetes-v1-37-etcd-range-stream/",
+      "published_at": "2026-09-01T18:30:00.000Z",
+      "summary": "<p>I am excited to announce that etcd RangeStream is graduating to beta in Kubernetes v1.37. Paired with etcd v3.7, it reduces the memory the API server and etcd need to read a large collection, and makes peak usage more predictable.</p> <h2 id=\"the-cost-of-large-reads\">The cost of large reads<a class=\"td-heading-self-link\" href=\"#the-cost-of-large-reads\" aria-label=\"Heading self-link\"></a></h2><p>The API server serves most list and watch requests from its in-memory watch cache. Populating that cache requires reading a resource's full state from etcd, at startup and on every re-initialization. For a resource with many objects, or large ones, such as Pods, that read is expensive.</p> <p>The API server already paginated these reads, asking etcd for a fixed number of keys at a time rather than the whole collection at once. But a page bounded by key count has no awareness of object size, so "
+    },
+    {
+      "source": "OpenAI News",
+      "title": "How AI-native companies turn workflows into operating capability",
+      "url": "https://openai.com/index/ai-native-company-workflows",
+      "published_at": "2026-09-01T17:00:00.000Z",
+      "summary": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Path to Astra: critical capabilities and frontier safeguards",
+      "url": "https://openai.com/index/path-to-astra",
+      "published_at": "2026-09-01T13:00:00.000Z",
+      "summary": "Astra is the first OpenAI model to meet the Critical cybersecurity capability threshold under the Preparedness Framework, with stronger safeguards for release."
+    }
+  ],
+  "telegram_message_id": 108
+}
