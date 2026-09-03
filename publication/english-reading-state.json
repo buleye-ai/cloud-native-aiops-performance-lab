@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 73,
+  "next_lesson": 74,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -505,6 +505,13 @@
       "topic": "How honeybees share information",
       "telegram_message_id": 110,
       "sent_at": "2026-09-02T16:50:17.227Z"
+    },
+    "2026-09-03:morning": {
+      "lesson": 73,
+      "level": "A2+",
+      "topic": "morning routine",
+      "telegram_message_id": 112,
+      "sent_at": "2026-09-03T04:39:42.470Z"
     }
   }
 }
