@@ -1,0 +1,52 @@
+{
+  "id": "mtl0ag77-a3cf03",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-09-03T04:09:35.107Z",
+  "title": "Kubernetes v1.37：HPA 可将工作负载缩容至零",
+  "english": "Kubernetes v1.37 adds Beta API support for scaling workloads down to zero replicas with the HorizontalPodAutoscaler (HPA). The capability is enabled by default and requires a suitable object or external metric. When the metric changes, HPA can scale the workload back up. Previously, scale-to-zero required an add-on, an external component, or an Alpha feature gate. This is particularly relevant for queue consumers and batch processors, where removing the final idle Pod can reduce reserved CPU or GPU costs. The stated trade-off is cold-start time, because HPA must observe the metric before scheduling capacity again.",
+  "chinese": "Kubernetes v1.37 将 HPA 的工作负载缩容至零能力纳入核心 Kubernetes，并以 Beta 形式默认启用。配置了合适对象指标或外部指标的 HPA，可以在负载空闲时将副本数降为 0，并在指标变化后重新扩容。该能力尤其适合队列消费者和批处理任务：当最后一个空闲 Pod 被移除时，可减少 CPU 或 GPU 等昂贵资源的预留成本。需要评估的代价是冷启动时间，因为 HPA 必须先观测到指标变化，随后才能重新调度容量。",
+  "why_it_matters": "对云原生和 AIOps 而言，这将“按需唤醒”进一步下沉到核心 HPA 能力。资深运维开发应重点验证外部指标的可靠性、指标到达延迟、扩容后的服务恢复时间，以及 GPU 工作负载在节省空闲成本与冷启动体验之间的取舍。对 Agent Infra 中事件驱动的消费者或异步批任务，也可评估其作为弹性资源策略的一部分。",
+  "interview_expression": "In Kubernetes v1.37, I would evaluate HPA scale-to-zero for event-driven consumers with external metrics. My operational focus would be metric reliability, recovery latency, and the cost-versus-cold-start trade-off for CPU- or GPU-intensive workloads.",
+  "vocabulary": [
+    {
+      "term": "scale to zero",
+      "meaning": "将副本数缩减至零",
+      "example": "The HPA can scale a workload to zero replicas when the metric allows it."
+    },
+    {
+      "term": "external metric",
+      "meaning": "外部指标，指来自 Kubernetes 工作负载之外的度量信号",
+      "example": "An external metric can trigger the workload to scale back up."
+    },
+    {
+      "term": "cold start",
+      "meaning": "冷启动，指从零副本恢复服务时产生的启动等待时间",
+      "example": "Teams should measure cold-start time before adopting scale-to-zero in production."
+    }
+  ],
+  "sources": [
+    {
+      "source": "Kubernetes Blog",
+      "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
+      "url": "https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/",
+      "published_at": "2026-09-02T18:30:00.000Z",
+      "summary": "<p>Kubernetes v1.37 includes API support for horizontal autoscaling of workloads down to zero replicas. This feature is now Beta and enabled by default. A <a href=\"https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/\">HorizontalPodAutoscaler</a> (HPA) that uses a suitable <em>object metric</em> or <em>external metric</em> can now scale a workload to zero replicas, then bring it back when the metric changes.</p> <p>Before v1.37, you needed an add-on or external component, or you had to enable the Alpha feature gate, to scale from zero. It is now part of core Kubernetes.</p> <p>Scaling to zero removes the last idle Pod from workloads such as queue consumers and batch processors. The savings are largest when each Pod reserves expensive resources, including dedicated CPUs or GPUs.</p> <p>The trade-off is cold-start time: the HPA must observe the metric, schedul"
+    },
+    {
+      "source": "OpenAI News",
+      "title": "ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT",
+      "url": "https://openai.com/index/atv-big-air-tour",
+      "published_at": "2026-09-02T12:00:00.000Z",
+      "summary": "ATV Big Air Tour uses ChatGPT Work to speed up marketing, merchandising, and more. It even turned merchandise photos into an inventory website in 15 minutes."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "Metal3 meets KubeVirtBMC: Provisioning KubeVirt VMs like bare metal",
+      "url": "https://www.cncf.io/blog/2026/09/02/metal3-meets-kubevirtbmc-provisioning-kubevirt-vms-like-bare-metal/",
+      "published_at": "2026-09-02T11:31:00.000Z",
+      "summary": "In the previous post , we introduced KubeVirtBMC and showed how it provides virtual BMC endpoints for KubeVirt VMs. We tested it with raw IPMI and Redfish commands. That was fun, but the real power of..."
+    }
+  ],
+  "telegram_message_id": 111
+}
