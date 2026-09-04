@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/",
+    "https://openai.com/index/daybreak-for-frontline-defenders",
+    "https://www.cncf.io/blog/2026/09/03/join-ospology-ospo-summit-china-2026-in-shanghai/",
+    "https://openai.com/index/legora-financial-statement-review-with-astra",
+    "https://openai.com/index/playco-game-prototyping-with-astra",
+    "https://www.cncf.io/blog/2026/09/03/migrating-a-critical-kubernetes-deployment-from-the-default-namespace-without-any-downtime/",
     "https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/",
     "https://openai.com/index/atv-big-air-tour",
     "https://www.cncf.io/blog/2026/09/02/metal3-meets-kubevirtbmc-provisioning-kubevirt-vms-like-bare-metal/",
