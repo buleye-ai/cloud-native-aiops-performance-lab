@@ -1,5 +1,10 @@
 {
   "used_urls": [
+    "https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/",
+    "https://www.cncf.io/blog/2026/09/04/cpu-gpu-why-ai-platform-engineering-is-a-heterogeneous-infrastructure-problem/",
+    "https://www.cncf.io/blog/2026/09/04/kubernetes-isnt-new-but-ai-makes-it-scary-again/",
+    "https://openai.com/index/gpt-6-astra",
+    "https://openai.com/index/safety-overview-gpt-6-astra",
     "https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/",
     "https://openai.com/index/daybreak-for-frontline-defenders",
     "https://www.cncf.io/blog/2026/09/03/join-ospology-ospo-summit-china-2026-in-shanghai/",
