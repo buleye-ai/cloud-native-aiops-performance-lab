@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 79,
+  "next_lesson": 80,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -547,6 +547,13 @@
       "topic": "asking a coworker for help",
       "telegram_message_id": 119,
       "sent_at": "2026-09-06T04:47:21.551Z"
+    },
+    "2026-09-06:evening": {
+      "lesson": 79,
+      "level": "A2+",
+      "topic": "choosing a good weekend activity",
+      "telegram_message_id": 120,
+      "sent_at": "2026-09-06T15:43:38.857Z"
     }
   }
 }
