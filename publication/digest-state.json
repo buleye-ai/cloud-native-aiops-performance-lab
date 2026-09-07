@@ -1,5 +1,7 @@
 {
   "used_urls": [
+    "https://openai.com/index/an-alien-mind",
+    "https://openai.com/index/research-acceleration-view-inside-openai",
     "https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/",
     "https://www.cncf.io/blog/2026/09/04/cpu-gpu-why-ai-platform-engineering-is-a-heterogeneous-infrastructure-problem/",
     "https://www.cncf.io/blog/2026/09/04/kubernetes-isnt-new-but-ai-makes-it-scary-again/",
