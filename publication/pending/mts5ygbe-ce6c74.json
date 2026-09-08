@@ -1,0 +1,52 @@
+{
+  "id": "mts5ygbe-ce6c74",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-09-08T04:22:36.315Z",
+  "title": "Karmada 毕业与 Kubernetes 上 AI 训练、推理平台化",
+  "english": "CNCF announced Karmada’s graduation, describing the project as a production-mature platform for multi-cluster and multi-cloud Kubernetes orchestration. The announcement comes as enterprises scale AI training and inference across hybrid infrastructure. Related CNCF announcements highlight a broader shift toward inference: China Merchants Bank reported that its cloud native platform unified AI training and inference on Kubernetes, raising average accelerator utilization from 35% to more than 60% and reducing inference cost per one million tokens by more than 60%. CNCF and SlashData also reported that 48% of China’s IIoT developers use cloud native technologies, compared with a 42% global average.",
+  "chinese": "CNCF 将 Karmada 提升至毕业项目，表明多集群、多云 Kubernetes 编排已具备生产成熟度。同期案例显示，企业正在把 AI 训练与推理统一到 Kubernetes 平台：招商银行的云原生平台提升了平均加速器利用率，并降低了按百万 token 计的推理成本。行业信号并非只关注模型训练，而是转向可持续运营、资源调度和成本可控的推理基础设施。",
+  "why_it_matters": "对云原生和 AIOps 团队而言，多集群调度、混合基础设施治理、GPU/加速器利用率与推理单位成本正在成为关键运营指标。对 Agent Infra 而言，稳定且可扩展的推理承载平台是部署和运营 Agent 工作负载的基础。职业上，应加强 Kubernetes 多集群编排、容量管理、可观测性及 AI 推理成本治理能力。",
+  "interview_expression": "I focus on operating AI platforms as production systems, including multi-cluster orchestration, accelerator utilization, and inference cost. I would measure success through service reliability, resource efficiency, and unit economics rather than model deployment alone.",
+  "vocabulary": [
+    {
+      "term": "orchestration",
+      "meaning": "编排；协调多个系统或资源的运行",
+      "example": "Multi-cluster orchestration can help teams manage workloads across hybrid infrastructure."
+    },
+    {
+      "term": "inference",
+      "meaning": "推理；模型根据输入生成结果的过程",
+      "example": "Inference workloads require predictable capacity and cost controls."
+    },
+    {
+      "term": "accelerator utilization",
+      "meaning": "加速器利用率，通常指 GPU 等计算加速资源的使用效率",
+      "example": "The platform increased average accelerator utilization to more than 60%."
+    }
+  ],
+  "sources": [
+    {
+      "source": "CNCF Blog",
+      "title": "Cloud Native Computing Foundation Announces Karmada Graduation",
+      "url": "https://www.cncf.io/announcements/2026/09/07/cloud-native-computing-foundation-announces-karmada-graduation/",
+      "published_at": "2026-09-08T02:06:17.000Z",
+      "summary": "Multi-cluster, multi-cloud Kubernetes orchestration project reaches production maturity as global enterprises scale AI training and inference across hybrid infrastructure Key Highlights SHANGHAI, China – KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China 2026 –..."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "CNCF Welcomes New Silver Members as Enterprises Scale AI From Training to Inference",
+      "url": "https://www.cncf.io/announcements/2026/09/07/cncf-welcomes-new-silver-members-as-enterprises-scale-ai-from-training-to-inference/",
+      "published_at": "2026-09-08T01:58:47.000Z",
+      "summary": "New members including SoftBank Corp. and Crusoe join the cloud native community to help build cost-efficient, sovereign infrastructure SHANGHAI, China – KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China 2026 – September 8, 2026..."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "China Merchants Bank Wins CNCF End User Case Study Contest for Unifying AI Training and Inference on Kubernetes",
+      "url": "https://www.cncf.io/announcements/2026/09/07/china-merchants-bank-wins-cncf-end-user-case-study-contest-for-unifying-ai-training-and-inference-on-kubernetes/",
+      "published_at": "2026-09-08T01:54:31.000Z",
+      "summary": "New cloud native platform lifted average accelerator compute utilization from 35% to more than 60% and cut inference cost per 1 million tokens by more than 60% Key Highlights SHANGHAI, China – KubeCon + CloudNativeCon +..."
+    }
+  ],
+  "telegram_message_id": 126
+}
