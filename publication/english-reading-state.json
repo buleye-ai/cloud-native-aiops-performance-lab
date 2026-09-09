@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 84,
+  "next_lesson": 85,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -582,6 +582,13 @@
       "topic": "How people make friends",
       "telegram_message_id": 129,
       "sent_at": "2026-09-08T16:50:37.134Z"
+    },
+    "2026-09-09:morning": {
+      "lesson": 84,
+      "level": "A2+",
+      "topic": "Healthy work habits",
+      "telegram_message_id": 131,
+      "sent_at": "2026-09-09T04:51:05.580Z"
     }
   }
 }
