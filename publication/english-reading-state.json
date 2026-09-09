@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 85,
+  "next_lesson": 86,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -589,6 +589,13 @@
       "topic": "Healthy work habits",
       "telegram_message_id": 131,
       "sent_at": "2026-09-09T04:51:05.580Z"
+    },
+    "2026-09-10:evening": {
+      "lesson": 85,
+      "level": "A2+",
+      "topic": "Enjoying music as a hobby",
+      "telegram_message_id": 132,
+      "sent_at": "2026-09-09T16:53:09.791Z"
     }
   }
 }
