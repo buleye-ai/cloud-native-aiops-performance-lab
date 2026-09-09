@@ -1,0 +1,52 @@
+{
+  "id": "mttlhygd-283de6",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-09-09T04:25:26.701Z",
+  "title": "Kubernetes v1.37 推进面向工作负载的调度",
+  "english": "The Kubernetes Blog describes v1.37 as the next major milestone in Workload-Aware Scheduling for AI/ML and complex batch workloads. The core Workload and PodGroup APIs, which enable gang scheduling, graduate to Beta, together with Workload-Aware Preemption and shared DRA ResourceClaims for PodGroups. The release also introduces the CompositePodGroup API for hierarchical scheduling requirements. It is designed to express multi-level topology constraints, gang scheduling, and preemption policies for complex, heterogeneous workloads. For senior operations and development engineers, the announcement highlights a shift from scheduling individual Pods toward expressing workload-level coordination and resource relationships. This direction is relevant to platform engineering, distributed workload operations, and infrastructure supporting AI/ML systems, while the supplied source does not provide further implementation details or performance figures.",
+  "chinese": "Kubernetes Blog称，v1.37是 Workload-Aware Scheduling（WAS）演进中的下一项重要里程碑，重点面向 AI/ML 与复杂批处理工作负载。Workload 和 PodGroup 核心 API（支持 gang scheduling）、Workload-Aware Preemption（WAP），以及供 PodGroup 使用的共享 DRA ResourceClaims 均进入 Beta。该版本还引入 CompositePodGroup API，用于表达多层拓扑约束、gang scheduling 和抢占策略，以支持复杂、异构的工作负载。提供的摘要未包含更多实现细节或性能数据。",
+  "why_it_matters": "这与云原生平台和 AI 基础设施直接相关：调度对象从单个 Pod 扩展到具备协同关系的工作负载，有助于资深运维开发理解分布式 AI/ML 与批处理系统的资源编排方向。对 AIOps 和 Agent Infra 而言，工作负载级拓扑、抢占与资源声明可作为平台自动化和运行治理需要关注的基础能力。职业发展上，应重视 Kubernetes 调度、资源抽象、异构工作负载和平台工程能力。",
+  "interview_expression": "I have been following Kubernetes’ move toward workload-level scheduling, especially gang scheduling and workload-aware preemption. These capabilities are relevant when operating complex, heterogeneous AI/ML and batch workloads.",
+  "vocabulary": [
+    {
+      "term": "workload-aware scheduling",
+      "meaning": "面向工作负载的调度",
+      "example": "Kubernetes v1.37 advances workload-aware scheduling for AI/ML and complex batch workloads."
+    },
+    {
+      "term": "gang scheduling",
+      "meaning": "协同调度；要求一组相关任务协同获得资源",
+      "example": "The Workload and PodGroup APIs enable gang scheduling."
+    },
+    {
+      "term": "preemption",
+      "meaning": "抢占；为满足调度策略而重新分配资源",
+      "example": "The release advances Workload-Aware Preemption for complex workloads."
+    }
+  ],
+  "sources": [
+    {
+      "source": "Kubernetes Blog",
+      "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
+      "url": "https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/",
+      "published_at": "2026-09-08T18:30:00.000Z",
+      "summary": "<p>AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next major milestone in the Workload-Aware Scheduling (WAS) journey. In this release, the core Workload and PodGroup APIs—enabling gang scheduling—along with Workload-Aware Preemption (WAP) and shared DRA ResourceClaims for PodGroups, all graduate to Beta, solidifying their role in the Kubernetes ecosystem.</p> <p>To address the hierarchical scheduling requirements of modern high-performance distributed workloads, v1.37 introduces the new <a href=\"https://kubernetes.io/docs/concepts/workloads/compositepodgroup-api/\">CompositePodGroup</a> API. This new API allows expressing multi-level topology constraints, gang scheduling, and preemption policies for complex, heterogeneous gro"
+    },
+    {
+      "source": "OpenAI News",
+      "title": "How GPT-5.6 Sol helps run quantum computing experiments",
+      "url": "https://openai.com/index/codex-quantum-computing-experiments",
+      "published_at": "2026-09-08T17:00:00.000Z",
+      "summary": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "The Work Now Within Reach",
+      "url": "https://openai.com/index/the-work-now-within-reach",
+      "published_at": "2026-09-08T13:00:00.000Z",
+      "summary": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical."
+    }
+  ],
+  "telegram_message_id": 130
+}
