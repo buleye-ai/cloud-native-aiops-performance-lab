@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 87,
+  "next_lesson": 88,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -603,6 +603,13 @@
       "topic": "taking a bus or train to work",
       "telegram_message_id": 134,
       "sent_at": "2026-09-10T04:51:09.200Z"
+    },
+    "2026-09-11:evening": {
+      "lesson": 87,
+      "level": "A2+",
+      "topic": "life in a car-free city",
+      "telegram_message_id": 135,
+      "sent_at": "2026-09-10T16:41:09.990Z"
     }
   }
 }
