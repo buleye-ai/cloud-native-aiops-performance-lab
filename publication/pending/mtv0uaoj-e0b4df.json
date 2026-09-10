@@ -1,0 +1,52 @@
+{
+  "id": "mtv0uaoj-e0b4df",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-09-10T04:22:42.835Z",
+  "title": "Kubernetes v1.37 引入节点生命周期条件",
+  "english": "Kubernetes v1.37 introduces five well-known Node conditions to provide a shared, Kubernetes-owned description of node lifecycle activity. The conditions are DrainInProgress, Drained, MaintenancePlanned, MaintenanceInProgress, and GracefulNodeShutdownInProgress. Previously, node state was described across readiness, taints, Pod state, labels, annotations, and provider-specific APIs, with no common condition for draining, maintenance, or graceful node shutdown. These conditions create a clearer lifecycle vocabulary for Kubernetes nodes.",
+  "chinese": "Kubernetes v1.37 新增五个标准化 Node conditions，用于描述节点排空、已排空、计划维护、维护中以及优雅节点关机进行中。此前，节点状态分散在 Readiness、taint、Pod 状态、标签、注解和云厂商特定 API 中，缺少由 Kubernetes 统一定义的生命周期表达。",
+  "why_it_matters": "对云原生与 AIOps 而言，统一的节点生命周期信号有助于将排空、维护和优雅关机纳入可观测性、自动化编排与告警规则。面向 Agent Infra，这也为自动化代理理解节点当前操作状态提供了明确、共享的语义，而不必只依赖分散的间接信号。",
+  "interview_expression": "Kubernetes v1.37 adds shared Node conditions for draining, maintenance, and graceful node shutdown. I would use these standardized signals when designing observability and automation workflows for node lifecycle operations.",
+  "vocabulary": [
+    {
+      "term": "Node condition",
+      "meaning": "节点条件；用于表达节点状态的标准化字段",
+      "example": "The new Node conditions describe lifecycle activity on a Kubernetes node."
+    },
+    {
+      "term": "draining",
+      "meaning": "节点排空；将工作负载从节点迁移或驱逐的过程",
+      "example": "DrainInProgress indicates that a node is draining."
+    },
+    {
+      "term": "Graceful Node Shutdown",
+      "meaning": "优雅节点关机；在关机过程中有序处理工作负载的机制",
+      "example": "GracefulNodeShutdownInProgress describes a graceful node shutdown in progress."
+    }
+  ],
+  "sources": [
+    {
+      "source": "Kubernetes Blog",
+      "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
+      "url": "https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/",
+      "published_at": "2026-09-09T18:30:00.000Z",
+      "summary": "<p>Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kubernetes-owned way to say that a Node is <a href=\"https://kubernetes.io/docs/tasks/administer-cluster/safely-drain-node/\">draining</a>, undergoing maintenance, or undergoing <a href=\"https://kubernetes.io/docs/concepts/cluster-administration/node-shutdown/\">Graceful Node Shutdown</a>.</p> <p>Kubernetes v1.37 introduces five well-known <a href=\"https://kubernetes.io/docs/reference/node/node-status/#condition\">Node conditions</a> that provide that description:</p> <ul> <li><code>DrainInProgress</code></li> <li><code>Drained</code></li> <li><code>MaintenancePlanned</code></li> <li><code>MaintenanceInProgress</code></li> <li><code>GracefulNodeShutdownInProgress</code></li> </ul>"
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Paul Christiano joins OpenAI Foundation Board",
+      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "published_at": "2026-09-09T17:00:00.000Z",
+      "summary": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "The AI policy window is open. We need to act.",
+      "url": "https://openai.com/index/ai-policy-window",
+      "published_at": "2026-09-09T13:00:00.000Z",
+      "summary": "Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open."
+    }
+  ],
+  "telegram_message_id": 133
+}
