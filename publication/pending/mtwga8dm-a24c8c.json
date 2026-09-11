@@ -1,0 +1,52 @@
+{
+  "id": "mtwga8dm-a24c8c",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-09-11T04:22:46.762Z",
+  "title": "Kubernetes v1.37：面向原地 Pod 扩容的调度器抢占进入 Alpha",
+  "english": "Kubernetes v1.37 introduces Scheduler Preemption for In-Place Pod Resize as an Alpha feature. Historically, resource allocation was decided during a Pod’s initial scheduling and placement. In-place Pod resize reached General Availability in v1.35, allowing developers and cluster operators to adjust CPU and memory allocations for running containers without disruptive restarts or application downtime. This model created a scheduling gap: when a running Pod requested a scale-up beyond a node’s allocatable headroom, the Kubelet marked the request as Deferred. The Pod could then remain waiting indefinitely for resources to become available naturally. The new scheduler preemption capability addresses this gap by bringing resize requests into the scheduler’s resource decision process.",
+  "chinese": "Kubernetes v1.37 引入了面向原地 Pod 调整的调度器抢占功能，目前处于 Alpha 阶段。此前，资源分配主要发生在 Pod 初始调度和放置时。v1.35 中，原地 Pod 调整功能达到 General Availability，使开发者和集群运维人员能够在不重启容器、不中断应用的情况下调整运行中容器的 CPU 和内存。当运行中的 Pod 请求扩容且节点没有足够的可分配资源时，Kubelet 会将请求标记为 Deferred，Pod 可能持续等待节点资源自然释放。该功能旨在弥补这一调度缺口。",
+  "why_it_matters": "这项变化直接关联云原生资源调度和运行中工作负载的弹性管理。对资深运维开发而言，需要关注原地扩容、节点可分配资源、Kubelet 状态以及调度器抢占之间的关系；这些概念也可作为 AIOps 自动化资源决策和 Agent Infra 运行时编排的基础语境。面试中可以体现对 Kubernetes 调度边界和生产运维影响的理解。",
+  "interview_expression": "Kubernetes v1.37 introduces an Alpha scheduler preemption capability for in-place Pod resize. I would evaluate how it changes resource pressure handling when a running Pod requests more CPU or memory than its node can currently provide.",
+  "vocabulary": [
+    {
+      "term": "preemption",
+      "meaning": "抢占",
+      "example": "Scheduler preemption can address resource pressure during an in-place Pod resize."
+    },
+    {
+      "term": "allocatable headroom",
+      "meaning": "可分配资源余量",
+      "example": "The resize request exceeded the node’s allocatable headroom."
+    },
+    {
+      "term": "Deferred",
+      "meaning": "延后处理；延期状态",
+      "example": "The Kubelet marked the resize request as Deferred when the node lacked sufficient resources."
+    }
+  ],
+  "sources": [
+    {
+      "source": "Kubernetes Blog",
+      "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
+      "url": "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/",
+      "published_at": "2026-09-10T18:30:00.000Z",
+      "summary": "<p>In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core <a href=\"https://kubernetes.io/blog/2025/12/19/kubernetes-v1-35-in-place-Pod-resize-ga/\">in-Place Pod resize</a> feature to General Availability in v1.35, application developers and cluster operators gained the powerful ability to dynamically adjust CPU and memory allocations of running containers without incurring disruptive restarts or application downtime.</p> <p>However, in-place resizing introduced a unique resource scheduling gap: if a running Pod requested a resource scale-up that exceeded the host node's allocatable headroom, the Kubelet was forced to mark the request as <code>Deferred</code>. The Pod would remain parked in this state indefinitely, waiting for resources on the node to naturally free up.</p> <p>To bridg"
+    },
+    {
+      "source": "OpenAI News",
+      "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+      "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+      "published_at": "2026-09-10T16:00:00.000Z",
+      "summary": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Now everyone can put data to work",
+      "url": "https://openai.com/index/put-data-to-work",
+      "published_at": "2026-09-10T15:00:00.000Z",
+      "summary": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language."
+    }
+  ],
+  "telegram_message_id": 136
+}
