@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 90,
+  "next_lesson": 91,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -624,6 +624,13 @@
       "topic": "How food connects people",
       "telegram_message_id": 138,
       "sent_at": "2026-09-11T16:44:23.486Z"
+    },
+    "2026-09-12:morning": {
+      "lesson": 90,
+      "level": "A2+",
+      "topic": "Asking a coworker for help",
+      "telegram_message_id": 140,
+      "sent_at": "2026-09-12T04:42:31.202Z"
     }
   }
 }
