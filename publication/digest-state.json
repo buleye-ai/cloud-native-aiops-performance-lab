@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+    "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/",
+    "https://openai.com/index/cognition-devin-testing-with-astra",
+    "https://www.cncf.io/blog/2026/09/11/building-a-reliable-cloud-native-foundation-for-distributed-ai-training/",
+    "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+    "https://openai.com/index/introducing-gpt-live-1-in-the-api",
     "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/",
     "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
     "https://openai.com/index/put-data-to-work",
