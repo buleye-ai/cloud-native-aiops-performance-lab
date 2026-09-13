@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 91,
+  "next_lesson": 92,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -631,6 +631,13 @@
       "topic": "Asking a coworker for help",
       "telegram_message_id": 140,
       "sent_at": "2026-09-12T04:42:31.202Z"
+    },
+    "2026-09-13:morning": {
+      "lesson": 91,
+      "level": "A2+",
+      "topic": "Work and focus",
+      "telegram_message_id": 141,
+      "sent_at": "2026-09-13T05:00:32.556Z"
     }
   }
 }
