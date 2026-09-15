@@ -1,5 +1,9 @@
 {
   "used_urls": [
+    "https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/",
+    "https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/",
+    "https://openai.com/index/fyxer",
+    "https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/",
     "https://openai.com/index/perplexity-improving-accuracy-with-astra",
     "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/",
     "https://openai.com/index/cognition-devin-testing-with-astra",

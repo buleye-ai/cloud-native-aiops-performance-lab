@@ -1,0 +1,52 @@
+{
+  "id": "mu26ozjb-14d6f2",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-09-15T04:40:56.039Z",
+  "title": "Kubernetes v1.37：Memory QoS 升级至 Beta 并默认启用",
+  "english": "Kubernetes v1.37 promotes Memory QoS to Beta and enables it by default. On Linux nodes using cgroup v2, the feature uses the memory controller to provide the kernel with better guidance for container memory handling. Memory QoS was introduced as an Alpha feature in v1.22 and gained tiered memory reservation support in v1.36. For cluster operators, the Beta transition means MemoryQoS should be evaluated as part of capacity planning, workload testing, and node-level observability. Teams should understand its behavior before relying on it for memory-sensitive production workloads.",
+  "chinese": "Kubernetes v1.37 将 Memory QoS 提升为 Beta，并默认启用。该能力面向使用 cgroup v2 的 Linux 节点，通过内存控制器向内核提供更明确的容器内存处理指引。Memory QoS 最早在 v1.22 以 Alpha 形式引入，并在 v1.36 扩展了分层内存预留能力。",
+  "why_it_matters": "这项变化直接影响云原生集群的资源治理。资深运维开发人员应将其纳入节点基线、容量规划、压测和内存相关可观测性检查。对于 AIOps 场景，内存压力、容器行为与节点资源信号是异常检测和根因分析的重要输入；默认启用也意味着升级评估不能忽略其对既有工作负载的影响。",
+  "interview_expression": "I would evaluate Memory QoS during a Kubernetes upgrade through workload testing, capacity planning, and node-level observability. Because it is enabled by default in v1.37, I would verify its behavior on memory-sensitive workloads before production rollout.",
+  "vocabulary": [
+    {
+      "term": "graduate to Beta",
+      "meaning": "升级至 Beta 阶段",
+      "example": "Memory QoS graduates to Beta in Kubernetes v1.37."
+    },
+    {
+      "term": "enabled by default",
+      "meaning": "默认启用",
+      "example": "The feature is enabled by default in Kubernetes v1.37."
+    },
+    {
+      "term": "memory controller",
+      "meaning": "内存控制器",
+      "example": "On cgroup v2 nodes, Memory QoS uses the memory controller."
+    }
+  ],
+  "sources": [
+    {
+      "source": "Kubernetes Blog",
+      "title": "Kubernetes Changed Block Tracking API - Beta Differences",
+      "url": "https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/",
+      "published_at": "2026-09-14T18:30:00.000Z",
+      "summary": "<p>Changed Block Tracking (CBT) support for CSI drivers <a href=\"https://kubernetes.io/blog/2025/09/25/csi-changed-block-tracking/\">shipped as Alpha</a> in September 2025. With the March 2026 <code>v1.0.0</code> release of the <a href=\"https://github.com/kubernetes-csi/external-snapshot-metadata\">external-snapshot-metadata</a> project, the feature moved to <strong>Beta</strong>.</p> <p>If you aren't yet familiar with <em>changed block tracking</em> for storage in Kubernetes, the <a href=\"https://kubernetes.io/blog/2025/09/25/csi-changed-block-tracking/\">Alpha announcement</a> covers the motivation, the three primary components (the CSI <code>SnapshotMetadata</code> gRPC service, the SnapshotMetadataService CRD, and the <code>external-snapshot-metadata</code> sidecar), and a walkthrough of how to use the API. CBT currently applies to block volumes; file-volume and network file-share chang"
+    },
+    {
+      "source": "Kubernetes Blog",
+      "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
+      "url": "https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/",
+      "published_at": "2026-09-14T18:30:00.000Z",
+      "summary": "<p>Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container memory. It was first introduced as Alpha in v1.22, and expanded in v1.36 with tiered memory reservation.</p> <p>This post covers what changed in v1.37, what the Beta promotion means for cluster operators, and how to configure the feature.</p> <h2 id=\"what-changed-in-v1-37\">What changed in v1.37<a class=\"td-heading-self-link\" href=\"#what-changed-in-v1-37\" aria-label=\"Heading self-link\"></a></h2><h3 id=\"memory-qos-is-beta-and-enabled-by-default\">Memory QoS is Beta and enabled by default<a class=\"td-heading-self-link\" href=\"#memory-qos-is-beta-and-enabled-by-default\" aria-label=\"Heading self-link\"></a></h3><p>The <code>MemoryQoS</code> feature gate is now Beta in v1.37. Thi"
+    },
+    {
+      "source": "OpenAI News",
+      "title": "How Fyxer built an AI executive assistant people trust",
+      "url": "https://openai.com/index/fyxer",
+      "published_at": "2026-09-14T12:00:00.000Z",
+      "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft emails in each user’s voice."
+    }
+  ],
+  "telegram_message_id": 145
+}
