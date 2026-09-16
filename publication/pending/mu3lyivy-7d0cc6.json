@@ -1,0 +1,45 @@
+{
+  "id": "mu3lyivy-7d0cc6",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-09-16T04:36:01.438Z",
+  "title": "Kubernetes v1.37：Pod 级资源管理进入 Beta，社区运营经验同步显现",
+  "english": "Kubernetes v1.37 graduates Pod-Level Resource Managers to Beta, with the feature disabled by default. According to the Kubernetes Blog, the capability was first introduced as Alpha in Kubernetes v1.36 and builds on Pod-Level Resources. It enables Kubelet’s Topology Manager, CPU Manager, and Memory Manager to use Pod-level resource declarations, specifically .spec.resources, when making hardware placement decisions. In parallel, the CNCF Blog reports that Kubernetes Community Days Lima 2026 was held on July 18, 2026 at UTEC in Barranco, marking its third edition, with organizers later sending the Transparency Report to CNCF, thanking sponsors, and processing follow-up work.",
+  "chinese": "本期重点是 Kubernetes v1.37 中 Pod-Level Resource Managers 升级到 Beta，但默认仍处于禁用状态。该能力最早在 Kubernetes v1.36 作为 Alpha 引入，并建立在 Pod-Level Resources 之上，使 Kubelet 的 Topology Manager、CPU Manager 和 Memory Manager 能够直接使用 Pod 级资源声明（.spec.resources）来进行硬件放置决策。另一个社区侧信号来自 CNCF Blog：KCD Lima 2026 于 2026 年 7 月 18 日在 Barranco 的 UTEC 举办，这是第三届，后续已向 CNCF 提交透明度报告、感谢赞助方并处理相关收尾工作。",
+  "why_it_matters": "对资深运维开发而言，Pod 级资源管理进入 Beta 表明 Kubernetes 在资源抽象与节点侧硬件放置决策之间的连接更进一步。它与云原生平台的资源治理、性能隔离和调度可预期性直接相关，也会影响 AIOps 或 Agent Infra 场景中对 CPU、内存与拓扑敏感工作负载的运行策略。KCD Lima 的案例则提醒工程师，职业发展不仅来自技术特性跟进，也来自参与社区、理解透明度报告、赞助协作和活动组织等开源治理实践。",
+  "interview_expression": "I track Kubernetes resource-management changes because they affect workload placement, isolation, and platform predictability. I also value community practices such as transparency reports, since they reflect how cloud native projects are governed beyond code.",
+  "vocabulary": [
+    {
+      "term": "graduate to Beta",
+      "meaning": "升级到 Beta 阶段",
+      "example": "The feature graduated to Beta but remains disabled by default."
+    },
+    {
+      "term": "hardware placement decision",
+      "meaning": "硬件放置决策",
+      "example": "Kubelet managers can use Pod-level declarations when making hardware placement decisions."
+    },
+    {
+      "term": "Transparency Report",
+      "meaning": "透明度报告",
+      "example": "The organizers sent the Transparency Report to the CNCF after the event."
+    }
+  ],
+  "sources": [
+    {
+      "source": "Kubernetes Blog",
+      "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
+      "url": "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/",
+      "published_at": "2026-09-15T18:30:00.000Z",
+      "summary": "<p>With the release of Kubernetes v1.37, the <strong>Pod-Level Resource Managers</strong> feature has graduated to <strong>Beta</strong> status (disabled by default)!</p> <p>First introduced as an Alpha feature in <a href=\"https://kubernetes.io/blog/2026/05/01/kubernetes-v1-36-feature-pod-level-resource-managers-alpha/\">Kubernetes v1.36</a>, this enhancement builds on <a href=\"https://kubernetes.io/blog/2025/09/22/kubernetes-v1-34-pod-level-resources/\">Pod-Level Resources</a> by equipping Kubelet's Topology Manager, CPU Manager, and Memory Manager to use Pod-level resource declarations (<code>.spec.resources</code>) directly when making hardware placement decisions.</p> <h2 id=\"bringing-pod-level-resources-to-node-managers\">Bringing pod-level resources to node managers<a class=\"td-heading-self-link\" href=\"#bringing-pod-level-resources-to-node-managers\" aria-label=\"Heading self-link\"></a>"
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "What I learned organizing KCD Lima 2026",
+      "url": "https://www.cncf.io/blog/2026/09/15/what-i-learned-organizing-kcd-lima-2026/",
+      "published_at": "2026-09-15T16:24:05.000Z",
+      "summary": "On July 18, 2026, we held the third edition of Kubernetes Community Days Lima at UTEC in Barranco. By now, we have already sent the Transparency Report to the CNCF, thanked our sponsors, and processed the..."
+    }
+  ],
+  "telegram_message_id": 148
+}

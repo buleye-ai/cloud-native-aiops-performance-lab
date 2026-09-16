@@ -1,5 +1,7 @@
 {
   "used_urls": [
+    "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/",
+    "https://www.cncf.io/blog/2026/09/15/what-i-learned-organizing-kcd-lima-2026/",
     "https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/",
     "https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/",
     "https://openai.com/index/fyxer",
