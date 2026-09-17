@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 99,
+  "next_lesson": 100,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -687,6 +687,13 @@
       "topic": "saving a little money each week",
       "telegram_message_id": 150,
       "sent_at": "2026-09-16T17:15:48.896Z"
+    },
+    "2026-09-17:morning": {
+      "lesson": 99,
+      "level": "A2+",
+      "topic": "planning three important tasks",
+      "telegram_message_id": 152,
+      "sent_at": "2026-09-17T04:58:49.886Z"
     }
   }
 }
