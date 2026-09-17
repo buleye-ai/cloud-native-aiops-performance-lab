@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/",
+    "https://openai.com/index/model-misalignment-reporting-framework",
+    "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+    "https://openai.com/index/reimagining-advertising-with-ai",
+    "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
+    "https://www.cncf.io/blog/2026/09/16/running-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend/",
     "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/",
     "https://www.cncf.io/blog/2026/09/15/what-i-learned-organizing-kcd-lima-2026/",
     "https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/",

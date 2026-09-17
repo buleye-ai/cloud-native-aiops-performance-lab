@@ -1,0 +1,52 @@
+{
+  "id": "mu51l43u-3b91fd",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-09-17T04:41:15.786Z",
+  "title": "Kubernetes v1.37 强化容器存储安全控制",
+  "english": "Kubernetes v1.37 introduces storage security features centered on emptyDir permission modes and bind mount options. These capabilities help application developers and security professionals apply stricter security policies directly in Kubernetes. The stated examples include preventing file deletion across containers and preventing execution of arbitrary binaries from writable volumes. The update relies on underlying Linux storage and permission mechanisms, including bind mount flags. For platform teams, the change highlights a shift toward expressing container storage restrictions as Kubernetes-native configuration rather than relying on complex workarounds.",
+  "chinese": "Kubernetes v1.37 引入了两项容器存储安全能力：emptyDir 权限模式和 bind mount 选项。它们使应用开发者与安全团队能够直接在 Kubernetes 中落实更严格的存储策略，例如限制跨容器删除文件，以及阻止从可写卷执行任意二进制文件。该能力建立在 Linux 存储与权限机制之上，包括 bind mount 标志。",
+  "why_it_matters": "这与云原生平台安全和 AIOps 运维治理直接相关：平台团队可将部分卷挂载、写入和执行约束声明为 Kubernetes 配置，减少依赖复杂规避方案的安全控制。对资深运维开发而言，理解 Linux 挂载语义、容器卷行为与 Kubernetes 安全策略之间的关系，是设计多租户平台和排查工作负载存储风险的重要能力。",
+  "interview_expression": "I focus on expressing storage security controls as Kubernetes-native configuration whenever possible. In Kubernetes v1.37, emptyDir permission modes and bind mount options are relevant examples of enforcing stricter workload policies without complex workarounds.",
+  "vocabulary": [
+    {
+      "term": "bind mount",
+      "meaning": "绑定挂载；将一个已有目录或文件挂载到另一位置的 Linux 挂载方式。",
+      "example": "Kubernetes v1.37 adds bind mount options for storage security."
+    },
+    {
+      "term": "emptyDir",
+      "meaning": "Kubernetes 的临时卷类型，可供 Pod 中的容器共享使用。",
+      "example": "The update introduces permission modes for emptyDir volumes."
+    },
+    {
+      "term": "writable volume",
+      "meaning": "可写卷；允许工作负载写入数据的存储卷。",
+      "example": "A security policy can prevent execution of arbitrary binaries from a writable volume."
+    }
+  ],
+  "sources": [
+    {
+      "source": "Kubernetes Blog",
+      "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
+      "url": "https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/",
+      "published_at": "2026-09-16T18:30:00.000Z",
+      "summary": "<p>Kubernetes v1.37 brings important storage security features: <code>emptyDir</code> permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for example, prohibiting deletion of files across containers or execution of arbitrary binaries from writable volumes, directly in Kubernetes without any complicated circumvention.</p> <h2 id=\"linux-storage-and-permission-fundamentals\">Linux storage and permission fundamentals<a class=\"td-heading-self-link\" href=\"#linux-storage-and-permission-fundamentals\" aria-label=\"Heading self-link\"></a></h2><p>Before diving into the new Kubernetes features, let us briefly review the low-level Linux security mechanisms that make them possible.</p> <h3 id=\"bind-mount-flags\">Bind mount flags<a class=\"td-heading-self-link\" href=\"#bind-mount-flags\" aria-label=\"Heading self-link\"></a"
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Our framework for reporting model misalignment",
+      "url": "https://openai.com/index/model-misalignment-reporting-framework",
+      "published_at": "2026-09-16T17:00:00.000Z",
+      "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Helping older adults use AI in everyday life",
+      "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+      "published_at": "2026-09-16T16:00:00.000Z",
+      "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely."
+    }
+  ],
+  "telegram_message_id": 151
+}
