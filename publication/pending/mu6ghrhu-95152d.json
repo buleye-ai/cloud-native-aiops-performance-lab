@@ -1,0 +1,52 @@
+{
+  "id": "mu6ghrhu-95152d",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-09-18T04:26:19.890Z",
+  "title": "OpenTelemetry 规模化迁移：指标平台走向统一可观测性",
+  "english": "A CNCF Blog post describes a large-scale migration of a metrics platform toward OpenTelemetry. The existing metrics pipeline had relied for most of the last decade on gostatsd, an open-source StatsD implementation maintained by the team. Gostatsd primarily operated as a sidecar on every host. The migration highlights a practical observability challenge: evolving a long-running, widely deployed metrics pipeline while preserving the operational role it already serves. For senior operations engineers, the key topic is not merely adopting a new telemetry standard, but planning how instrumentation, host-level deployment patterns, and metric pipelines change together at scale.",
+  "chinese": "CNCF Blog 分享了一项将指标平台迁移至 OpenTelemetry 的规模化实践。该团队此前长期依赖其维护的 gostatsd——一个开源 StatsD 实现，并将其作为每台主机上的 sidecar 运行。已提供的信息表明，这不是单纯替换组件，而是对长期运行、广泛部署的指标管道进行演进。关注点应包括：现有埋点和指标管道如何衔接、主机级 sidecar 部署模式如何变化，以及如何在大规模迁移中保持可观测性能力的连续性。",
+  "why_it_matters": "这与云原生可观测性直接相关：OpenTelemetry 正在成为统一遥测采集与传输的重要方向。对 AIOps 而言，指标数据的标准化和管道演进是后续分析、告警与自动化决策的基础。对资深运维开发岗位而言，能够设计并推进跨主机、跨组件的可观测性迁移，比仅会部署单一工具更能体现平台工程能力。",
+  "interview_expression": "I am interested in observability migrations that treat telemetry as a platform capability, not just a tooling change. At scale, I would evaluate how the metrics pipeline, deployment model, and operational continuity evolve together.",
+  "vocabulary": [
+    {
+      "term": "telemetry",
+      "meaning": "遥测数据；系统运行状态产生的可观测性数据。",
+      "example": "The team is migrating its metrics platform toward OpenTelemetry."
+    },
+    {
+      "term": "metrics pipeline",
+      "meaning": "指标管道；负责采集、处理或传递指标数据的链路。",
+      "example": "The existing metrics pipeline relied on gostatsd for most of the last decade."
+    },
+    {
+      "term": "sidecar",
+      "meaning": "边车模式；与主应用或主机工作负载并行运行的辅助组件。",
+      "example": "Gostatsd primarily operated as a sidecar on every host."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "How Cooley is accelerating IPO work with ChatGPT",
+      "url": "https://openai.com/index/cooley-gopublic",
+      "published_at": "2026-09-17T12:00:00.000Z",
+      "summary": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "OpenTelemetry everywhere: Migrating a metrics platform at scale",
+      "url": "https://www.cncf.io/blog/2026/09/17/opentelemetry-everywhere-migrating-a-metrics-platform-at-scale/",
+      "published_at": "2026-09-17T11:00:00.000Z",
+      "summary": "Why we did this at all For most of the last decade our metrics pipeline ran on gostatsd, the open-source StatsD implementation we maintain. It primarily did two jobs: as sidecar on every host and the..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Introducing Astra for Law",
+      "url": "https://openai.com/index/astra-for-law",
+      "published_at": "2026-09-17T00:00:00.000Z",
+      "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work."
+    }
+  ],
+  "telegram_message_id": 154
+}
