@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 103,
+  "next_lesson": 104,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -715,6 +715,13 @@
       "topic": "learning from a small mistake",
       "telegram_message_id": 156,
       "sent_at": "2026-09-18T16:43:20.973Z"
+    },
+    "2026-09-19:morning": {
+      "lesson": 103,
+      "level": "A2+",
+      "topic": "staying focused in a busy office",
+      "telegram_message_id": 158,
+      "sent_at": "2026-09-19T04:43:41.130Z"
     }
   }
 }
