@@ -1,5 +1,7 @@
 {
   "used_urls": [
+    "https://openai.com/index/hex-gpt-6-astra",
+    "https://www.cncf.io/blog/2026/09/11/kubecon-cloudnativecon-north-america-2026-your-week-in-salt-lake-city/",
     "https://openai.com/index/cooley-gopublic",
     "https://www.cncf.io/blog/2026/09/17/opentelemetry-everywhere-migrating-a-metrics-platform-at-scale/",
     "https://openai.com/index/astra-for-law",
@@ -197,7 +199,6 @@
     "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
     "https://www.cncf.io/blog/2026/07/24/my-lfx-mentorship-journey-with-kgateway/",
     "https://www.cncf.io/blog/2026/07/24/opentelemetry-has-graduated-now-what/",
-    "https://www.cncf.io/blog/2026/07/23/launch-of-the-ai-infra-sig-under-the-cncf-japan-chapter-first-meetup-and-call-for-speakers/",
-    "https://www.cncf.io/blog/2026/07/23/sustaining-opentelemetry-what-a-10-week-contributor-cohort-actually-looks-like/"
+    "https://www.cncf.io/blog/2026/07/23/launch-of-the-ai-infra-sig-under-the-cncf-japan-chapter-first-meetup-and-call-for-speakers/"
   ]
 }
