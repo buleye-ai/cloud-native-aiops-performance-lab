@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 108,
+  "next_lesson": 109,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -750,6 +750,13 @@
       "topic": "making plans with family",
       "telegram_message_id": 167,
       "sent_at": "2026-09-21T05:07:00.361Z"
+    },
+    "2026-09-22:evening": {
+      "lesson": 108,
+      "level": "A2+",
+      "topic": "A surprising fact about fireflies",
+      "telegram_message_id": 168,
+      "sent_at": "2026-09-21T18:18:16.971Z"
     }
   }
 }
