@@ -1,0 +1,52 @@
+{
+  "id": "muc6oahd-5dddd5",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-09-22T04:38:05.330Z",
+  "title": "Kubernetes v1.37 将 PVC 最近使用状态推进至 Beta，AI 侧关注 Agent 记忆与治理标准",
+  "english": "Kubernetes v1.37 promotes the PersistentVolumeClaimUnusedSinceTime feature gate to Beta and enables it by default. The PVC protection controller adds an Unused condition to each PersistentVolumeClaim, indicating whether any running Pod currently references it. This removes the need for custom tooling or manual cross-referencing when checking PVC usage. In AI infrastructure, V7 describes using GPT-5.6 to turn scattered company files into source-linked context for agents. OpenAI also calls for coordinated AI evaluation, reporting, and governance, while expanding learning paths for practical AI skills.",
+  "chinese": "Kubernetes v1.37 将 PersistentVolumeClaimUnusedSinceTime 特性门控提升为 Beta，并默认启用。PVC 保护控制器会为每个 PersistentVolumeClaim 添加 Unused 条件，用于表明是否仍有运行中的 Pod 引用该 PVC。运维团队可据此减少自定义脚本和资源交叉核对。在 AI 基础设施方向，V7 提出将分散的企业文件转化为可供 Agent 使用、且带来源链接的上下文；OpenAI 同时强调评估、报告和治理的协同标准，并扩展了面向不同角色的实用 AI 技能学习路径。",
+  "why_it_matters": "对云原生运维而言，PVC 的原生使用状态可成为存储资源盘点、回收流程和策略自动化的可靠输入。对 AIOps 与 Agent Infra 而言，带来源链接的上下文、可协调的评估与治理要求，意味着 Agent 系统不仅要能调用知识，还应具备可追溯性和可管理性。职业发展上，存储控制器、Kubernetes API 状态建模、Agent 上下文管理和 AI 治理都是可衔接的能力方向。",
+  "interview_expression": "I would use the PVC Unused condition as an API-level signal for storage visibility instead of relying on custom cross-referencing. For agent infrastructure, I value source-linked context because it supports traceability in complex work.",
+  "vocabulary": [
+    {
+      "term": "feature gate",
+      "meaning": "特性门控，用于控制 Kubernetes 功能是否启用及其成熟度。",
+      "example": "The PersistentVolumeClaimUnusedSinceTime feature gate is enabled by default in Kubernetes v1.37."
+    },
+    {
+      "term": "PersistentVolumeClaim",
+      "meaning": "持久卷声明，简称 PVC，用于申请和使用 Kubernetes 持久化存储。",
+      "example": "Each PersistentVolumeClaim can include an Unused condition."
+    },
+    {
+      "term": "source-linked",
+      "meaning": "与来源关联的，可追溯到原始资料。",
+      "example": "V7 turns company files into source-linked context for agents."
+    }
+  ],
+  "sources": [
+    {
+      "source": "Kubernetes Blog",
+      "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)",
+      "url": "https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/",
+      "published_at": "2026-09-21T18:30:00.000Z",
+      "summary": "<p>Kubernetes v1.37 promotes the <code>PersistentVolumeClaimUnusedSinceTime</code> feature gate to Beta (enabled by default). With this feature, the PersistentVolumeClaim (PVC) protection controller adds an <code>Unused</code> condition to each PVC, telling you whether any running pod currently references it — no custom tooling or cross-referencing required.</p> <p>For the API definition of PVC conditions, see the <a href=\"https://kubernetes.io/docs/reference/kubernetes-api/core/persistent-volume-claim-v1/#PersistentVolumeClaimCondition\">PersistentVolumeClaim API reference</a>. Read on to learn how the <code>Unused</code> condition works and how to use it.</p> <h2 id=\"why-track-pvc-usage\">Why track PVC usage?<a class=\"td-heading-self-link\" href=\"#why-track-pvc-usage\" aria-label=\"Heading self-link\"></a></h2><p>In large-scale Kubernetes clusters, it is common for users to create PVCs and t"
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Advisory Group on Mathematics and Artificial Intelligence",
+      "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+      "published_at": "2026-09-21T12:00:00.000Z",
+      "summary": "OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+      "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+      "published_at": "2026-09-21T12:00:00.000Z",
+      "summary": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster."
+    }
+  ],
+  "telegram_message_id": 169
+}

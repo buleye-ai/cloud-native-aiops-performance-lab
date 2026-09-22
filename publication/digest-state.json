@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/",
+    "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+    "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+    "https://openai.com/index/building-standards-next-phase-ai",
+    "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+    "https://openai.com/index/v7",
     "https://openai.com/index/australian-youth-safety-blueprint",
     "https://openai.com/index/hex-gpt-6-astra",
     "https://www.cncf.io/blog/2026/09/11/kubecon-cloudnativecon-north-america-2026-your-week-in-salt-lake-city/",
@@ -193,12 +199,6 @@
     "https://www.cncf.io/blog/2026/07/23/when-kubeflow-meets-cilium-debugging-60-idle-gpus-in-kubernetes/",
     "https://www.cncf.io/blog/2026/07/23/the-future-of-ai-is-community-driven-and-open/",
     "https://openai.com/index/health-in-chatgpt",
-    "https://www.cncf.io/blog/2026/07/22/confidential-containers-becomes-a-cncf-incubating-project/",
-    "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
-    "https://openai.com/index/how-news-organizations-are-using-ai",
-    "https://www.cncf.io/blog/2026/07/27/federating-clusters-for-zero-downtime-kubernetes/",
-    "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
-    "https://www.cncf.io/blog/2026/07/24/my-lfx-mentorship-journey-with-kgateway/",
-    "https://www.cncf.io/blog/2026/07/24/opentelemetry-has-graduated-now-what/"
+    "https://www.cncf.io/blog/2026/07/22/confidential-containers-becomes-a-cncf-incubating-project/"
   ]
 }
