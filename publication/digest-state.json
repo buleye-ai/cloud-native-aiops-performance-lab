@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://openai.com/index/two-years-of-openai-academy",
+    "https://www.cncf.io/blog/2026/09/23/which-hat-am-i-wearing-right-now/",
+    "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+    "https://openai.com/index/sam-altman-un-security-council-remarks",
+    "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
+    "https://openai.com/index/invideo-builds-with-gpt-6-astra",
     "https://openai.com/index/better-prompt-caching-for-gpt-6",
     "https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/",
     "https://openai.com/index/introducing-gpt-6-sol-and-luna",
@@ -193,12 +199,6 @@
     "https://kubernetes.io/blog/2026/07/29/controller-runtime-cache-explained/",
     "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
     "https://www.cncf.io/blog/2026/07/29/your-kubernetes-health-checks-are-accidentally-waking-your-services-heres-the-fix/",
-    "https://openai.com/index/chatgpt-for-academic-researchers",
-    "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
-    "https://openai.com/index/scientific-computing-agentic-ai",
-    "https://www.cncf.io/announcements/2026/07/28/cncf-and-slashdata-report-finds-japans-cloud-native-community-reaches-nearly-1-million-developers/",
-    "https://www.cncf.io/announcements/2026/07/28/subaru-wins-cncf-end-user-case-study-contest-for-accelerating-ai-development-with-cloud-native-infrastructure/",
-    "https://www.cncf.io/blog/2026/07/28/lima-v2-2-windows-guests-and-tpm-2-0-emulation/",
-    "https://www.cncf.io/blog/2026/07/28/welcome-cohdi-to-the-cncf-evolving-kubernetes-into-composable-disaggregated-infrastructures/"
+    "https://openai.com/index/chatgpt-for-academic-researchers"
   ]
 }
