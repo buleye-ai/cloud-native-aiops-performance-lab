@@ -1,5 +1,9 @@
 {
   "used_urls": [
+    "https://www.cncf.io/blog/2026/09/24/observability-day-where-the-community-comes-together-at-kubecon-cloudnativecon-north-america-2026/",
+    "https://openai.com/index/ringg",
+    "https://openai.com/index/introducing-mentalhealthbench",
+    "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
     "https://openai.com/index/two-years-of-openai-academy",
     "https://www.cncf.io/blog/2026/09/23/which-hat-am-i-wearing-right-now/",
     "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
@@ -195,10 +199,6 @@
     "https://www.cncf.io/blog/2026/07/30/runtime-supply-chain-verification-using-the-node-resource-interface-nri/",
     "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
     "https://openai.com/index/avatarin",
-    "https://kubernetes.io/blog/2026/07/14/custom-metrics-exporter-kubernetes/",
-    "https://kubernetes.io/blog/2026/07/29/controller-runtime-cache-explained/",
-    "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
-    "https://www.cncf.io/blog/2026/07/29/your-kubernetes-health-checks-are-accidentally-waking-your-services-heres-the-fix/",
-    "https://openai.com/index/chatgpt-for-academic-researchers"
+    "https://kubernetes.io/blog/2026/07/14/custom-metrics-exporter-kubernetes/"
   ]
 }
