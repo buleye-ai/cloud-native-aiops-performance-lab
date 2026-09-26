@@ -1,5 +1,7 @@
 {
   "used_urls": [
+    "https://openai.com/index/proaction",
+    "https://www.cncf.io/blog/2026/09/25/security-slam-2026-fall-edition/",
     "https://www.cncf.io/blog/2026/09/24/observability-day-where-the-community-comes-together-at-kubecon-cloudnativecon-north-america-2026/",
     "https://openai.com/index/ringg",
     "https://openai.com/index/introducing-mentalhealthbench",
@@ -197,8 +199,6 @@
     "https://openai.com/index/advancing-responsible-ai-across-europe",
     "https://openai.com/index/unive",
     "https://www.cncf.io/blog/2026/07/30/runtime-supply-chain-verification-using-the-node-resource-interface-nri/",
-    "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
-    "https://openai.com/index/avatarin",
-    "https://kubernetes.io/blog/2026/07/14/custom-metrics-exporter-kubernetes/"
+    "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6"
   ]
 }

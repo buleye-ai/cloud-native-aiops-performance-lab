@@ -1,0 +1,45 @@
+{
+  "id": "muhwozc8-16b614",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-09-26T04:45:18.440Z",
+  "title": "云原生安全活动与 AI 驱动业务自动化",
+  "english": "Two recent updates highlight complementary priorities for senior cloud-native and AI practitioners. Proaction reports that Codex, GPT-Live-1, and GPT-6 Astra help it build, operate, and sell modern fleet-management products faster, with a reported 60% increase in sales and more than 75 hours saved. Separately, CNCF announced Security Slam 2026 – Fall Edition, a 30-day virtual event running from October 5 through November 6, 2026, organized in partnership with the Open Source Security Foundation. Together, these items connect AI-assisted software and business operations with the continuing importance of open-source cloud-native security practices.",
+  "chinese": "OpenAI News 的案例称，Proaction 使用 Codex、GPT-Live-1 和 GPT-6 Astra，更快地构建、运营和销售现代车队管理产品，并报告销售额提升 60%、节省超过 75 小时。CNCF 则介绍了 Security Slam 2026 秋季版，这是一个与 OpenSSF 合作的 30 天线上活动，时间为 2026 年 10 月 5 日至 11 月 6 日。两条信息分别体现了 AI 辅助业务与软件交付，以及云原生开源安全的重要性。",
+  "why_it_matters": "对云原生和 AIOps 从业者而言，AI 工具正在延伸到构建、运营和销售等环节；同时，云原生环境仍需要持续关注开源安全。对 Agent Infra 和职业发展而言，理解 AI 辅助工作流与安全工程之间的关系，有助于形成更完整的交付和运营能力。",
+  "interview_expression": "I see AI-assisted development as part of a broader operational workflow that includes building, operating, and selling software. At the same time, cloud-native teams must keep open-source security as a core engineering responsibility.",
+  "vocabulary": [
+    {
+      "term": "fleet management",
+      "meaning": "车队管理",
+      "example": "The company builds modern fleet management products with AI-assisted tools."
+    },
+    {
+      "term": "open-source security",
+      "meaning": "开源安全",
+      "example": "Open-source security remains important for cloud-native infrastructure."
+    },
+    {
+      "term": "virtual event",
+      "meaning": "线上活动",
+      "example": "Security Slam 2026 is described as a 30-day virtual event."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+      "url": "https://openai.com/index/proaction",
+      "published_at": "2026-09-25T19:00:00.000Z",
+      "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "Security Slam 2026 – Fall edition",
+      "url": "https://www.cncf.io/blog/2026/09/25/security-slam-2026-fall-edition/",
+      "published_at": "2026-09-25T11:00:00.000Z",
+      "summary": "Security Slam 2026 – Fall Edition is a 30-day virtual event from October 5 through November 6, 2026. What Is the Security Slam? The Open Source Security Foundation (OpenSSF) is partnering with the Cloud Native Computing..."
+    }
+  ],
+  "telegram_message_id": 181
+}
