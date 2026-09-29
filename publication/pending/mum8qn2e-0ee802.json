@@ -1,0 +1,52 @@
+{
+  "id": "mum8qn2e-0ee802",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-09-29T05:33:35.942Z",
+  "title": "云原生 Agent Harness：从聊天框走向可协作的工程系统",
+  "english": "The CNCF Blog argues that coding agents became more useful when they moved beyond a chat-box interaction model. Its summary identifies four changes: capable tools, a shared repository and filesystem, subagents, and skills that preserve what the system has learned. This framing is relevant to cloud-native engineering because it treats an agent as part of an operational environment rather than as an isolated conversational interface. Other supplied updates show adjacent AI activity: OpenAI describes stronger safeguards and support for Australia’s cyber defences, expanded support for the Lenfest AI Collaborative, and a Basis case in which GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol.",
+  "chinese": "CNCF 博客认为，编码 Agent 真正变得有用，不只是因为模型会聊天，而是因为它获得了更强的工具、共享代码仓库与文件系统、子 Agent，以及能够沉淀系统经验的技能。这一观点把 Agent 放入可执行、可协作的工程环境中，接近云原生平台和运维系统的设计方式。用户提供的其他信息还包括：OpenAI 将加强对澳大利亚网络防御的安全措施与支持；Lenfest AI Collaborative 和 Fellowship Program 获得扩大支持；Basis 表示 GPT-6 Astra 完成一个 50 页签的税务工作簿，速度是 GPT-5.6 Sol 的两倍。",
+  "why_it_matters": "对云原生和 Agent Infra 而言，重点从单次对话转向工具调用、共享工作区、子 Agent 编排和经验沉淀。对 AIOps 来说，这提示运维 Agent 需要嵌入真实的仓库、文件系统与执行权限，并配套安全护栏。对职业发展而言，资深运维开发应强化平台工程、自动化编排、权限治理和可观测性，而不只是掌握提示词。",
+  "interview_expression": "I see agent infrastructure as more than a chat interface: it needs tools, shared workspaces, delegation, and durable skills. In an operations context, I would also prioritize permissions, observability, and safeguards.",
+  "vocabulary": [
+    {
+      "term": "agent harness",
+      "meaning": "Agent 运行与协作的基础设施或控制框架",
+      "example": "A cloud-native agent harness can connect agents with tools, repositories, and shared files."
+    },
+    {
+      "term": "subagent",
+      "meaning": "由主 Agent 委派任务的子 Agent",
+      "example": "The main agent can assign a focused investigation to a subagent."
+    },
+    {
+      "term": "safeguard",
+      "meaning": "安全防护措施；保障机制",
+      "example": "The organization outlined stronger safeguards for its cyber-defence support."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "How we will do better for Australia",
+      "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+      "published_at": "2026-09-28T19:00:00.000Z",
+      "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "The case for a cloud native agent harness",
+      "url": "https://www.cncf.io/blog/2026/09/28/the-case-for-a-cloud-native-agent-harness/",
+      "published_at": "2026-09-28T11:00:00.000Z",
+      "summary": "Coding agents became useful when they stopped being a chat box. Four things changed the shape of the problem: capable tools, a shared repository and filesystem, subagents, and skills that capture what the system learned from..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+      "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+      "published_at": "2026-09-28T07:00:00.000Z",
+      "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support."
+    }
+  ],
+  "telegram_message_id": 188
+}
