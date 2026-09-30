@@ -1,5 +1,9 @@
 {
   "used_urls": [
+    "https://openai.com/index/introducing-gpt-6-1-sol",
+    "https://openai.com/index/devday-2026-recap",
+    "https://openai.com/index/introducing-dots",
+    "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
     "https://openai.com/index/how-we-will-do-better-for-australia",
     "https://www.cncf.io/blog/2026/09/28/the-case-for-a-cloud-native-agent-harness/",
     "https://openai.com/index/lenfest-ai-collaborative-expansion",
@@ -195,10 +199,6 @@
     "https://kubernetes.io/blog/2026/07/08/announcing-etcd-3.7/",
     "https://kubernetes.io/blog/2026/06/26/open-source-maintainership-in-the-age-of-ai/",
     "https://kubernetes.io/blog/2026/06/25/headlamp-cluster-api-plugin/",
-    "https://openai.com/index/ten-advances-in-mathematics",
-    "https://kubernetes.io/blog/2026/07/31/kubernetes-v1-37-sneak-peek/",
-    "https://openai.com/index/building-abundant-intelligence",
-    "https://www.cncf.io/blog/2026/07/31/scaling-kubernetes-pods-with-keda-based-on-amazon-sqs-queue-depth/",
-    "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation"
+    "https://openai.com/index/ten-advances-in-mathematics"
   ]
 }

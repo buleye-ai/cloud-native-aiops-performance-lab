@@ -1,0 +1,52 @@
+{
+  "id": "munnqqor-d3555d",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-09-30T05:21:21.052Z",
+  "title": "OpenAI 发布 GPT-6.1 Sol、Dots 与前沿模型安全案例指南",
+  "english": "OpenAI announced GPT-6.1 Sol, positioned as offering near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices. Its DevDay 2026 recap highlighted more than 20 announcements spanning GPT-6 Astra, ChatGPT, Codex, APIs, security, and builder tools. OpenAI also introduced Dots, proactive assistants designed to continue work across complex projects and everyday tasks while keeping users in control. Separately, OpenAI published early guidance on safety cases for frontier AI training, covering technical safeguards, operational practices, and investigation of misalignment incidents.",
+  "chinese": "本轮信息集中展示了 AI 平台能力从“更强模型”走向“更可运营的智能系统”。GPT-6.1 Sol强调以较低代价支持编码、计算机操作和专业工作；DevDay 2026覆盖模型、API、安全与开发者工具；Dots强调可跨复杂项目持续推进任务的主动式助手；安全案例指南则把技术防护、运营实践与失配事件调查纳入前沿模型训练治理框架。",
+  "why_it_matters": "对云原生与 AIOps 团队而言，模型成本下降和计算机操作能力增强，意味着可将更多运维自动化场景交给 Agent 执行，但也需要更严格的权限边界、可观测性、审计记录与人工接管机制。对 Agent Infra 岗位，重点能力将包括工具调用编排、长任务状态管理、可靠性工程、安全治理和事件复盘。",
+  "interview_expression": "I would treat an AI agent as a production system, not just a model endpoint. That means designing explicit permissions, observability, audit trails, and human handoff paths for long-running tasks.",
+  "vocabulary": [
+    {
+      "term": "proactive assistant",
+      "meaning": "主动式助手：可主动持续推进任务，而不只是在单轮对话中响应。",
+      "example": "A proactive assistant can continue a complex task while keeping the user in control."
+    },
+    {
+      "term": "safety case",
+      "meaning": "安全案例：用于系统化论证和记录系统安全性的证据、控制措施与运营流程。",
+      "example": "The team prepared a safety case for the deployment of a frontier AI system."
+    },
+    {
+      "term": "misalignment incident",
+      "meaning": "失配事件：AI 系统行为与预期目标、约束或人类意图不一致的事件。",
+      "example": "Operational teams should investigate every significant misalignment incident."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "Introducing GPT-6.1 Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "published_at": "2026-09-29T10:00:00.000Z",
+      "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "DevDay 2026 Recap",
+      "url": "https://openai.com/index/devday-2026-recap",
+      "published_at": "2026-09-29T10:00:00.000Z",
+      "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Introducing dots",
+      "url": "https://openai.com/index/introducing-dots",
+      "published_at": "2026-09-29T00:00:00.000Z",
+      "summary": "Dots by OpenAI are proactive assistants that can keep working across complex projects and everyday tasks. Learn how dots help you stay in control while work moves forward."
+    }
+  ],
+  "telegram_message_id": 191
+}
