@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 129,
+  "next_lesson": 130,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -897,6 +897,13 @@
       "topic": "Easy evening cooking",
       "telegram_message_id": 197,
       "sent_at": "2026-10-01T18:35:39.884Z"
+    },
+    "2026-10-02:morning": {
+      "lesson": 129,
+      "level": "B1",
+      "topic": "buying useful things at a shop",
+      "telegram_message_id": 199,
+      "sent_at": "2026-10-02T05:48:36.768Z"
     }
   }
 }
