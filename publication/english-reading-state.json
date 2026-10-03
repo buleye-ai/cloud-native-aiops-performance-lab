@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 131,
+  "next_lesson": 132,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -911,6 +911,13 @@
       "topic": "Sleep and learning",
       "telegram_message_id": 200,
       "sent_at": "2026-10-02T18:00:53.704Z"
+    },
+    "2026-10-03:morning": {
+      "lesson": 131,
+      "level": "B1",
+      "topic": "Making plans with family",
+      "telegram_message_id": 202,
+      "sent_at": "2026-10-03T05:25:53.310Z"
     }
   }
 }
