@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 132,
+  "next_lesson": 133,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -918,6 +918,13 @@
       "topic": "Making plans with family",
       "telegram_message_id": 202,
       "sent_at": "2026-10-03T05:25:53.310Z"
+    },
+    "2026-10-04:evening": {
+      "lesson": 132,
+      "level": "B1",
+      "topic": "Animal communication",
+      "telegram_message_id": 203,
+      "sent_at": "2026-10-03T16:41:52.042Z"
     }
   }
 }
