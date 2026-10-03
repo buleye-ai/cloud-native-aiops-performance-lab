@@ -1,5 +1,10 @@
 {
   "used_urls": [
+    "https://openai.com/index/practical-guide-building-gpt-6",
+    "https://www.cncf.io/blog/2026/10/02/kubecon-cloudnativecon-north-america-2026-join-the-cloud-native-community-at-opentofu-day/",
+    "https://openai.com/index/chatham-financial",
+    "https://www.cncf.io/blog/2026/10/01/guardrails-not-gates-rethinking-policy-in-platform-teams/",
+    "https://openai.com/index/the-den-family-social",
     "https://www.cncf.io/blog/2026/10/01/kubecon-cloudnativecon-north-america-2026-from-user-to-contributor-to-maintainer/",
     "https://www.cncf.io/blog/2026/10/01/kubecon-cloudnativecon-north-america-2026-build-your-infrastructure-engineer-journey/",
     "https://www.cncf.io/blog/2026/10/01/kubecon-cloudnativecon-north-america-2026-build-your-application-developer-journey/",
@@ -194,11 +199,6 @@
     "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
     "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
     "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work",
-    "https://www.cncf.io/announcements/2026/08/05/k8gb-becomes-a-cncf-incubating-project/",
-    "https://www.cncf.io/blog/2026/08/05/opencost-1-121-0-first-of-a-kind-kubernetes-inference-cost-tracking/",
-    "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
-    "https://www.cncf.io/blog/2026/08/04/you-cant-debug-what-you-cant-see-observability-for-ai-agents/",
-    "https://openai.com/index/learn-teach-chatgpt-work-codex",
-    "https://openai.com/index/apple-is-getting-this-wrong"
+    "https://www.cncf.io/announcements/2026/08/05/k8gb-becomes-a-cncf-incubating-project/"
   ]
 }

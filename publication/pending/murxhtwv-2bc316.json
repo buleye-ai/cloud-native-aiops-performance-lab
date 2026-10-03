@@ -1,0 +1,52 @@
+{
+  "id": "murxhtwv-2bc316",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-10-03T05:05:26.191Z",
+  "title": "云原生与 AI 运维简报：从模型工作流到平台治理",
+  "english": "Recent updates highlight a convergence between AI-assisted workflows and cloud-native platform engineering. OpenAI’s guide for the GPT-6 family discusses model selection, reasoning effort, prompt and skill tuning, tool coordination, and production workflow preparation. CNCF’s OpenTofu Day focuses on the infrastructure surrounding Kubernetes, including cloud accounts, networking, managed services, and cluster provisioning. Another CNCF article argues for “guardrails, not gates” in platform-team policy design, challenging overly blocking enforcement models. In an OpenAI customer story, Chatham Financial uses Codex and GPT-5.6 to redesign workflows and reduce trade validation from 30 minutes to under 4. Together, these examples point toward engineers who can connect AI capabilities with reliable infrastructure, policy, and production operations.",
+  "chinese": "本期信息体现了 AI 工程与云原生平台工程的结合。OpenAI 的 GPT-6 指南涉及模型选择、推理力度调节、提示词与技能优化、工具协同，以及生产工作流准备。CNCF 的 OpenTofu Day 聚焦 Kubernetes 集群之外及之前的基础设施，包括云账户、网络、托管服务和集群供应。另一篇 CNCF 文章倡导平台团队从“强制拦截”转向“护栏式治理”。此外，Chatham Financial 使用 Codex 和 GPT-5.6 重构工作流，将交易验证时间从 30 分钟缩短至 4 分钟以内。",
+  "why_it_matters": "对云原生与 AIOps 而言，重点不只是部署模型或集群，还包括工具编排、基础设施供应、生产流程和治理策略。对 Agent Infra 而言，模型选择、推理力度、技能与工具协同构成了可控工作流的基础。对职业发展而言，资深运维开发需要同时理解 Kubernetes 周边基础设施、策略护栏和 AI 驱动的流程重构。",
+  "interview_expression": "I focus on connecting AI capabilities with reliable infrastructure, policy guardrails, and production workflows. For platform engineering, I care about both provisioning the environment and making tool-driven automation controllable.",
+  "vocabulary": [
+    {
+      "term": "reasoning effort",
+      "meaning": "推理力度；模型在任务中投入的推理程度",
+      "example": "The guide discusses how to tune reasoning effort for production workflows."
+    },
+    {
+      "term": "provisioning",
+      "meaning": "供应与配置基础设施",
+      "example": "OpenTofu Day covers provisioning cloud accounts, networking, managed services, and clusters."
+    },
+    {
+      "term": "guardrail",
+      "meaning": "护栏式约束；用于引导而非一律阻断的治理机制",
+      "example": "Platform teams can rethink policy as guardrails rather than gates."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "A model guide for the GPT-6 family",
+      "url": "https://openai.com/index/practical-guide-building-gpt-6",
+      "published_at": "2026-10-02T16:15:00.000Z",
+      "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "KubeCon + CloudNativeCon North America 2026: Join the cloud native community at OpenTofu Day",
+      "url": "https://www.cncf.io/blog/2026/10/02/kubecon-cloudnativecon-north-america-2026-join-the-cloud-native-community-at-opentofu-day/",
+      "published_at": "2026-10-02T15:22:44.000Z",
+      "summary": "Most of KubeCon + CloudNativeCon assumes the cluster already exists. OpenTofu Day covers everything that has to be provisioned before and around it: cloud accounts, networking, managed services, and the clusters themselves. On November 9, OpenTofu..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Chatham scales its capital markets expertise with OpenAI",
+      "url": "https://openai.com/index/chatham-financial",
+      "published_at": "2026-10-02T00:00:00.000Z",
+      "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4."
+    }
+  ],
+  "telegram_message_id": 201
+}
