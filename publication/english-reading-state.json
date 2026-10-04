@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 133,
+  "next_lesson": 134,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -925,6 +925,13 @@
       "topic": "Animal communication",
       "telegram_message_id": 203,
       "sent_at": "2026-10-03T16:41:52.042Z"
+    },
+    "2026-10-04:morning": {
+      "lesson": 133,
+      "level": "B1",
+      "topic": "a calm morning routine",
+      "telegram_message_id": 204,
+      "sent_at": "2026-10-04T06:02:44.380Z"
     }
   }
 }
