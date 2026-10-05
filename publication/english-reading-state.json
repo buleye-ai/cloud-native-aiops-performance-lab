@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 135,
+  "next_lesson": 136,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -939,6 +939,13 @@
       "topic": "Saving money each week",
       "telegram_message_id": 205,
       "sent_at": "2026-10-04T16:59:38.343Z"
+    },
+    "2026-10-05:morning": {
+      "lesson": 135,
+      "level": "B1",
+      "topic": "Daily planning",
+      "telegram_message_id": 208,
+      "sent_at": "2026-10-05T05:50:53.797Z"
     }
   }
 }
