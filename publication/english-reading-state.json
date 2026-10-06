@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 137,
+  "next_lesson": 138,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -953,6 +953,13 @@
       "topic": "Healthy breakfast",
       "telegram_message_id": 210,
       "sent_at": "2026-10-06T06:29:48.928Z"
+    },
+    "2026-10-07:evening": {
+      "lesson": 137,
+      "level": "B1",
+      "topic": "How food connects people",
+      "telegram_message_id": 211,
+      "sent_at": "2026-10-06T18:35:19.497Z"
     }
   }
 }
