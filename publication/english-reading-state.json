@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 136,
+  "next_lesson": 137,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -946,6 +946,13 @@
       "topic": "Daily planning",
       "telegram_message_id": 208,
       "sent_at": "2026-10-05T05:50:53.797Z"
+    },
+    "2026-10-06:morning": {
+      "lesson": 136,
+      "level": "B1",
+      "topic": "Healthy breakfast",
+      "telegram_message_id": 210,
+      "sent_at": "2026-10-06T06:29:48.928Z"
     }
   }
 }
