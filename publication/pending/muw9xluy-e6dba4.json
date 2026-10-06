@@ -1,0 +1,52 @@
+{
+  "id": "muw9xluy-e6dba4",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-10-06T06:04:42.346Z",
+  "title": "Kubernetes 节点 Swap：提升 Agentic AI 工作负载密度",
+  "english": "Kubernetes support for running nodes with swap enabled reached General Availability in v1.34. The Kubernetes Blog describes how fast NVMe SSD-backed swap can page out dormant memory, allowing nodes to host more pods when memory is the first hard limit. This is especially relevant to agentic AI workloads, which may require large memory footprints to start and run untrusted code, then remain idle while waiting for the next prompt. In benchmarks covering CI/CD kernel builds, sandboxed headless browsers, and isolated Python runtimes, the approach delivered density gains of up to 3×, often with little or no latency cost.",
+  "chinese": "Kubernetes 博客介绍了启用节点 Swap 的扩容方法。文章指出，内存通常比 CPU 更早成为集群瓶颈，而 Agentic AI 工作负载在启动和运行不受信任代码时需要较大的内存，并可能在等待下一次提示词时保持空闲但仍占用内存。使用快速 NVMe SSD 支撑 Swap，可以将休眠内存分页出去，从而提高节点可承载的 Pod 数量。该能力在 Kubernetes v1.34 达到 General Availability。针对 CI/CD 内核构建、沙箱化无头浏览器和隔离 Python 运行时的测试显示，工作负载密度最高提升 3 倍，且延迟通常没有明显增加。",
+  "why_it_matters": "这对云原生平台和 Agent Infra 具有直接意义：平台团队可以重新评估内存成为瓶颈时的节点容量策略，并关注 Swap 对不同工作负载延迟与密度的影响。对资深运维开发而言，理解节点内存分页、Pod 密度和 NVMe 存储之间的关系，有助于设计更适合 AI Agent、沙箱和开发流水线的 Kubernetes 运行环境。",
+  "interview_expression": "I would evaluate node swap as a capacity optimization for memory-bound Kubernetes workloads, especially when idle memory remains resident. I would validate the trade-off with workload-specific benchmarks covering pod density and latency.",
+  "vocabulary": [
+    {
+      "term": "dormant memory",
+      "meaning": "休眠内存",
+      "example": "The node can page out dormant memory while a workload waits for the next prompt."
+    },
+    {
+      "term": "density gains",
+      "meaning": "密度提升",
+      "example": "The benchmark reported density gains of up to three times across the tested workloads."
+    },
+    {
+      "term": "untrusted code",
+      "meaning": "不受信任的代码",
+      "example": "Sandboxed runtimes need enough memory to start and execute untrusted code safely."
+    }
+  ],
+  "sources": [
+    {
+      "source": "CNCF Blog",
+      "title": "Kubelet watches inodes. Just not until it’s an emergency.",
+      "url": "https://www.cncf.io/blog/2026/10/05/kubelet-watches-inodes-just-not-until-its-an-emergency/",
+      "published_at": "2026-10-05T21:27:03.000Z",
+      "summary": "A worker node pages with NodeFilesystemFilesFillingUp. It’s on course to run out of inodes. You check the disk first, because that’s what everyone checks first, and it reads 83% used: 103G used, 22G available. Then you..."
+    },
+    {
+      "source": "Kubernetes Blog",
+      "title": "Scaling Kubernetes Workloads with Node Swap",
+      "url": "https://kubernetes.io/blog/2026/10/05/scaling-kubernetes-workloads-with-node-swap/",
+      "published_at": "2026-10-05T18:00:00.000Z",
+      "summary": "<p>Memory is often the first hard limit a Kubernetes cluster hits. Nodes run out of RAM long before they run out of CPU, and the new wave of agentic AI workloads makes this worse. These workloads demand large memory footprints to start up and run untrusted code, then sit idle waiting for the next prompt. That idle but resident memory is expensive, and it caps how many pods a node can hold. This is where swap helps. Kubernetes support for running nodes with swap enabled reached General Availability in v1.34, and by backing that swap with fast NVMe solid state drives (SSDs), a node can page out dormant memory and pack in far more pods. This post explains how we benchmarked that approach across three workloads, including CI/CD kernel builds, sandboxed headless browsers, and isolated Python runtimes; we found density gains of up to 3×, often with little or no latency cost.</p> <h2 id=\"the-no"
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Our approach to EU text provenance rules",
+      "url": "https://openai.com/index/eu-text-provenance",
+      "published_at": "2026-10-05T15:00:00.000Z",
+      "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers."
+    }
+  ],
+  "telegram_message_id": 209
+}

@@ -1,5 +1,9 @@
 {
   "used_urls": [
+    "https://www.cncf.io/blog/2026/10/05/kubelet-watches-inodes-just-not-until-its-an-emergency/",
+    "https://kubernetes.io/blog/2026/10/05/scaling-kubernetes-workloads-with-node-swap/",
+    "https://openai.com/index/eu-text-provenance",
+    "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
     "https://openai.com/index/practical-guide-building-gpt-6",
     "https://www.cncf.io/blog/2026/10/02/kubecon-cloudnativecon-north-america-2026-join-the-cloud-native-community-at-opentofu-day/",
     "https://openai.com/index/chatham-financial",
@@ -195,10 +199,6 @@
     "https://www.cncf.io/blog/2026/08/07/does-kubernetes-dra-replace-hami/",
     "https://www.cncf.io/blog/2026/08/07/shadow-ai-in-ci-cd-threat-modeling-the-path-from-developer-laptop-to-kubernetes/",
     "https://openai.com/index/hsp-gruppe",
-    "https://www.cncf.io/blog/2026/08/06/litmuschaos-q1-q2-2026-update-community-contributions-and-project-progress/",
-    "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
-    "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai",
-    "https://openai.com/index/how-the-world-is-putting-chatgpt-to-work",
-    "https://www.cncf.io/announcements/2026/08/05/k8gb-becomes-a-cncf-incubating-project/"
+    "https://www.cncf.io/blog/2026/08/06/litmuschaos-q1-q2-2026-update-community-contributions-and-project-progress/"
   ]
 }
