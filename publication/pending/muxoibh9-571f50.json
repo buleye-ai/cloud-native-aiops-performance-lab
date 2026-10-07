@@ -1,0 +1,52 @@
+{
+  "id": "muxoibh9-571f50",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-10-07T05:40:29.469Z",
+  "title": "云原生资源隔离与企业级 AI 工作流：从 cgroup v2 到可执行 Agent",
+  "english": "Kubernetes is moving toward cgroup v2 as the foundation for container resource management. The provided Kubernetes source states that cgroup v1 support entered maintenance mode with Kubernetes v1.31, while cgroup v2 has been stable since v1.25. Its unified hierarchy and consistent interface strengthen resource isolation and support modern resource-management features. In parallel, the provided OpenAI sources describe enterprise AI workflows that connect frontier models with enterprise knowledge, combine multiple data sources with human review, and train and evaluate agents on complex contracting workflows. For senior operations and development engineers, these developments connect infrastructure control with governed AI execution: reliable resource boundaries remain important while agents increasingly participate in planning, research, and professional work.",
+  "chinese": "Kubernetes 正逐步转向 cgroup v2。来源指出，Kubernetes v1.31 中 cgroup v1 支持进入维护模式，而 cgroup v2 自 v1.25 起已稳定。cgroup v2 提供统一层级和更一致的接口，可加强资源隔离，并为现代资源管理能力提供基础。与此同时，OpenAI 提供的材料显示，企业 AI 工作流正在连接前沿模型与企业知识，整合多个数据源并保留人工审核，也在复杂合同流程中训练和评估 AI Agent。对资深运维开发而言，这意味着基础设施资源治理与 AI 执行能力需要同时关注：容器边界、资源管理和人工审查共同支撑更可靠的企业级 AI 工作流。",
+  "why_it_matters": "这直接关联云原生资源隔离、AIOps 的运行基础和 Agent Infra 的治理要求。cgroup v2 的统一资源管理接口有助于理解容器运行边界；企业知识连接、多数据源工作流、人工审核以及 Agent 训练与评估，则说明 AI 系统需要可控的执行环境和明确的审查机制。对职业发展而言，能够同时讨论 Kubernetes 资源管理与 AI 工作流治理，更贴近资深运维开发岗位的跨领域要求。",
+  "interview_expression": "I see cgroup v2 as an important foundation for consistent container resource management and isolation. As AI agents move into enterprise workflows, I would also evaluate how their execution is governed, monitored, and reviewed by humans.",
+  "vocabulary": [
+    {
+      "term": "resource isolation",
+      "meaning": "资源隔离",
+      "example": "cgroup v2 provides a stronger foundation for resource isolation in containerized environments."
+    },
+    {
+      "term": "human review",
+      "meaning": "人工审核",
+      "example": "Longer-running AI workflows can combine multiple data sources with human review."
+    },
+    {
+      "term": "contracting workflow",
+      "meaning": "合同流程",
+      "example": "AI agents are being trained and evaluated on complex contracting workflows."
+    }
+  ],
+  "sources": [
+    {
+      "source": "Kubernetes Blog",
+      "title": "The Shift to cgroup v2 in Kubernetes: What You Need to Know",
+      "url": "https://kubernetes.io/blog/2026/10/06/kubernetes-cgroups-v2-shift/",
+      "published_at": "2026-10-06T18:00:00.000Z",
+      "summary": "<p>In Linux, <em>cgroups</em> (control groups) are a kernel feature used for managing system resources. Kubernetes uses cgroups to allocate resources like CPU and memory to containers, ensuring that applications run smoothly without interfering with each other. With the release of Kubernetes v1.31, support for v1 cgroup management moved into <a href=\"https://kubernetes.io/blog/2024/08/14/kubernetes-1-31-moving-cgroup-v1-support-maintenance-mode/\">maintenance mode</a>. Support for v2 cgroup management has been stable since Kubernetes v1.25.</p> <p>Compared with cgroup v1, cgroup v2 provides a single unified hierarchy, a more consistent interface, and a stronger foundation for resource isolation and modern resource-management features.</p> <h2 id=\"deprecation-of-cgroup-v1\">Deprecation of cgroup v1<a class=\"td-heading-self-link\" href=\"#deprecation-of-cgroup-v1\" aria-label=\"Heading self-link"
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+      "url": "https://openai.com/index/atlassian-partnership",
+      "published_at": "2026-10-06T16:00:00.000Z",
+      "summary": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "How Jump Trading is scaling quant research with ChatGPT",
+      "url": "https://openai.com/index/jump-trading",
+      "published_at": "2026-10-06T12:00:00.000Z",
+      "summary": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review."
+    }
+  ],
+  "telegram_message_id": 212
+}
