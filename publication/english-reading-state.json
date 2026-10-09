@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 142,
+  "next_lesson": 143,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -988,6 +988,13 @@
       "topic": "a small lesson from travel",
       "telegram_message_id": 217,
       "sent_at": "2026-10-08T19:00:05.229Z"
+    },
+    "2026-10-09:morning": {
+      "lesson": 142,
+      "level": "B1",
+      "topic": "keeping a small home tidy",
+      "telegram_message_id": 219,
+      "sent_at": "2026-10-09T06:22:39.898Z"
     }
   }
 }
