@@ -1,0 +1,52 @@
+{
+  "id": "mv0jvasn-52f2f9",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-10-09T05:53:55.559Z",
+  "title": "云原生 AI Agent 的权限边界与可控自动化",
+  "english": "A recent CNCF Blog article frames a critical question for cloud-native operations: under what conditions can an autonomous system safely operate a machine? Its proposed direction is to avoid giving AI agents root access and instead require them to propose the next system state. This approach is relevant to AIOps and Agent Infrastructure because it emphasizes controlled change, reviewable intent, and a clearer boundary between recommendation and execution. The supplied OpenAI examples show adjacent industry applications: Oracle uses ChatGPT Work and Codex to create repeatable workflows across recruiting, engineering, and operations, while LegalOn reduced estimated daily Codex costs by 65% while maintaining development speed. Together, these examples highlight the need to balance automation, governance, and operational efficiency.",
+  "chinese": "CNCF 文章提出，不应直接赋予 AI Agent root 权限，而应让其提出系统的下一状态。该思路把 Agent 的职责从直接执行转向生成可审查的变更意图，适合用于云原生运维、AIOps 和 Agent Infra 的权限设计。用户提供的 OpenAI 案例显示，Oracle 将 ChatGPT Work 和 Codex 用于招聘、工程与运营中的可重复工作流；LegalOn 在保持开发速度的同时，将估算的每日 Codex 成本降低了 65%。这些信息共同说明，资深运维开发需要同时关注自动化收益、权限治理、变更审查和成本控制。",
+  "why_it_matters": "对云原生和 AIOps 而言，Agent 是否能直接改变机器状态是核心风险边界。采用“提出下一系统状态、再由受控流程执行”的模式，有助于建立可审查的变更链路。对 Agent Infra 设计者而言，这意味着需要关注权限分层、意图验证和执行控制。对职业发展而言，运维开发人员需要从脚本编写扩展到自动化治理、成本管理与 AI 工作流设计。",
+  "interview_expression": "I would design an AI operations agent to propose a desired system state rather than execute privileged changes directly. This creates a reviewable control point while still allowing teams to automate repeatable workflows.",
+  "vocabulary": [
+    {
+      "term": "root access",
+      "meaning": "root 权限；最高级别的系统访问权限",
+      "example": "AI agents should not receive root access by default."
+    },
+    {
+      "term": "propose the next system state",
+      "meaning": "提出系统的下一状态",
+      "example": "The agent can propose the next system state for human or policy-based review."
+    },
+    {
+      "term": "repeatable workflow",
+      "meaning": "可重复工作流",
+      "example": "Codex helped turn specialist knowledge into a repeatable workflow."
+    }
+  ],
+  "sources": [
+    {
+      "source": "CNCF Blog",
+      "title": "Don&#8217;t give AI agents root. Make them propose the next system state.",
+      "url": "https://www.cncf.io/blog/2026/10/08/dont-give-ai-agents-root-make-them-propose-the-next-system-state/",
+      "published_at": "2026-10-08T22:21:41.000Z",
+      "summary": "The uncomfortable question In the past few months, I&#8217;ve been hearing different versions of the same question: under what conditions can we safely allow an autonomous system to operate a machine? It comes up when my..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+      "url": "https://openai.com/index/oracle",
+      "published_at": "2026-10-08T16:00:00.000Z",
+      "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "url": "https://openai.com/index/pollo-ai",
+      "published_at": "2026-10-08T12:00:00.000Z",
+      "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads."
+    }
+  ],
+  "telegram_message_id": 218
+}
