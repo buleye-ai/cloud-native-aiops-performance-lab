@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 144,
+  "next_lesson": 145,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -1002,6 +1002,13 @@
       "topic": "Making friends",
       "telegram_message_id": 220,
       "sent_at": "2026-10-09T18:30:00.961Z"
+    },
+    "2026-10-10:morning": {
+      "lesson": 144,
+      "level": "B1",
+      "topic": "having a good lunch break",
+      "telegram_message_id": 221,
+      "sent_at": "2026-10-10T06:01:04.201Z"
     }
   }
 }
