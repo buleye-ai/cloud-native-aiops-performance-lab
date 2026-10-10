@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 145,
+  "next_lesson": 146,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -1009,6 +1009,13 @@
       "topic": "having a good lunch break",
       "telegram_message_id": 221,
       "sent_at": "2026-10-10T06:01:04.201Z"
+    },
+    "2026-10-11:evening": {
+      "lesson": 145,
+      "level": "B1",
+      "topic": "enjoying music as a hobby",
+      "telegram_message_id": 222,
+      "sent_at": "2026-10-10T17:27:39.445Z"
     }
   }
 }
