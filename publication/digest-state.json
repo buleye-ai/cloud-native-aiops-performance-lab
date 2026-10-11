@@ -1,5 +1,10 @@
 {
   "used_urls": [
+    "https://www.cncf.io/blog/2026/10/09/join-platform-engineering-day-at-kubecon-cloudnativecon-north-america-2026/",
+    "https://www.cncf.io/blog/2026/10/09/making-the-golden-kubestronaut-a-little-more-golden/",
+    "https://www.cncf.io/blog/2026/10/09/who-owns-nis2-and-dora-on-a-kubernetes-platform-team/",
+    "https://openai.com/index/sophos",
+    "https://openai.com/index/asana-browser-agent",
     "https://www.cncf.io/blog/2026/10/08/dont-give-ai-agents-root-make-them-propose-the-next-system-state/",
     "https://openai.com/index/oracle",
     "https://openai.com/index/pollo-ai",
@@ -194,11 +199,6 @@
     "https://www.cncf.io/blog/2026/08/14/eleven-minutes-zero-humans-building-a-self-healing-kubernetes-upgrade-pipeline-on-kairos/",
     "https://www.cncf.io/blog/2026/08/13/lightweight-dragonfly-deployment-p2p-distribution-without-the-database-stack/",
     "https://www.cncf.io/blog/2026/08/13/llmops-and-platform-engineering-who-should-own-the-ai-pipeline/",
-    "https://openai.com/index/builders-guide-to-gpt-5-6",
-    "https://openai.com/index/previewing-ultrafast",
-    "https://openai.com/index/dali-rajic-chief-revenue-officer",
-    "https://www.cncf.io/blog/2026/08/12/good-apps-arent-born-theyre-guided-building-observable-policy-as-code/",
-    "https://www.cncf.io/blog/2026/08/12/advancing-ai-model-interoperability-with-docker-and-modelpack/",
-    "https://openai.com/index/how-enterprises-put-ai-to-work"
+    "https://openai.com/index/builders-guide-to-gpt-5-6"
   ]
 }
