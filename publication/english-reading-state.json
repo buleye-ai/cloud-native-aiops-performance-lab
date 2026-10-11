@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 147,
+  "next_lesson": 148,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -1023,6 +1023,13 @@
       "topic": "Commuting to work",
       "telegram_message_id": 224,
       "sent_at": "2026-10-11T05:57:07.921Z"
+    },
+    "2026-10-12:evening": {
+      "lesson": 147,
+      "level": "B1",
+      "topic": "Life in a different kind of city",
+      "telegram_message_id": 225,
+      "sent_at": "2026-10-11T17:46:10.229Z"
     }
   }
 }
