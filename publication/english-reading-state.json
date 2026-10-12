@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 148,
+  "next_lesson": 149,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -1030,6 +1030,13 @@
       "topic": "Life in a different kind of city",
       "telegram_message_id": 225,
       "sent_at": "2026-10-11T17:46:10.229Z"
+    },
+    "2026-10-12:morning": {
+      "lesson": 148,
+      "level": "B1",
+      "topic": "Making a Simple Healthy Breakfast",
+      "telegram_message_id": 226,
+      "sent_at": "2026-10-12T06:07:54.747Z"
     }
   }
 }
