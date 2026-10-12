@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 149,
+  "next_lesson": 150,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -1037,6 +1037,13 @@
       "topic": "Making a Simple Healthy Breakfast",
       "telegram_message_id": 226,
       "sent_at": "2026-10-12T06:07:54.747Z"
+    },
+    "2026-10-13:evening": {
+      "lesson": 149,
+      "level": "B1",
+      "topic": "Food and connection",
+      "telegram_message_id": 227,
+      "sent_at": "2026-10-12T21:23:27.048Z"
     }
   }
 }
