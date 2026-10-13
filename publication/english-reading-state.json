@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 150,
+  "next_lesson": 151,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -1044,6 +1044,13 @@
       "topic": "Food and connection",
       "telegram_message_id": 227,
       "sent_at": "2026-10-12T21:23:27.048Z"
+    },
+    "2026-10-13:morning": {
+      "lesson": 150,
+      "level": "B1",
+      "topic": "Asking a Coworker for Help",
+      "telegram_message_id": 229,
+      "sent_at": "2026-10-13T06:52:50.250Z"
     }
   }
 }
