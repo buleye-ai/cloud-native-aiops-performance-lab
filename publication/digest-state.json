@@ -1,5 +1,6 @@
 {
   "used_urls": [
+    "https://openai.com/index/higgsfield-longer-videos-voice",
     "https://www.cncf.io/blog/2026/10/12/from-zero-to-agent-builder-running-kagent-on-your-laptop/",
     "https://www.cncf.io/blog/2026/10/09/join-platform-engineering-day-at-kubecon-cloudnativecon-north-america-2026/",
     "https://www.cncf.io/blog/2026/10/09/making-the-golden-kubestronaut-a-little-more-golden/",
@@ -198,7 +199,6 @@
     "https://openai.com/index/openai-joins-ports-pike-project",
     "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
     "https://www.cncf.io/blog/2026/08/14/eleven-minutes-zero-humans-building-a-self-healing-kubernetes-upgrade-pipeline-on-kairos/",
-    "https://www.cncf.io/blog/2026/08/13/lightweight-dragonfly-deployment-p2p-distribution-without-the-database-stack/",
-    "https://www.cncf.io/blog/2026/08/13/llmops-and-platform-engineering-who-should-own-the-ai-pipeline/"
+    "https://www.cncf.io/blog/2026/08/13/lightweight-dragonfly-deployment-p2p-distribution-without-the-database-stack/"
   ]
 }
