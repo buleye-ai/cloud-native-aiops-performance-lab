@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 152,
+  "next_lesson": 153,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -1058,6 +1058,13 @@
       "topic": "Choosing a good weekend activity",
       "telegram_message_id": 230,
       "sent_at": "2026-10-13T19:30:35.599Z"
+    },
+    "2026-10-14:morning": {
+      "lesson": 152,
+      "level": "B1",
+      "topic": "A short walk before work",
+      "telegram_message_id": 232,
+      "sent_at": "2026-10-14T05:01:13.476Z"
     }
   }
 }
