@@ -1,0 +1,52 @@
+{
+  "id": "mv917nea-4e3349",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-10-15T04:21:34.642Z",
+  "title": "Kueue 准入追踪：从“Pod Pending”转向“Workload 是否已获准入”",
+  "english": "A Kubernetes Job can remain suspended with no Pods, application logs, or inspectable Pod objects when a cluster is managed by Kueue. In that situation, the first operational question is not simply why a Pod is pending, but whether Kueue has admitted the Workload to use the requested resources. The Kueue plugin for Headlamp brings this investigation into the Headlamp UI. Operators can start from the Workload, read its condition message, and follow links through the admission path instead of reconstructing the process from multiple commands and large YAML objects. This makes admission status a more direct starting point for diagnosing delayed Jobs.",
+  "chinese": "在由 Kueue 管理的集群中，Kubernetes Job 处于 suspended 状态、尚未创建 Pod、没有应用日志，并不一定意味着异常；Kueue 可能仍在判断该 Job 能否使用其请求的资源。排障入口应从“为什么 Pod Pending”前移到“Workload 是否已被 Kueue 准入”。Headlamp 的 Kueue 插件将这一调查路径放入 UI：运维人员可从 Workload 的条件消息开始，并沿准入链路继续查看，而不必在多条命令和大型 YAML 对象之间手工还原过程。",
+  "why_it_matters": "这直接关联云原生批处理调度与 Agent Infra 的资源治理：当 AI 或其他批处理工作负载未产生 Pod 时，排障不能只盯住 Pod 生命周期，还应检查队列与准入状态。对资深运维开发而言，这要求把 Workload 条件、资源请求和准入链路纳入可观测性与故障定位流程。",
+  "interview_expression": "When a Kubernetes Job has no Pods, I first distinguish Pod-level scheduling issues from workload admission issues. In a Kueue-managed cluster, I would check whether the Workload has been admitted before investigating application logs.",
+  "vocabulary": [
+    {
+      "term": "admission",
+      "meaning": "准入；此处指系统决定工作负载是否可以使用所请求资源的过程。",
+      "example": "The operator checked whether Kueue had admitted the Workload."
+    },
+    {
+      "term": "Workload",
+      "meaning": "工作负载；这里指由 Kueue 处理和判断准入状态的对象。",
+      "example": "Start the investigation from the Workload and read its condition message."
+    },
+    {
+      "term": "suspended",
+      "meaning": "暂停的；此处指 Job 尚未继续创建或运行其 Pod。",
+      "example": "The Job remained suspended while Kueue evaluated the requested resources."
+    }
+  ],
+  "sources": [
+    {
+      "source": "Kubernetes Blog",
+      "title": "Why Is My Kubernetes Job Still Pending? Tracing Kueue Admission with Headlamp",
+      "url": "https://kubernetes.io/blog/2026/10/14/tracing-kueue-admission-with-headlamp/",
+      "published_at": "2026-10-14T18:35:00.000Z",
+      "summary": "<p>You submit a <a href=\"https://kubernetes.io/docs/concepts/workloads/controllers/job/\">Kubernetes Job</a> and wait for its Pods to appear. A minute passes. Then another. The Job is still suspended, there are no application logs, and there may not even be a Pod to inspect.</p> <p>In a cluster managed by <a href=\"https://kueue.sigs.k8s.io/\">Kueue</a>, this can be completely normal. Kueue may still be deciding whether the Job can use the requested resources. The useful question is not only “Why is the Pod pending?” It is first “Has Kueue admitted the Workload?”</p> <p>The <a href=\"https://github.com/headlamp-k8s/plugins/tree/main/kueue\">Kueue plugin for Headlamp</a> brings that investigation into the Headlamp UI. Instead of reconstructing the admission path from several commands and large YAML objects, you can begin with the Workload, read its condition message, and follow links through t"
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "url": "https://openai.com/index/amp-beyond-coding",
+      "published_at": "2026-10-14T12:00:00.000Z",
+      "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "SentinelOne cuts malware analysis from weeks to hours",
+      "url": "https://openai.com/index/sentinelone",
+      "published_at": "2026-10-14T12:00:00.000Z",
+      "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats."
+    }
+  ],
+  "telegram_message_id": 234
+}

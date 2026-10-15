@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://kubernetes.io/blog/2026/10/14/tracing-kueue-admission-with-headlamp/",
+    "https://openai.com/index/amp-beyond-coding",
+    "https://openai.com/index/sentinelone",
+    "https://openai.com/index/third-moment-research",
+    "https://openai.com/index/block-ai-powered-security",
+    "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
     "https://openai.com/index/higgsfield-longer-videos-voice",
     "https://www.cncf.io/blog/2026/10/12/from-zero-to-agent-builder-running-kagent-on-your-laptop/",
     "https://www.cncf.io/blog/2026/10/09/join-platform-engineering-day-at-kubecon-cloudnativecon-north-america-2026/",
@@ -193,12 +199,6 @@
     "https://openai.com/index/pacing-model-development-cyber-capabilities",
     "https://openai.com/index/chatgpt-for-teens",
     "https://openai.com/index/asana",
-    "https://www.cncf.io/blog/2026/08/17/welcome-falkey-the-falco-and-ky-the-kyverno-pyrenees/",
-    "https://www.cncf.io/announcements/2026/08/17/cncf-announces-kubeflows-graduation-solidifying-the-standard-for-cloud-native-ai-operations/",
-    "https://openai.com/index/the-defenders-window",
-    "https://openai.com/index/openai-joins-ports-pike-project",
-    "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
-    "https://www.cncf.io/blog/2026/08/14/eleven-minutes-zero-humans-building-a-self-healing-kubernetes-upgrade-pipeline-on-kairos/",
-    "https://www.cncf.io/blog/2026/08/13/lightweight-dragonfly-deployment-p2p-distribution-without-the-database-stack/"
+    "https://www.cncf.io/blog/2026/08/17/welcome-falkey-the-falco-and-ky-the-kyverno-pyrenees/"
   ]
 }
