@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 155,
+  "next_lesson": 156,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -1079,6 +1079,13 @@
       "topic": "keeping a small home tidy",
       "telegram_message_id": 235,
       "sent_at": "2026-10-15T04:49:48.224Z"
+    },
+    "2026-10-16:evening": {
+      "lesson": 155,
+      "level": "B1",
+      "topic": "how people make friends",
+      "telegram_message_id": 236,
+      "sent_at": "2026-10-15T17:18:56.906Z"
     }
   }
 }
