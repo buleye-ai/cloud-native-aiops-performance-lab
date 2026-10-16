@@ -1,0 +1,52 @@
+{
+  "id": "mvagj7ii-1d4324",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-10-16T04:18:14.346Z",
+  "title": "OpenTelemetry 将软件碳强度纳入云原生可观测性信号",
+  "english": "CNCF presented a keynote at Observability Summit Europe 2026 in Prague on making Software Carbon Intensity (SCI) a first-class signal in OpenTelemetry. The proposal explores treating carbon intensity as part of cloud-native observability, alongside established operational signals. Separately, OpenAI announced the Rosalind Academic Plan for eligible academic labs, sponsored access to GPT-Rosalind and related tools for life-sciences research. Its other updates describe AI-assisted active learning for educators and Agreement Analyzer, developed with Sullivan & Cromwell to identify issues in draft agreements. Together, these items show AI moving into specialized workflows while observability expands toward sustainability-related measurement.",
+  "chinese": "CNCF 的主题演讲讨论了如何将软件碳强度（SCI）作为 OpenTelemetry 中的一类一等信号，使云原生可观测性能够覆盖碳强度这一可持续性维度。OpenAI 则发布了面向符合条件学术实验室的 Rosalind Academic Plan，并介绍了教育场景的主动学习支持，以及与 Sullivan & Cromwell 合作开发、用于识别协议草案问题的 Agreement Analyzer。",
+  "why_it_matters": "对资深运维开发而言，SCI 进入 OpenTelemetry 的讨论意味着可观测性信号的范围可能从性能、可靠性延伸到碳相关指标，AIOps 平台需要考虑如何采集、关联和呈现这类信号。OpenAI 的案例表明，AI 正在进入科研、教育和法律等专业工作流；建设 Agent Infra 时，重点仍是将模型能力嵌入可审计、面向具体任务的工具链。",
+  "interview_expression": "I see observability evolving beyond reliability and performance toward sustainability-related signals such as software carbon intensity. For AI systems, I would focus on integrating model capabilities into auditable, domain-specific workflows rather than treating the model as an isolated service.",
+  "vocabulary": [
+    {
+      "term": "first-class signal",
+      "meaning": "一等信号；被作为核心、标准化观测对象对待的信号",
+      "example": "The keynote explored carbon intensity as a first-class signal in OpenTelemetry."
+    },
+    {
+      "term": "Software Carbon Intensity",
+      "meaning": "软件碳强度，简称 SCI",
+      "example": "Software Carbon Intensity could become part of cloud-native observability."
+    },
+    {
+      "term": "draft agreement",
+      "meaning": "协议草案；合同草案",
+      "example": "Agreement Analyzer is designed to identify issues in a draft agreement."
+    }
+  ],
+  "sources": [
+    {
+      "source": "CNCF Blog",
+      "title": "Carbon as a first-class signal: Bringing software carbon intensity to OpenTelemetry",
+      "url": "https://www.cncf.io/blog/2026/10/15/carbon-as-a-first-class-signal-bringing-software-carbon-intensity-to-opentelemetry/",
+      "published_at": "2026-10-15T22:21:45.000Z",
+      "summary": "At Observability Summit Europe 2026 in Prague, I presented a keynote titled Carbon as a First-Class Signal: Designing a Standard for OpenTelemetry. The talk explored how Software Carbon Intensity (SCI) could become part of cloud-native observability..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "published_at": "2026-10-15T19:00:00.000Z",
+      "summary": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Teaching students to think and learn through questions",
+      "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+      "published_at": "2026-10-15T13:00:00.000Z",
+      "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning."
+    }
+  ],
+  "telegram_message_id": 237
+}

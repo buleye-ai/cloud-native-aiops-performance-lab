@@ -1,5 +1,9 @@
 {
   "used_urls": [
+    "https://www.cncf.io/blog/2026/10/15/carbon-as-a-first-class-signal-bringing-software-carbon-intensity-to-opentelemetry/",
+    "https://openai.com/index/introducing-the-rosalind-academic-plan",
+    "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+    "https://openai.com/index/sullivan-cromwell",
     "https://kubernetes.io/blog/2026/10/14/tracing-kueue-admission-with-headlamp/",
     "https://openai.com/index/amp-beyond-coding",
     "https://openai.com/index/sentinelone",
@@ -195,10 +199,6 @@
     "https://openai.com/index/nvidia/chatgpt-work",
     "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
     "https://www.cncf.io/blog/2026/08/18/cloud-native-platform-sovereignty-through-multi-plane-architecture/",
-    "https://openai.com/index/partnering-with-codeai",
-    "https://openai.com/index/pacing-model-development-cyber-capabilities",
-    "https://openai.com/index/chatgpt-for-teens",
-    "https://openai.com/index/asana",
-    "https://www.cncf.io/blog/2026/08/17/welcome-falkey-the-falco-and-ky-the-kyverno-pyrenees/"
+    "https://openai.com/index/partnering-with-codeai"
   ]
 }
