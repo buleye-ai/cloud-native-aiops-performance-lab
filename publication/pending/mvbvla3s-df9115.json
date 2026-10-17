@@ -1,0 +1,52 @@
+{
+  "id": "mvbvla3s-df9115",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-10-17T04:07:31.432Z",
+  "title": "生产级 Agent 与 AI 工作负载正在把治理、运行时安全和平台工程推到前台",
+  "english": "Recent updates point to a shared operational pattern: AI products need production-grade platforms, not just prototypes. Itaú is applying an AI First strategy through the ia.i conversational interface and the IARA governance platform in a highly regulated sector. CNCF coverage highlights the operational gap between an n8n demo built with one container and SQLite and a production deployment requiring workers, webhook processors, PostgreSQL, and Redis. Another CNCF post focuses on extending Kubernetes policy enforcement into runtime security for AI workloads. Meanwhile, Stack Overflow for Agents reportedly used Codex to ship in weeks, while its ChatGPT plugin contributed to up to 10x growth in agent creation.",
+  "chinese": "本轮信息的共同主题是：AI 应用从试验走向生产后，核心挑战转为平台化运行、治理与安全。Itaú 在强监管金融环境中，以 ia.i 对话界面和 IARA 治理平台落实 AI First 策略，覆盖客户与员工。n8n 的案例强调，单容器加 SQLite 适合快速演示，但生产流量需要 worker、webhook processor、PostgreSQL 和 Redis 等组件。针对 AI 工作负载，Kubernetes 的准入策略还需要延伸到运行时安全。与此同时，面向 Agent 的产品可借助 Codex 加快交付，但 Agent 创建增长也会提高对基础设施和治理能力的要求。",
+  "why_it_matters": "对资深运维开发而言，重点不只是部署模型或工作流，而是把 Agent 和自动化工作流纳入可扩展、可维护、可治理的生产平台：设计异步 worker 与 webhook 处理能力，管理状态组件，并将 Kubernetes 策略从准入控制扩展到运行时安全。在职业发展上，Kubernetes 安全、平台工程、AI 治理和 Agent Infra 的交叉能力正在形成明确的实践方向。",
+  "interview_expression": "I focus on the operational path from an AI prototype to a governed production platform. For Kubernetes-based AI workloads, I consider both admission control and runtime security, alongside the reliability requirements of workers, webhooks, and stateful services.",
+  "vocabulary": [
+    {
+      "term": "admission control",
+      "meaning": "准入控制；在资源进入 Kubernetes 集群前执行策略校验或修改的机制。",
+      "example": "Admission control can enforce policy before a workload is created."
+    },
+    {
+      "term": "runtime security",
+      "meaning": "运行时安全；对已经运行的工作负载进行监控、检测或防护。",
+      "example": "Runtime security extends protection beyond deployment-time checks."
+    },
+    {
+      "term": "webhook processor",
+      "meaning": "Webhook 处理器；负责接收和处理外部事件回调的服务组件。",
+      "example": "Webhook processors should be designed for reliable production traffic."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "url": "https://openai.com/index/itau-generative-ai",
+      "published_at": "2026-10-16T19:00:00.000Z",
+      "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "Deploying, maintaining, and migrating production n8n on EKS",
+      "url": "https://www.cncf.io/blog/2026/10/16/deploying-maintaining-and-migrating-production-n8n-on-eks/",
+      "published_at": "2026-10-16T16:39:04.000Z",
+      "summary": "n8n is easy to try and harder to run under production traffic. A single container with SQLite works great for a quick demo. Production is a different story entirely. You need workers, webhook processors, PostgreSQL, Redis,..."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "Putting Nepal on the CNCF Golden Kubestronaut map",
+      "url": "https://www.cncf.io/blog/2026/10/16/putting-nepal-on-the-cncf-golden-kubestronaut-map/",
+      "published_at": "2026-10-16T11:30:00.000Z",
+      "summary": "In this blog, I will share my Golden Kubestronaut journey, how I became the first and youngest Golden Kubestronaut from Nepal, what motivated me to pursue this path, and what it actually takes to earn the..."
+    }
+  ],
+  "telegram_message_id": 240
+}

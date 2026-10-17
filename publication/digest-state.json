@@ -1,5 +1,10 @@
 {
   "used_urls": [
+    "https://openai.com/index/itau-generative-ai",
+    "https://www.cncf.io/blog/2026/10/16/deploying-maintaining-and-migrating-production-n8n-on-eks/",
+    "https://www.cncf.io/blog/2026/10/16/putting-nepal-on-the-cncf-golden-kubestronaut-map/",
+    "https://openai.com/index/stack-overflow-chatgpt-plugin",
+    "https://www.cncf.io/blog/2026/10/15/extending-kubernetes-policy-enforcement-to-runtime-security-for-ai-workloads/",
     "https://www.cncf.io/blog/2026/10/15/carbon-as-a-first-class-signal-bringing-software-carbon-intensity-to-opentelemetry/",
     "https://openai.com/index/introducing-the-rosalind-academic-plan",
     "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
@@ -194,11 +199,6 @@
     "https://openai.com/index/stampli",
     "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
     "https://www.cncf.io/blog/2026/08/19/kyverno-is-a-platform-primitive-not-a-security-tool/",
-    "https://openai.com/index/replit",
-    "https://openai.com/index/chatgpt-ads-expands-across-europe",
-    "https://openai.com/index/nvidia/chatgpt-work",
-    "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
-    "https://www.cncf.io/blog/2026/08/18/cloud-native-platform-sovereignty-through-multi-plane-architecture/",
-    "https://openai.com/index/partnering-with-codeai"
+    "https://openai.com/index/replit"
   ]
 }
