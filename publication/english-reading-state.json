@@ -1,6 +1,6 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 159,
+  "next_lesson": 160,
   "deliveries": {
     "2026-07-28:morning": {
       "lesson": 1,
@@ -1107,6 +1107,13 @@
       "topic": "taking a bus or train to work",
       "telegram_message_id": 241,
       "sent_at": "2026-10-17T04:37:31.191Z"
+    },
+    "2026-10-18:morning": {
+      "lesson": 159,
+      "level": "B1",
+      "topic": "planning three important tasks",
+      "telegram_message_id": 243,
+      "sent_at": "2026-10-18T04:42:55.621Z"
     }
   }
 }
