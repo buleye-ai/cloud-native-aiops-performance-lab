@@ -1,5 +1,6 @@
 {
   "used_urls": [
+    "https://openai.com/index/benefit-street-partners",
     "https://openai.com/index/itau-generative-ai",
     "https://www.cncf.io/blog/2026/10/16/deploying-maintaining-and-migrating-production-n8n-on-eks/",
     "https://www.cncf.io/blog/2026/10/16/putting-nepal-on-the-cncf-golden-kubestronaut-map/",
@@ -198,7 +199,6 @@
     "https://openai.com/index/introducing-ai-futures",
     "https://openai.com/index/stampli",
     "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
-    "https://www.cncf.io/blog/2026/08/19/kyverno-is-a-platform-primitive-not-a-security-tool/",
-    "https://openai.com/index/replit"
+    "https://www.cncf.io/blog/2026/08/19/kyverno-is-a-platform-primitive-not-a-security-tool/"
   ]
 }
