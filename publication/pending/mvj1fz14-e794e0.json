@@ -1,0 +1,52 @@
+{
+  "id": "mvj1fz14-e794e0",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-10-22T04:25:44.728Z",
+  "title": "模型分发、AI SRE 与智能体上下文成为云原生运维关注点",
+  "english": "OpenAI announced that its models and Codex workflows are coming to Gemini's Model Garden through Google Cloud Marketplace. Separately, a CNCF Blog post argues that teams evaluating AI SRE products may already have a coding agent capable of investigating a Kubernetes cluster, but that agent often lacks necessary context. OpenAI also described work with distribution partners to maintain consistent safeguards, responsible access, and clear Usage Policy expectations. Together, these updates point to an operational focus on model availability, agent context, and consistent controls across distribution channels.",
+  "chinese": "OpenAI 表示，其模型和 Codex 工作流将通过 Google Cloud Marketplace 进入 Gemini 的 Model Garden。与此同时，CNCF 博客指出，评估 AI SRE 产品的团队可能已经拥有可调查 Kubernetes 集群的编码智能体，但该智能体通常缺少必要上下文。OpenAI 还说明其与分发合作伙伴协作，以维持一致的安全保障、负责任访问和明确的使用政策预期。",
+  "why_it_matters": "对云原生与 AIOps 团队而言，重点不只是接入新的模型入口，更是让现有智能体获得受控、可用的集群与业务上下文。对 Agent Infra 而言，模型分发渠道、策略一致性和上下文供给都是需要纳入平台设计与运维治理的边界。对资深运维开发者，这要求同时理解 Kubernetes 调查流程、智能体能力限制及跨平台模型服务的接入方式。",
+  "interview_expression": "I would evaluate an AI SRE agent based on the operational context it can access, not only on its model capability. In a Kubernetes environment, controlled context and consistent safeguards are essential for reliable agent-assisted investigation.",
+  "vocabulary": [
+    {
+      "term": "distribution partners",
+      "meaning": "分发合作伙伴，指协助提供或交付服务的合作方。",
+      "example": "OpenAI works with distribution partners to uphold consistent safeguards."
+    },
+    {
+      "term": "Kubernetes cluster",
+      "meaning": "Kubernetes 集群，用于运行和管理容器化工作负载的集群环境。",
+      "example": "A coding agent can investigate a Kubernetes cluster."
+    },
+    {
+      "term": "agent context",
+      "meaning": "智能体上下文，指智能体完成调查或任务所需的相关信息与环境背景。",
+      "example": "An AI SRE agent often lacks the context needed for investigation."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "Broad access through consistent standards",
+      "url": "https://openai.com/index/broad-access-through-consistent-standards",
+      "published_at": "2026-10-21T21:00:00.000Z",
+      "summary": "How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "How AT&T is rethinking in-house legal work with OpenAI",
+      "url": "https://openai.com/index/att-legal",
+      "published_at": "2026-10-21T17:00:00.000Z",
+      "summary": "AT&T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+      "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "published_at": "2026-10-21T13:00:00.000Z",
+      "summary": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT."
+    }
+  ],
+  "telegram_message_id": 253
+}

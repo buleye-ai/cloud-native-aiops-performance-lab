@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://openai.com/index/broad-access-through-consistent-standards",
+    "https://openai.com/index/att-legal",
+    "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+    "https://openai.com/index/openai-models-google-cloud",
+    "https://www.cncf.io/blog/2026/10/21/before-you-evaluate-an-ai-sre-give-your-existing-agent-context/",
+    "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
     "https://openai.com/index/ted-taylor-restaurant",
     "https://openai.com/index/terminal-x",
     "https://openai.com/index/openai-to-acquire-orchestra-bio",
@@ -193,12 +199,6 @@
     "https://www.cncf.io/blog/2026/08/25/the-lazy-developers-guide-to-observing-your-own-code/",
     "https://www.cncf.io/blog/2026/08/25/stop-trying-to-learn-all-of-kubernetes-at-once/",
     "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
-    "https://openai.com/index/jalapeno-first-results",
-    "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
-    "https://openai.com/index/introducing-admin-plugin",
-    "https://openai.com/index/gpt-5-6-in-kiro",
-    "https://www.cncf.io/blog/2026/08/24/automating-root-cause-analysis-at-scale-multi-signal-correlation-for-cloud-native-incident-response/",
-    "https://www.cncf.io/blog/2026/08/21/how-to-turn-slow-queries-into-actionable-reliability-metrics-with-opentelemetry/",
-    "https://www.cncf.io/blog/2026/08/20/announcing-h1-2027-kcds/"
+    "https://openai.com/index/jalapeno-first-results"
   ]
 }
