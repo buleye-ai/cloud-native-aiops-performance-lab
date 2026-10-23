@@ -1,0 +1,52 @@
+{
+  "id": "mvkh23mg-592a7f",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-10-23T04:30:37.529Z",
+  "title": "AI Agent 可观测性与企业 AI 工作流进入工程化阶段",
+  "english": "OpenAI introduced the Decisions API, described as enabling fast, focused, low-cost decisions for applications. OpenAI also explained what forward deployed engineering means and reported that Uber is rolling out ChatGPT Work to more than 30,000 employees for research, data analysis, presentations, and complex workflows. Separately, a CNCF Blog post addresses filtering and reducing AI agent telemetry with the OpenTelemetry Collector. Its summary says AI coding-agent telemetry can become a costly, hard-to-understand wall of text, while noting that it is OpenTelemetry native. Together, these items span application decisioning, enterprise AI-work deployment, delivery-oriented engineering, and observability for AI agents.",
+  "chinese": "本组信息覆盖四个方向：面向应用的 Decisions API；面向企业员工的 ChatGPT Work 推广；OpenAI 对前置部署工程（FDE）的说明；以及使用 OpenTelemetry Collector 过滤和缩减 AI Agent 遥测数据。CNCF 文章指出，AI 编码 Agent 的遥测可能形成难以理解且存储成本高的大量文本，但其数据原生兼容 OpenTelemetry。",
+  "why_it_matters": "对云原生与 AIOps 团队而言，AI Agent 的遥测已可纳入 OpenTelemetry 体系，但需要通过过滤与缩减控制数据量和可读性。企业级 AI 工作流的扩展也意味着平台团队需要关注应用决策能力、可观测性以及面向实际部署场景的工程协作。",
+  "interview_expression": "I would treat AI agent telemetry as an OpenTelemetry data-management problem: preserve useful signals while reducing cost and noise. For enterprise AI rollouts, I focus on observability and operational workflows alongside application capabilities.",
+  "vocabulary": [
+    {
+      "term": "telemetry",
+      "meaning": "遥测数据；系统运行过程中采集的信号或数据。",
+      "example": "The team filters AI agent telemetry with the OpenTelemetry Collector."
+    },
+    {
+      "term": "forward deployed engineering",
+      "meaning": "前置部署工程，指贴近实际客户或部署场景开展的工程工作。",
+      "example": "OpenAI explained what forward deployed engineering means."
+    },
+    {
+      "term": "rollout",
+      "meaning": "分阶段推广或部署。",
+      "example": "Uber is rolling out ChatGPT Work to more than 30,000 employees."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "Build more responsive apps with the Decisions API",
+      "url": "https://openai.com/index/decisions-api",
+      "published_at": "2026-10-22T19:00:00.000Z",
+      "summary": "Fast, focused, low-cost decisions for any application."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "Filtering and reducing AI agent telemetry with the OpenTelemetry Collector",
+      "url": "https://www.cncf.io/blog/2026/10/22/filtering-and-reducing-ai-agent-telemetry-with-the-opentelemetry-collector/",
+      "published_at": "2026-10-22T11:00:00.000Z",
+      "summary": "Turn on an AI coding agent&#8217;s telemetry and it throws a wall of text at you. It&#8217;s expensive to store and what&#8217;s worse, you can&#8217;t make sense of it. It&#8217;s all OpenTelemetry native, though. So you..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "What FDE means at OpenAI",
+      "url": "https://openai.com/index/forward-deployed-engineering-means",
+      "published_at": "2026-10-22T06:00:00.000Z",
+      "summary": "What forward deployed engineering means at OpenAI"
+    }
+  ],
+  "telegram_message_id": 256
+}

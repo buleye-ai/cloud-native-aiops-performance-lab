@@ -1,5 +1,9 @@
 {
   "used_urls": [
+    "https://openai.com/index/decisions-api",
+    "https://www.cncf.io/blog/2026/10/22/filtering-and-reducing-ai-agent-telemetry-with-the-opentelemetry-collector/",
+    "https://openai.com/index/forward-deployed-engineering-means",
+    "https://openai.com/index/uber-chatgpt-work-rollout",
     "https://openai.com/index/broad-access-through-consistent-standards",
     "https://openai.com/index/att-legal",
     "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
@@ -195,10 +199,6 @@
     "https://openai.com/index/learning-never-stops",
     "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
     "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
-    "https://openai.com/index/loveholidays",
-    "https://www.cncf.io/blog/2026/08/25/the-lazy-developers-guide-to-observing-your-own-code/",
-    "https://www.cncf.io/blog/2026/08/25/stop-trying-to-learn-all-of-kubernetes-at-once/",
-    "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
-    "https://openai.com/index/jalapeno-first-results"
+    "https://openai.com/index/loveholidays"
   ]
 }
