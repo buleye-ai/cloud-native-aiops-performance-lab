@@ -1,5 +1,9 @@
 {
   "used_urls": [
+    "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+    "https://www.cncf.io/blog/2026/10/23/multi-tenant-gpu-kubernetes-on-simulated-hardware-with-kamaji-and-hami/",
+    "https://openai.com/index/securing-our-frontier-model-training-environment",
+    "https://openai.com/index/openai-nask-ai-safety-security-partnership",
     "https://openai.com/index/decisions-api",
     "https://www.cncf.io/blog/2026/10/22/filtering-and-reducing-ai-agent-telemetry-with-the-opentelemetry-collector/",
     "https://openai.com/index/forward-deployed-engineering-means",
@@ -195,10 +199,6 @@
     "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
     "https://openai.com/index/expanding-our-presence-in-brazil",
     "https://www.cncf.io/blog/2026/08/26/governance-guidance-for-cncf-projects-choosing-the-right-structure-for-your-projects-size-and-stage/",
-    "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
-    "https://openai.com/index/learning-never-stops",
-    "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
-    "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
-    "https://openai.com/index/loveholidays"
+    "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts"
   ]
 }
