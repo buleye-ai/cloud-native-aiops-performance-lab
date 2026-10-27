@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://openai.com/index/greptile-code-review-codex-astra",
+    "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+    "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+    "https://www.cncf.io/blog/2026/10/26/isolation-security-scale/",
+    "https://openai.com/index/chatgpt-expanding-world-of-work",
+    "https://openai.com/index/fanatics-streamline-fan-experience",
     "https://openai.com/index/scaling-storage-one-billion-users-part-two",
     "https://www.cncf.io/blog/2026/10/23/multi-tenant-gpu-kubernetes-on-simulated-hardware-with-kamaji-and-hami/",
     "https://openai.com/index/securing-our-frontier-model-training-environment",
@@ -193,12 +199,6 @@
     "https://www.cncf.io/blog/2026/08/28/scale-before-the-spike-predictive-autoscaling-for-gpu-workloads-on-kubernetes/",
     "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
     "https://www.cncf.io/blog/2026/08/28/your-kubernetes-platform-is-ready-for-containers-is-it-ready-for-ai/",
-    "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
-    "https://kubernetes.io/blog/2026/08/27/kubernetes-v1-37-metrics-api-ga/",
-    "https://www.cncf.io/blog/2026/08/27/building-an-ai-factory-on-kubernetes/",
-    "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
-    "https://openai.com/index/expanding-our-presence-in-brazil",
-    "https://www.cncf.io/blog/2026/08/26/governance-guidance-for-cncf-projects-choosing-the-right-structure-for-your-projects-size-and-stage/",
-    "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts"
+    "https://openai.com/index/supporting-next-generation-ai-startups-thailand"
   ]
 }
