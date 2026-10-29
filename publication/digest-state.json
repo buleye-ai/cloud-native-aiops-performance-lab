@@ -1,5 +1,9 @@
 {
   "used_urls": [
+    "https://www.cncf.io/blog/2026/10/28/volcano-v1-16-released-namespacequeue-fairshare-and-a-broader-hypernode-ecosystem/",
+    "https://openai.com/index/openai-servicenow-partnership-expansion",
+    "https://openai.com/index/the-future-of-the-firm",
+    "https://openai.com/index/legora",
     "https://openai.com/index/retell-ai",
     "https://www.cncf.io/blog/2026/10/27/over-500-golden-kubestronauts-the-evolving-standard-for-cloud-native-mastery/",
     "https://openai.com/index/oracle-apps-in-chatgpt",
@@ -195,10 +199,6 @@
     "https://openai.com/index/path-to-astra",
     "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
     "https://www.cncf.io/blog/2026/09/01/platform-engineering-maturity-from-toolchain-to-self-service/",
-    "https://openai.com/index/gilbert-tobin",
-    "https://kubernetes.io/blog/2026/08/31/kubernetes-v1-37-storage-version-migration-ga/",
-    "https://www.cncf.io/blog/2026/08/31/opentelemetry-has-graduated-now-what-2/",
-    "https://openai.com/index/polimill",
-    "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads"
+    "https://openai.com/index/gilbert-tobin"
   ]
 }

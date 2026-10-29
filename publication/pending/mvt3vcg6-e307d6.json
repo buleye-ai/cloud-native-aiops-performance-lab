@@ -1,0 +1,52 @@
+{
+  "id": "mvt3vcg6-e307d6",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-10-29T05:31:22.950Z",
+  "title": "Volcano v1.16 与企业工作流中的 AI Agent 扩展",
+  "english": "Volcano v1.16.0 introduces NamespaceQueue and the fairshare plugin. NamespaceQueue enables tenants to use hierarchical queues inside their namespaces, organizing quotas and queue hierarchies within administrator-authorized resource pools. The fairshare plugin incorporates historical resource consumption. Separately, OpenAI and ServiceNow are expanding their partnership to bring OpenAI models and agents into ServiceNow, while bringing ServiceNow workflows into ChatGPT and Codex. OpenAI also describes AI entering the organizational chart, and Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows and contract analysis. Together, these updates connect multi-tenant resource governance with the growing operational use of AI agents in enterprise workflows.",
+  "chinese": "Volcano v1.16.0 新增 NamespaceQueue 与 fairshare 插件。NamespaceQueue 允许租户在各自命名空间内建立分层队列，并在管理员授权的资源池中组织配额和队列层级；fairshare 则引入历史资源消耗。与此同时，OpenAI 与 ServiceNow 扩展合作，把 OpenAI 模型和 Agent 引入 ServiceNow，并把 ServiceNow 工作流带入 ChatGPT 和 Codex。Legora 的案例显示，OpenAI 模型、ChatGPT 与 Codex 可用于加速法律工作流和合同分析。",
+  "why_it_matters": "对云原生和 AIOps 而言，多租户 AI 工作负载需要可审计的资源池、配额与队列治理；NamespaceQueue 和 fairshare 直接对应这类调度需求。对 Agent Infra 而言，ServiceNow、ChatGPT 和 Codex 的工作流连接表明，Agent 正进入企业既有系统。资深运维开发应关注如何将调度策略、资源治理与企业工作流中的 Agent 执行边界结合起来。",
+  "interview_expression": "I am interested in combining multi-tenant resource governance with agent-based enterprise workflows. In practice, that means treating queue policy, quota boundaries, and historical consumption as operational concerns for AI workloads.",
+  "vocabulary": [
+    {
+      "term": "hierarchical queue",
+      "meaning": "分层队列；可按层级组织和管理的队列结构",
+      "example": "Tenants can organize quotas through hierarchical queues within their namespaces."
+    },
+    {
+      "term": "fairshare",
+      "meaning": "公平份额；基于资源使用情况进行相对公平分配的机制",
+      "example": "The fairshare plugin brings historical resource consumption into scheduling."
+    },
+    {
+      "term": "enterprise workflow",
+      "meaning": "企业工作流；企业系统中定义和执行的业务流程",
+      "example": "OpenAI models and agents are being brought into enterprise workflows."
+    }
+  ],
+  "sources": [
+    {
+      "source": "CNCF Blog",
+      "title": "Volcano v1.16 Released: NamespaceQueue, fairshare, and a broader HyperNode ecosystem",
+      "url": "https://www.cncf.io/blog/2026/10/28/volcano-v1-16-released-namespacequeue-fairshare-and-a-broader-hypernode-ecosystem/",
+      "published_at": "2026-10-28T20:45:08.000Z",
+      "summary": "Volcano v1.16.0 is available . v1.16.0 introduces NamespaceQueue and the fairshare plugin. Tenants can use hierarchical queues within their own namespaces to organize quotas and queue hierarchies within administrator-authorized resource pools. Fairshare brings historical resource consumption..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+      "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+      "published_at": "2026-10-28T13:15:00.000Z",
+      "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "The future of the firm",
+      "url": "https://openai.com/index/the-future-of-the-firm",
+      "published_at": "2026-10-28T10:00:00.000Z",
+      "summary": "How AI might enter the org chart—beneath, beside, and between us."
+    }
+  ],
+  "telegram_message_id": 272
+}
