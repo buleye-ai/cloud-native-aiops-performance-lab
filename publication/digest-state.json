@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://www.cncf.io/blog/2026/10/29/kubecon-cloudnativecon-na-2026-end-user-tab-recommendations-and-tips/",
+    "https://www.cncf.io/blog/2026/10/29/the-boundary-problem-in-agentic-ai-is-a-platform-problem/",
+    "https://openai.com/index/updated-model-spec",
+    "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+    "https://openai.com/index/ropes-gray-ai-diligence",
+    "https://kubernetes.io/blog/2026/10/29/sig-arch-ai-conformance-2026/",
     "https://www.cncf.io/blog/2026/10/28/volcano-v1-16-released-namespacequeue-fairshare-and-a-broader-hypernode-ecosystem/",
     "https://openai.com/index/openai-servicenow-partnership-expansion",
     "https://openai.com/index/the-future-of-the-firm",
@@ -193,12 +199,6 @@
     "https://openai.com/index/atv-big-air-tour",
     "https://www.cncf.io/blog/2026/09/02/metal3-meets-kubevirtbmc-provisioning-kubevirt-vms-like-bare-metal/",
     "https://www.cncf.io/blog/2026/08/31/observability-in-kubernetes-from-metrics-to-meaning/",
-    "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety",
-    "https://kubernetes.io/blog/2026/09/01/kubernetes-v1-37-etcd-range-stream/",
-    "https://openai.com/index/ai-native-company-workflows",
-    "https://openai.com/index/path-to-astra",
-    "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
-    "https://www.cncf.io/blog/2026/09/01/platform-engineering-maturity-from-toolchain-to-self-service/",
-    "https://openai.com/index/gilbert-tobin"
+    "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety"
   ]
 }

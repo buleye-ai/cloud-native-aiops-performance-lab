@@ -1,0 +1,52 @@
+{
+  "id": "mvujcdou-7c6517",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-10-30T05:32:18.126Z",
+  "title": "Agentic AI 的边界治理进入云原生平台议程",
+  "english": "Recent cloud native and AI updates point to a shared operational theme: agent behavior must be governed through platform capabilities, monitoring, and human review. CNCF frames the boundary problem in agentic AI as a platform problem, emphasizing that an agent can act only through the tools it is given. OpenAI describes layered monitoring for detecting frontier-model misalignment and unauthorized agent behavior before incidents escalate. Kubernetes’ AI Conformance effort has moved from a Working Group into SIG Architecture as a subproject. In a legal diligence use case, lawyers review grouped documents, summaries, and reports before advising clients.",
+  "chinese": "多项动态共同指向一个可运维的问题：Agent 的风险不只来自模型输出，还取决于平台为其开放了哪些工具、权限和执行边界。CNCF 将这一问题定义为平台问题；OpenAI 强调通过分层监控发现模型失配与未经授权的 Agent 行为；Kubernetes 的 AI Conformance 已从 Working Group 进入 SIG Architecture 子项目。与此同时，交易尽调场景仍保留律师对文档分组、摘要和报告的审核，体现人类复核在高风险工作流中的位置。",
+  "why_it_matters": "对云原生与 AIOps 团队而言，Agent Infra 需要把工具暴露、权限边界、行为监控、告警响应和人工审批视为同一套平台能力。Kubernetes 中 AI Conformance 的组织化推进，也意味着具备合规验证、可观测性与安全自动化能力的运维开发者将更贴近基础设施演进方向。",
+  "interview_expression": "I view agent governance as a platform engineering problem: tool boundaries, monitoring, and human review should be designed together. In an AIOps environment, I would make those controls observable and actionable for responders.",
+  "vocabulary": [
+    {
+      "term": "agentic AI",
+      "meaning": "具备自主调用工具或执行任务能力的智能体式 AI",
+      "example": "Agentic AI must operate within clearly defined tool boundaries."
+    },
+    {
+      "term": "layered monitoring",
+      "meaning": "分层监控；通过多个监测层发现风险行为",
+      "example": "Layered monitoring can help responders intervene before an incident escalates."
+    },
+    {
+      "term": "conformance",
+      "meaning": "一致性或符合性；验证实现是否满足既定要求",
+      "example": "AI conformance can support more consistent platform behavior."
+    }
+  ],
+  "sources": [
+    {
+      "source": "CNCF Blog",
+      "title": "KubeCon + CloudNativeCon NA 2026: End User TAB recommendations and tips",
+      "url": "https://www.cncf.io/blog/2026/10/29/kubecon-cloudnativecon-na-2026-end-user-tab-recommendations-and-tips/",
+      "published_at": "2026-10-30T00:43:04.000Z",
+      "summary": "KubeCon + CloudNativeCon NA 2026 in Salt Lake City will bring the cloud native community together with projects, vendors and end users in what is one of the largest open source events. In this post, we..."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "The boundary problem in agentic AI is a platform problem",
+      "url": "https://www.cncf.io/blog/2026/10/29/the-boundary-problem-in-agentic-ai-is-a-platform-problem/",
+      "published_at": "2026-10-29T18:11:50.000Z",
+      "summary": "An autonomous agent will do exactly what its tools let it do, and no more. This sounds like a constraint. In practice it is the whole risk, because the set of things an agent&#8217;s tools let..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "An updated Model Spec for more capable and beneficial AI",
+      "url": "https://openai.com/index/updated-model-spec",
+      "published_at": "2026-10-29T17:00:00.000Z",
+      "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent."
+    }
+  ],
+  "telegram_message_id": 275
+}
