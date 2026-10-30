@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 184,
+  "next_lesson": 185,
   "deliveries": {
-    "2026-07-30:evening": {
-      "lesson": 4,
-      "level": "A2",
-      "topic": "a simple idea from science",
-      "telegram_message_id": 15,
-      "sent_at": "2026-07-29T17:00:10.624Z"
-    },
     "2026-07-30:morning": {
       "lesson": 5,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "planning three important tasks",
       "telegram_message_id": 276,
       "sent_at": "2026-10-30T05:58:08.317Z"
+    },
+    "2026-10-31:evening": {
+      "lesson": 184,
+      "level": "B1",
+      "topic": "a simple idea from science",
+      "telegram_message_id": 277,
+      "sent_at": "2026-10-30T18:10:33.284Z"
     }
   }
 }
