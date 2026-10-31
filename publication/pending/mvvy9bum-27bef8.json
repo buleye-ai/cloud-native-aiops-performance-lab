@@ -1,0 +1,52 @@
+{
+  "id": "mvvy9bum-27bef8",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-10-31T05:17:36.190Z",
+  "title": "从可观测性到训练偏好：云原生与 AI 平台的治理边界扩展",
+  "english": "Recent OpenAI and CNCF updates highlight two operational themes for platform engineers. OpenAI says it will honor a shared robots.txt signal through which website operators can communicate AI training preferences to participating providers. Separately, OpenChoreo describes using OpenTelemetry-powered distributed tracing and Kubernetes events to understand application behavior after deployment, within an Internal Developer Platform golden path. OpenAI also reports expanded ChatGPT violence-prevention safeguards, earlier interventions, and a commitment to public safety reporting. Together, these items point to AI systems requiring both conventional production observability and explicit governance interfaces for data use and safety.",
+  "chinese": "简报显示，AI 平台运维的关注点正在从单纯的部署与性能，扩展到数据使用偏好、安全治理和运行时可观测性。OpenAI 表示将遵循共享的 robots.txt 信号，使网站运营者能够向参与方表达 AI 训练偏好。CNCF 的 OpenChoreo 案例则强调，在 IDP 的 golden path 中，借助 OpenTelemetry 分布式追踪与 Kubernetes 事件理解应用上线后的实际行为。与此同时，ChatGPT 正在加强暴力预防保护、提前干预与公共安全报告承诺。",
+  "why_it_matters": "对云原生和 AIOps 团队而言，AI 工作负载需要被纳入现有的追踪、事件和生产行为分析体系；对 Agent Infra 而言，外部数据获取与训练相关流程需要保留可执行、可审计的偏好与治理接口。资深运维开发应同时具备可观测性工程能力，以及将安全和数据治理要求落入平台工作流的能力。",
+  "interview_expression": "I treat observability as a platform capability, not just an application feature: traces and Kubernetes events should help teams understand production behavior after deployment. For AI systems, I would also design explicit, auditable controls for data-use preferences and safety requirements.",
+  "vocabulary": [
+    {
+      "term": "distributed tracing",
+      "meaning": "分布式追踪：关联跨服务请求链路，用于定位端到端行为和故障。",
+      "example": "Distributed tracing helps operators understand how a request behaves across services."
+    },
+    {
+      "term": "Kubernetes events",
+      "meaning": "Kubernetes 事件：集群对象状态变化或控制器行为产生的事件记录。",
+      "example": "Kubernetes events can provide context when a workload does not behave as expected."
+    },
+    {
+      "term": "robots.txt",
+      "meaning": "网站用于表达爬虫访问规则的文本协议文件；本来源中提及其可承载 AI 训练偏好信号。",
+      "example": "The website used a shared robots.txt signal to communicate its AI training preferences."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "Making it easier for websites to express AI training preferences",
+      "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "published_at": "2026-10-30T09:30:00.000Z",
+      "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Community safety report and new protections for teens",
+      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "published_at": "2026-10-30T09:00:00.000Z",
+      "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Fair use benefits everyone",
+      "url": "https://openai.com/index/fair-use-benefits-everyone",
+      "published_at": "2026-10-30T00:00:00.000Z",
+      "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation."
+    }
+  ],
+  "telegram_message_id": 278
+}

@@ -1,5 +1,10 @@
 {
   "used_urls": [
+    "https://openai.com/index/helping-websites-express-ai-training-preferences",
+    "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+    "https://openai.com/index/fair-use-benefits-everyone",
+    "https://openai.com/index/credit-saison",
+    "https://www.cncf.io/blog/2026/10/27/opentelemetry-powered-distributed-tracing-and-kubernetes-events-in-openchoreo/",
     "https://www.cncf.io/blog/2026/10/29/kubecon-cloudnativecon-na-2026-end-user-tab-recommendations-and-tips/",
     "https://www.cncf.io/blog/2026/10/29/the-boundary-problem-in-agentic-ai-is-a-platform-problem/",
     "https://openai.com/index/updated-model-spec",
@@ -194,11 +199,6 @@
     "https://www.cncf.io/blog/2026/09/03/join-ospology-ospo-summit-china-2026-in-shanghai/",
     "https://openai.com/index/legora-financial-statement-review-with-astra",
     "https://openai.com/index/playco-game-prototyping-with-astra",
-    "https://www.cncf.io/blog/2026/09/03/migrating-a-critical-kubernetes-deployment-from-the-default-namespace-without-any-downtime/",
-    "https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/",
-    "https://openai.com/index/atv-big-air-tour",
-    "https://www.cncf.io/blog/2026/09/02/metal3-meets-kubevirtbmc-provisioning-kubevirt-vms-like-bare-metal/",
-    "https://www.cncf.io/blog/2026/08/31/observability-in-kubernetes-from-metrics-to-meaning/",
-    "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety"
+    "https://www.cncf.io/blog/2026/09/03/migrating-a-critical-kubernetes-deployment-from-the-default-namespace-without-any-downtime/"
   ]
 }
