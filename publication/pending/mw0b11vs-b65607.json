@@ -1,0 +1,52 @@
+{
+  "id": "mw0b11vs-b65607",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-11-03T06:26:09.736Z",
+  "title": "OpenAI 强化安全激励与开发基础设施",
+  "english": "OpenAI announced higher Security Bug Bounty rewards, with additional bonuses for report quality, researcher loyalty, and priority campaigns. It is also preparing an internal security sprint with Cathedral Systems to test and strengthen defenses using AI. On the developer-platform side, OpenAI described Pando, a Git-compatible backend built for the development scale enabled by Codex. These updates place security research, AI-assisted defense, and source-control scalability in the same operational picture. For cloud-native engineering teams, the relevant question is how security feedback loops and developer infrastructure can remain reliable as AI expands the volume and pace of software development.",
+  "chinese": "OpenAI 同时披露了三项相关动向：提高安全漏洞赏金，并增加报告质量、研究者忠诚度和重点活动奖金；与 Cathedral Systems 准备内部安全冲刺，使用 AI 测试并强化防御；构建了名为 Pando 的 Git 兼容后端，以支持 Codex 所带来的开发规模。这些信息表明，AI 驱动的软件开发扩张会同时提高代码协作、漏洞反馈和防御验证的基础设施要求。",
+  "why_it_matters": "对云原生和 AIOps 团队而言，AI 增加开发吞吐量后，Git 后端、CI/CD、访问控制、漏洞报告分流与安全验证都可能成为规模瓶颈。对 Agent Infra 而言，安全冲刺中使用 AI 也提示需要为智能体建立可审计的测试边界、优先级机制和人工复核流程。职业上，具备开发平台扩展与 AI 安全运营交叉能力的运维开发人员更贴近这类需求。",
+  "interview_expression": "I view AI-assisted development as an infrastructure and security scaling problem, not only a productivity improvement. I would connect developer-platform capacity with auditable security testing and a clear vulnerability-feedback process.",
+  "vocabulary": [
+    {
+      "term": "bug bounty",
+      "meaning": "漏洞赏金计划，组织向独立安全研究人员支付奖励以发现并报告漏洞。",
+      "example": "OpenAI is raising Security Bug Bounty rewards for independent security researchers."
+    },
+    {
+      "term": "security sprint",
+      "meaning": "安全冲刺，在集中周期内进行安全测试、修复或防御强化的工作安排。",
+      "example": "OpenAI is preparing an internal security sprint to test and strengthen its defenses using AI."
+    },
+    {
+      "term": "Git-compatible backend",
+      "meaning": "与 Git 协议或工作方式兼容的后端系统，可承载代码版本管理相关操作。",
+      "example": "Pando is a Git-compatible backend designed for the scale of development that Codex makes possible."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "Rewarding defenders with bigger bug bounties",
+      "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+      "published_at": "2026-11-02T18:00:00.000Z",
+      "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Preparing our next security sprint to harden OpenAI",
+      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "published_at": "2026-11-02T18:00:00.000Z",
+      "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Scaling Git at OpenAI",
+      "url": "https://openai.com/index/scaling-git-at-openai",
+      "published_at": "2026-11-02T15:30:00.000Z",
+      "summary": "How OpenAI built Pando, a Git-compatible backend designed for the scale of development that Codex makes possible."
+    }
+  ],
+  "telegram_message_id": 285
+}

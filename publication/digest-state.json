@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+    "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+    "https://openai.com/index/scaling-git-at-openai",
+    "https://openai.com/index/grid-protectors-program",
+    "https://www.cncf.io/blog/2026/11/02/the-linkerd-story-the-people-behind-the-service-mesh-a-new-documentary-premieres-at-kubecon-cloudnativecon-north-america-2026/",
+    "https://openai.com/index/lifeval",
     "https://openai.com/index/helping-websites-express-ai-training-preferences",
     "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
     "https://openai.com/index/fair-use-benefits-everyone",
@@ -193,12 +199,6 @@
     "https://www.cncf.io/blog/2026/09/04/cpu-gpu-why-ai-platform-engineering-is-a-heterogeneous-infrastructure-problem/",
     "https://www.cncf.io/blog/2026/09/04/kubernetes-isnt-new-but-ai-makes-it-scary-again/",
     "https://openai.com/index/gpt-6-astra",
-    "https://openai.com/index/safety-overview-gpt-6-astra",
-    "https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/",
-    "https://openai.com/index/daybreak-for-frontline-defenders",
-    "https://www.cncf.io/blog/2026/09/03/join-ospology-ospo-summit-china-2026-in-shanghai/",
-    "https://openai.com/index/legora-financial-statement-review-with-astra",
-    "https://openai.com/index/playco-game-prototyping-with-astra",
-    "https://www.cncf.io/blog/2026/09/03/migrating-a-critical-kubernetes-deployment-from-the-default-namespace-without-any-downtime/"
+    "https://openai.com/index/safety-overview-gpt-6-astra"
   ]
 }
