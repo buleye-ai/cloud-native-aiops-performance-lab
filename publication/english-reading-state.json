@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 194,
+  "next_lesson": 195,
   "deliveries": {
-    "2026-08-04:evening": {
-      "lesson": 14,
-      "level": "A2",
-      "topic": "saving a little money each week",
-      "telegram_message_id": 30,
-      "sent_at": "2026-08-03T18:59:18.486Z"
-    },
     "2026-08-04:morning": {
       "lesson": 15,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "A calm morning routine",
       "telegram_message_id": 289,
       "sent_at": "2026-11-04T06:37:53.307Z"
+    },
+    "2026-11-05:evening": {
+      "lesson": 194,
+      "level": "B1",
+      "topic": "Saving money each week",
+      "telegram_message_id": 290,
+      "sent_at": "2026-11-04T19:59:37.243Z"
     }
   }
 }
