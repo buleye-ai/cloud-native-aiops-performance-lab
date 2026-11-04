@@ -1,5 +1,10 @@
 {
   "used_urls": [
+    "https://www.cncf.io/blog/2026/11/03/openkruise-agents-v0-6-0-leaping-ahead-in-agent-sandbox-security-and-automation/",
+    "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+    "https://openai.com/index/cisco-cyber",
+    "https://openai.com/index/heimstaden",
+    "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
     "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
     "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
     "https://openai.com/index/scaling-git-at-openai",
@@ -194,11 +199,6 @@
     "https://www.cncf.io/blog/2026/09/07/handling-vulnerability-reports-recipe-card/",
     "https://openai.com/index/supporting-independent-journalism-in-ukraine",
     "https://openai.com/index/an-alien-mind",
-    "https://openai.com/index/research-acceleration-view-inside-openai",
-    "https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/",
-    "https://www.cncf.io/blog/2026/09/04/cpu-gpu-why-ai-platform-engineering-is-a-heterogeneous-infrastructure-problem/",
-    "https://www.cncf.io/blog/2026/09/04/kubernetes-isnt-new-but-ai-makes-it-scary-again/",
-    "https://openai.com/index/gpt-6-astra",
-    "https://openai.com/index/safety-overview-gpt-6-astra"
+    "https://openai.com/index/research-acceleration-view-inside-openai"
   ]
 }
