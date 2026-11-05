@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 196,
+  "next_lesson": 197,
   "deliveries": {
-    "2026-08-05:evening": {
-      "lesson": 16,
-      "level": "A2",
-      "topic": "a simple idea from science",
-      "telegram_message_id": 33,
-      "sent_at": "2026-08-04T18:19:15.885Z"
-    },
     "2026-08-05:morning": {
       "lesson": 17,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "Planning a productive morning",
       "telegram_message_id": 292,
       "sent_at": "2026-11-05T06:58:24.851Z"
+    },
+    "2026-11-06:evening": {
+      "lesson": 196,
+      "level": "B1",
+      "topic": "A simple idea from science",
+      "telegram_message_id": 293,
+      "sent_at": "2026-11-05T20:14:44.680Z"
     }
   }
 }
