@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://openai.com/index/openai-to-acquire-pierre",
+    "https://www.cncf.io/blog/2026/11/04/openshell-on-kubernetes-a-guide-for-platform-engineers/",
+    "https://openai.com/index/a-thousand-fewer-paths-to-root",
+    "https://openai.com/index/daybreak-red-aws-govcloud",
+    "https://openai.com/index/introducing-images-2-6",
+    "https://openai.com/index/devrev-enterprise-self-service",
     "https://www.cncf.io/blog/2026/11/03/openkruise-agents-v0-6-0-leaping-ahead-in-agent-sandbox-security-and-automation/",
     "https://openai.com/index/accelerating-engineering-for-the-physical-world",
     "https://openai.com/index/cisco-cyber",
@@ -193,12 +199,6 @@
     "https://openai.com/index/introducing-chatgpt-images-2-5",
     "https://www.cncf.io/blog/2026/09/08/distributed-tracing-for-ci-pipelines-without-touching-a-single-workflow-file/",
     "https://www.cncf.io/announcements/2026/09/07/cloud-native-computing-foundation-announces-karmada-graduation/",
-    "https://www.cncf.io/announcements/2026/09/07/cncf-welcomes-new-silver-members-as-enterprises-scale-ai-from-training-to-inference/",
-    "https://www.cncf.io/announcements/2026/09/07/china-merchants-bank-wins-cncf-end-user-case-study-contest-for-unifying-ai-training-and-inference-on-kubernetes/",
-    "https://www.cncf.io/announcements/2026/09/07/cncf-and-slashdata-report-highlights-chinas-cloud-native-momentum-as-ai-moves-to-inference/",
-    "https://www.cncf.io/blog/2026/09/07/handling-vulnerability-reports-recipe-card/",
-    "https://openai.com/index/supporting-independent-journalism-in-ukraine",
-    "https://openai.com/index/an-alien-mind",
-    "https://openai.com/index/research-acceleration-view-inside-openai"
+    "https://www.cncf.io/announcements/2026/09/07/cncf-welcomes-new-silver-members-as-enterprises-scale-ai-from-training-to-inference/"
   ]
 }
