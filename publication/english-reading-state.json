@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 197,
+  "next_lesson": 198,
   "deliveries": {
-    "2026-08-05:morning": {
-      "lesson": 17,
-      "level": "A2",
-      "topic": "talking about the weather",
-      "telegram_message_id": 35,
-      "sent_at": "2026-08-05T10:16:09.728Z"
-    },
     "2026-08-06:evening": {
       "lesson": 18,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "A simple idea from science",
       "telegram_message_id": 293,
       "sent_at": "2026-11-05T20:14:44.680Z"
+    },
+    "2026-11-06:morning": {
+      "lesson": 197,
+      "level": "B1",
+      "topic": "Talking about the weather",
+      "telegram_message_id": 295,
+      "sent_at": "2026-11-06T06:57:31.289Z"
     }
   }
 }
