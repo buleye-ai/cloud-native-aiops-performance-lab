@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 198,
+  "next_lesson": 199,
   "deliveries": {
-    "2026-08-06:evening": {
-      "lesson": 18,
-      "level": "A2",
-      "topic": "learning from a small mistake",
-      "telegram_message_id": 36,
-      "sent_at": "2026-08-05T18:10:48.210Z"
-    },
     "2026-08-06:morning": {
       "lesson": 19,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "Talking about the weather",
       "telegram_message_id": 295,
       "sent_at": "2026-11-06T06:57:31.289Z"
+    },
+    "2026-11-07:evening": {
+      "lesson": 198,
+      "level": "B1",
+      "topic": "Learning from a small mistake",
+      "telegram_message_id": 296,
+      "sent_at": "2026-11-06T19:39:45.616Z"
     }
   }
 }
