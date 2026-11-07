@@ -1,5 +1,9 @@
 {
   "used_urls": [
+    "https://www.cncf.io/blog/2026/11/06/faster-llm-inference-startup-what-you-need-to-know/",
+    "https://openai.com/index/partnering-with-hacktron",
+    "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+    "https://openai.com/ads/customers/flipsnack",
     "https://openai.com/index/cultfit-builds-with-codex",
     "https://openai.com/index/australian-universities-ai-native-graduates",
     "https://www.cncf.io/blog/2026/11/05/kpt-v1-0-0-is-released/",
@@ -195,10 +199,6 @@
     "https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/",
     "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
     "https://openai.com/index/ai-policy-window",
-    "https://www.cncf.io/blog/2026/09/09/whose-gpus-are-these-anyway-secure-self-service-metrics-for-multi-tenant-kubernetes/",
-    "https://openai.com/index/gpt-6-astra-next-generation-work",
-    "https://www.cncf.io/blog/2026/09/09/how-cloud-native-goes-ai-native/",
-    "https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/",
-    "https://openai.com/index/codex-quantum-computing-experiments"
+    "https://www.cncf.io/blog/2026/09/09/whose-gpus-are-these-anyway-secure-self-service-metrics-for-multi-tenant-kubernetes/"
   ]
 }

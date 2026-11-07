@@ -1,0 +1,52 @@
+{
+  "id": "mw5zafn0-243a62",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-11-07T05:44:09.132Z",
+  "title": "缩短 LLM 推理启动时间：从实例启动到可服务请求",
+  "english": "The CNCF Blog explains that adding an inference replica does not create usable capacity immediately. The new instance must become capable of serving requests, and the path from process startup to the first generated response may include loading model weights, initializing GPU resources, compiling kernels, and capturing execution state. For cloud-native platform engineers, this highlights an important distinction between replica count and effective inference capacity. Autoscaling decisions based only on process or pod readiness may therefore fail to reflect actual user-facing availability. Startup behavior should be treated as part of inference platform design, especially when operating latency-sensitive services and evaluating the operational impact of scale-out events.",
+  "chinese": "CNCF Blog指出，增加一个推理副本只有在新实例能够处理请求后，才会真正形成可用容量。从进程启动到生成第一个响应，LLM服务器可能需要加载权重、初始化GPU资源、编译内核并完成执行捕获等步骤。对云原生平台而言，副本数量不等于即时可用的推理容量；仅依据进程或实例启动状态进行扩缩容判断，可能无法准确反映面向用户的服务能力。",
+  "why_it_matters": "这直接关联云原生推理平台的扩缩容、就绪状态设计和容量度量，也涉及AIOps对启动过程与服务可用性的观测。对资深运维开发而言，需要把模型加载和GPU初始化等启动阶段纳入推理服务的运行分析，而不能只关注副本数量。",
+  "interview_expression": "I distinguish replica count from effective serving capacity because an inference instance may still be loading weights or initializing GPU resources. In an autoscaling design, I would account for this startup path when evaluating readiness and user-facing latency.",
+  "vocabulary": [
+    {
+      "term": "effective capacity",
+      "meaning": "有效容量",
+      "example": "Replica count does not always represent effective capacity during inference scale-out."
+    },
+    {
+      "term": "GPU initialization",
+      "meaning": "GPU初始化",
+      "example": "GPU initialization can be part of the time required before an inference server serves requests."
+    },
+    {
+      "term": "scale-out",
+      "meaning": "扩容",
+      "example": "A scale-out event may create infrastructure capacity before it creates usable inference capacity."
+    }
+  ],
+  "sources": [
+    {
+      "source": "CNCF Blog",
+      "title": "Faster LLM inference startup: What you need to know",
+      "url": "https://www.cncf.io/blog/2026/11/06/faster-llm-inference-startup-what-you-need-to-know/",
+      "published_at": "2026-11-06T12:00:00.000Z",
+      "summary": "Adding an inference replica creates capacity only after the new instance can serve requests. Between starting a process and generating a response, an LLM server may need to load weights, initialize GPU resources, compile kernels, capture..."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "url": "https://openai.com/index/partnering-with-hacktron",
+      "published_at": "2026-11-06T08:00:00.000Z",
+      "summary": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "published_at": "2026-11-06T00:00:00.000Z",
+      "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science."
+    }
+  ],
+  "telegram_message_id": 297
+}
