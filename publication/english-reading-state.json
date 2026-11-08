@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 201,
+  "next_lesson": 202,
   "deliveries": {
-    "2026-08-07:evening": {
-      "lesson": 21,
-      "level": "A2",
-      "topic": "a small lesson from travel",
-      "telegram_message_id": 41,
-      "sent_at": "2026-08-07T15:39:24.994Z"
-    },
     "2026-08-08:evening": {
       "lesson": 22,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "cooking an easy dinner",
       "telegram_message_id": 299,
       "sent_at": "2026-11-07T17:50:40.294Z"
+    },
+    "2026-11-08:morning": {
+      "lesson": 201,
+      "level": "B1",
+      "topic": "Choosing useful items at a shop",
+      "telegram_message_id": 301,
+      "sent_at": "2026-11-08T06:14:34.932Z"
     }
   }
 }
