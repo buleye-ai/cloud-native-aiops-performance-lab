@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 203,
+  "next_lesson": 204,
   "deliveries": {
-    "2026-08-09:morning": {
-      "lesson": 23,
-      "level": "A2",
-      "topic": "making plans with family",
-      "telegram_message_id": 44,
-      "sent_at": "2026-08-09T04:49:05.337Z"
-    },
     "2026-08-09:evening": {
       "lesson": 24,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "Sleep and learning",
       "telegram_message_id": 302,
       "sent_at": "2026-11-08T18:03:31.213Z"
+    },
+    "2026-11-09:morning": {
+      "lesson": 203,
+      "level": "B1",
+      "topic": "Making plans with family",
+      "telegram_message_id": 304,
+      "sent_at": "2026-11-09T06:47:46.575Z"
     }
   }
 }
