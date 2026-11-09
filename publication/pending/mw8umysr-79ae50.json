@@ -1,0 +1,38 @@
+{
+  "id": "mw8umysr-79ae50",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-11-09T05:57:14.283Z",
+  "title": "Lima v2.3 扩展 Windows 原生运行与 Linux 网络能力",
+  "english": "Lima v2.3 was released on November 6. The release enables Lima to run on Windows without extra dependencies, with virtual machines started through the same Host Compute System. It also follows v2.2, which added support for Windows guests in July. According to the CNCF Blog, v2.3 includes VMnet on Linux and a menu-based TUI. For senior operations engineers, this release is relevant to cross-platform local VM workflows and developer environment standardization.",
+  "chinese": "CNCF Blog 表示，Lima v2.3 已于 11 月 6 日发布。该版本让 Lima 能够在 Windows 上无需额外依赖运行，虚拟机通过同一套 Host Compute System 启动。此前的 v2.2 已在 7 月增加 Windows guest 支持；v2.3 还包含 Linux 上的 VMnet 与菜单式 TUI。",
+  "why_it_matters": "这项更新与云原生开发和运维环境的跨平台一致性直接相关。对于负责开发者平台、容器化本地环境或自动化测试基础设施的资深运维开发人员，Windows 原生运行能力可能降低环境准备中的额外依赖；Linux VMnet 与菜单式 TUI 则涉及虚拟机网络配置和本地操作体验。来源未说明其对 Kubernetes、AIOps 或 Agent Infra 的直接集成，因此不应作进一步推断。",
+  "interview_expression": "I pay close attention to cross-platform infrastructure tooling because it affects how consistently teams can provision local environments. When evaluating a release, I separate documented capabilities from assumptions about downstream Kubernetes or AIOps integration.",
+  "vocabulary": [
+    {
+      "term": "native",
+      "meaning": "原生的；无需额外兼容层或依赖即可在目标平台运行的",
+      "example": "Lima v2.3 runs natively on Windows without extra dependencies."
+    },
+    {
+      "term": "virtual machine",
+      "meaning": "虚拟机（VM），由软件模拟出的计算环境",
+      "example": "The platform starts virtual machines through the Host Compute System."
+    },
+    {
+      "term": "dependency",
+      "meaning": "依赖项，软件运行或构建所需要的其他组件",
+      "example": "Removing extra dependencies can simplify local environment setup."
+    }
+  ],
+  "sources": [
+    {
+      "source": "CNCF Blog",
+      "title": "Lima v2.3: Native on Windows, VMnet on Linux, and menu TUI",
+      "url": "https://www.cncf.io/blog/2026/11/08/lima-v2-3-native-on-windows-vmnet-on-linux-and-menu-tui/",
+      "published_at": "2026-11-08T12:30:00.000Z",
+      "summary": "Back in July with v2.2, we added support for Windows guests. On November 6, we shipped v2.3 of Lima and now it runs without extra dependencies on Windows: VMs start through the same Host Compute System..."
+    }
+  ],
+  "telegram_message_id": 303
+}

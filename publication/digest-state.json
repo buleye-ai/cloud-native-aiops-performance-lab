@@ -1,5 +1,6 @@
 {
   "used_urls": [
+    "https://www.cncf.io/blog/2026/11/08/lima-v2-3-native-on-windows-vmnet-on-linux-and-menu-tui/",
     "https://www.cncf.io/blog/2026/11/07/we-organized-sustainability-month-heres-what-we-learned-%f0%9f%8c%b1/",
     "https://www.cncf.io/blog/2026/11/06/faster-llm-inference-startup-what-you-need-to-know/",
     "https://openai.com/index/partnering-with-hacktron",
@@ -198,7 +199,6 @@
     "https://openai.com/index/introducing-chatgpt-financial-services",
     "https://openai.com/index/expanding-ai-access-us-government",
     "https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/",
-    "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
-    "https://openai.com/index/ai-policy-window"
+    "https://openai.com/index/paul-christiano-joins-openai-foundation-board"
   ]
 }
