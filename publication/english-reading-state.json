@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 205,
+  "next_lesson": 206,
   "deliveries": {
-    "2026-08-10:morning": {
-      "lesson": 25,
-      "level": "A2",
-      "topic": "morning routine",
-      "telegram_message_id": 46,
-      "sent_at": "2026-08-10T05:12:19.217Z"
-    },
     "2026-08-10:evening": {
       "lesson": 26,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "A surprising fact about nature",
       "telegram_message_id": 305,
       "sent_at": "2026-11-09T22:41:00.875Z"
+    },
+    "2026-11-10:morning": {
+      "lesson": 205,
+      "level": "B1",
+      "topic": "A calm morning routine",
+      "telegram_message_id": 307,
+      "sent_at": "2026-11-10T07:27:44.267Z"
     }
   }
 }
