@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+    "https://www.cncf.io/blog/2026/11/09/new-research-virtual-machines-remain-central-to-cloud-native-infrastructure-as-ai-workloads-evolve/",
+    "https://openai.com/index/control-room",
+    "https://www.cncf.io/blog/2026/11/09/run-linux-applications-in-hypervisor-isolated-micro-vms-with-hyperlight/",
+    "https://openai.com/index/coderabbit-codex-daybreak",
+    "https://openai.com/index/kuken",
     "https://www.cncf.io/blog/2026/11/08/lima-v2-3-native-on-windows-vmnet-on-linux-and-menu-tui/",
     "https://www.cncf.io/blog/2026/11/07/we-organized-sustainability-month-heres-what-we-learned-%f0%9f%8c%b1/",
     "https://www.cncf.io/blog/2026/11/06/faster-llm-inference-startup-what-you-need-to-know/",
@@ -193,12 +199,6 @@
     "https://openai.com/index/scaling-storage-one-billion-users-part-one",
     "https://openai.com/index/introducing-gpt-live-1-in-the-api",
     "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/",
-    "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
-    "https://openai.com/index/put-data-to-work",
-    "https://www.cncf.io/blog/2026/09/10/kubernetes-disaster-recovery-guidance-from-three-reproducible-failure-scenarios/",
-    "https://openai.com/index/introducing-chatgpt-financial-services",
-    "https://openai.com/index/expanding-ai-access-us-government",
-    "https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/",
-    "https://openai.com/index/paul-christiano-joins-openai-foundation-board"
+    "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials"
   ]
 }
