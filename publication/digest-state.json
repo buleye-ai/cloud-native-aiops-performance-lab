@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://openai.com/index/gilbert-tobin-sam-nickless",
+    "https://openai.com/index/chatgpt-plus-for-veterans",
+    "https://www.cncf.io/announcements/2026/11/10/cncf-welcomes-twelve-new-members-as-organizations-look-to-run-ai-agents-on-open-sovereign-infrastructure/",
+    "https://www.cncf.io/announcements/2026/11/10/cncf-welcomes-coreweave-as-a-platinum-member-to-further-open-source-ai-infrastructure/",
+    "https://www.cncf.io/blog/2026/11/10/open-cluster-management-ocm-becomes-a-cncf-incubating-project/",
+    "https://www.cncf.io/announcements/2026/11/10/cncf-welcomes-vultr-as-a-platinum-member-to-advance-open-and-sovereign-cloud-infrastructure-for-ai/",
     "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
     "https://www.cncf.io/blog/2026/11/09/new-research-virtual-machines-remain-central-to-cloud-native-infrastructure-as-ai-workloads-evolve/",
     "https://openai.com/index/control-room",
@@ -193,12 +199,6 @@
     "https://openai.com/index/fyxer",
     "https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/",
     "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-    "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/",
-    "https://openai.com/index/cognition-devin-testing-with-astra",
-    "https://www.cncf.io/blog/2026/09/11/building-a-reliable-cloud-native-foundation-for-distributed-ai-training/",
-    "https://openai.com/index/scaling-storage-one-billion-users-part-one",
-    "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-    "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/",
-    "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials"
+    "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/"
   ]
 }

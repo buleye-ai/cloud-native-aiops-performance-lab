@@ -1,0 +1,52 @@
+{
+  "id": "mwbpd8a0-80f85c",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-11-11T05:53:00.456Z",
+  "title": "CNCF推动开放主权AI基础设施，OCM进入孵化阶段",
+  "english": "CNCF announced new members as organizations seek to run AI agents on open, sovereign infrastructure with stronger security, visibility, and control. CoreWeave joined as a Platinum Member to support open source, cloud native infrastructure for production AI at scale. Vultr also became a Platinum Member, emphasizing open interoperability for global AI factory infrastructure. Meanwhile, Open Cluster Management became a CNCF Incubating Project after a Technical Oversight Committee vote. OCM is designed to simplify Kubernetes cluster management across cloud and on-premises environments. Separately, OpenAI highlighted AI adoption in legal services and reported that more than 20,000 veterans and transitioning service members claimed a free year of ChatGPT Plus for civilian-career preparation.",
+  "chinese": "本轮信号集中在生产级AI基础设施的开放性、主权控制与多集群运营。CNCF新增成员的表述强调：组织希望在开放、主权基础设施上运行AI Agent，并获得更强的安全性、可见性和控制力。CoreWeave与Vultr成为CNCF白金会员，分别关联生产级AI的云原生开源基础设施，以及AI工厂基础设施的开放互操作性。与此同时，OCM经CNCF技术监督委员会投票成为孵化项目，目标是简化跨云、本地环境的Kubernetes集群管理。OpenAI的两项案例则显示，AI正在进入法律业务与职业转型支持场景。",
+  "why_it_matters": "对云原生与AIOps团队而言，AI Agent进入生产环境会把多集群治理、安全边界、可观测性和基础设施控制权推到核心位置。OCM的孵化进展值得关注，因为跨云与本地Kubernetes管理是承载分布式AI工作负载的直接运维问题。职业上，资深运维开发可强化Kubernetes多集群管理、平台工程、可观测性及面向AI工作负载的开放互操作能力。",
+  "interview_expression": "I focus on operating AI workloads with strong security, visibility, and control across cloud and on-premises Kubernetes environments. I see multi-cluster management and open interoperability as important capabilities for production AI platforms.",
+  "vocabulary": [
+    {
+      "term": "sovereign infrastructure",
+      "meaning": "主权基础设施，强调组织对基础设施、数据与运行控制权的掌控。",
+      "example": "Organizations are looking to run AI agents on open, sovereign infrastructure."
+    },
+    {
+      "term": "interoperability",
+      "meaning": "互操作性，指不同系统或平台能够协同工作和交换信息的能力。",
+      "example": "Open interoperability can support AI factory infrastructure at global scale."
+    },
+    {
+      "term": "incubating project",
+      "meaning": "孵化项目，指进入CNCF孵化阶段的开源项目。",
+      "example": "Open Cluster Management became a CNCF Incubating Project."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "Gilbert + Tobin rethinks the business of law with AI",
+      "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "summary": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "ChatGPT Plus for veterans and servicemembers",
+      "url": "https://openai.com/index/chatgpt-plus-for-veterans",
+      "published_at": "2026-11-11T08:00:00.000Z",
+      "summary": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "CNCF Welcomes Twelve New Members as Organizations Look to Run AI Agents on Open, Sovereign Infrastructure",
+      "url": "https://www.cncf.io/announcements/2026/11/10/cncf-welcomes-twelve-new-members-as-organizations-look-to-run-ai-agents-on-open-sovereign-infrastructure/",
+      "published_at": "2026-11-10T16:00:00.000Z",
+      "summary": "Organizations join the cloud native community to strengthen security, visibility, and control for production AI Key Highlights KUBECON + CLOUDNATIVECON NORTH AMERICA, SALT LAKE CITY – November 10, 2026 – The Cloud Native Computing Foundation® (CNCF®),..."
+    }
+  ],
+  "telegram_message_id": 309
+}
