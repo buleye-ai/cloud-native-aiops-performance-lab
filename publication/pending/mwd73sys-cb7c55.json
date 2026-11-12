@@ -1,0 +1,52 @@
+{
+  "id": "mwd73sys-cb7c55",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-11-12T06:57:19.973Z",
+  "title": "云原生平台与 AI 基础设施简报",
+  "english": "The supplied CNCF reports highlight platform engineering, AI infrastructure, and end-user collaboration. Meta’s case study describes a GitOps platform using Argo CD and Kargo to streamline application delivery across 100 Kubernetes clusters supporting AI research and inference; the headline says deployments accelerated from hours to minutes. CNCF also announced a User Group Program for long-lived collaboration around industry verticals or problem domains, and welcomed Adyen as a Platinum End User Member. Another CNCF article introduces OpenShell on Kubernetes for platform engineers, noting that agents may run shells, install packages, read files, and open network connections. OpenAI’s JioStar interview is described as covering AI discovery at 500 million-user scale, with lessons on evaluations, guardrails, and production deployment. These are source-reported claims, not independent validation.",
+  "chinese": "本次来源聚焦平台工程、AI 基础设施和终端用户协作。CNCF 的 Meta 案例称，Meta 使用 Argo CD 与 Kargo 构建 GitOps 平台，以改进支持 AI 研究与推理的 100 个 Kubernetes 集群上的应用交付；标题称部署时间从数小时缩短到数分钟。CNCF 还宣布启动围绕行业领域或问题域开展长期协作的 User Group Program，并宣布 Adyen 成为 Platinum End User Member。关于 OpenShell 的文章指出，AI Agent 可能会运行 shell、安装软件包、读取文件并建立网络连接。OpenAI 对 JioStar 首席架构师的访谈介绍了 5 亿用户规模下的 AI discovery，并提及评测、护栏和生产部署经验。以上为所给来源的表述，不构成独立验证。",
+  "why_it_matters": "对云原生平台团队而言，Meta 案例展示了 GitOps 在大规模 Kubernetes 应用交付中的实践方向；OpenShell 文章所描述的 Agent 能力提示，运行时隔离、权限边界和网络控制值得纳入 Agent Infra 设计。来源提及的评测与护栏也与 AIOps 将 AI 功能投入生产相关。参与 CNCF 用户协作可帮助资深工程师交流行业实践，并拓展平台工程影响力。",
+  "interview_expression": "I focus on making AI infrastructure reliable in production through clear deployment workflows, evaluation, and guardrails. In Kubernetes environments, I also consider how to constrain agent access to shells, files, and network connections.",
+  "vocabulary": [
+    {
+      "term": "streamline",
+      "meaning": "简化；提高流程效率",
+      "example": "The platform uses GitOps to streamline application delivery."
+    },
+    {
+      "term": "guardrail",
+      "meaning": "护栏；用于约束系统行为的控制措施",
+      "example": "Guardrails can help limit an AI agent's actions."
+    },
+    {
+      "term": "production deployment",
+      "meaning": "生产环境部署",
+      "example": "The team evaluated the model before production deployment."
+    }
+  ],
+  "sources": [
+    {
+      "source": "CNCF Blog",
+      "title": "Introducing CNCF User Groups: Long-lived homes for End User collaboration",
+      "url": "https://www.cncf.io/blog/2026/11/11/introducing-cncf-user-groups-long-lived-homes-for-end-user-collaboration/",
+      "published_at": "2026-11-11T16:41:17.000Z",
+      "summary": "The CNCF End User Community is launching its User Group Program at KubeCon + CloudNativeCon North America. These are long-lived groups, each built around an industry vertical or problem domain, that serves the common need of..."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "Meta Wins CNCF End User Case Study Contest for Accelerating AI Infrastructure Deployments From Hours to Minutes",
+      "url": "https://www.cncf.io/announcements/2026/11/11/meta-wins-cncf-end-user-case-study-contest-for-accelerating-ai-infrastructure-deployments-from-hours-to-minutes/",
+      "published_at": "2026-11-11T16:00:00.000Z",
+      "summary": "Using Argo CD and Kargo, Meta is building a GitOps platform to streamline application delivery across 100 Kubernetes clusters supporting AI research and inference Key Highlights SALT LAKE CITY – KubeCon + CloudNativeCon North America 2026..."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "CNCF Welcomes Adyen as Platinum End User Member to Advance Open Source Financial Infrastructure",
+      "url": "https://www.cncf.io/announcements/2026/11/11/cncf-welcomes-adyen-as-platinum-end-user-member-to-advance-open-source-financial-infrastructure/",
+      "published_at": "2026-11-11T16:00:00.000Z",
+      "summary": "Operating over 100 Kubernetes clusters across €1.39T in volume, Adyen brings production-scale fintech expertise to CNCF governance and open source projects Key Highlights KUBECON + CLOUDNATIVECON NORTH AMERICA, SALT LAKE CITY – November 11, 2026 –..."
+    }
+  ],
+  "telegram_message_id": 312
+}

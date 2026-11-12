@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://www.cncf.io/blog/2026/11/11/introducing-cncf-user-groups-long-lived-homes-for-end-user-collaboration/",
+    "https://www.cncf.io/announcements/2026/11/11/meta-wins-cncf-end-user-case-study-contest-for-accelerating-ai-infrastructure-deployments-from-hours-to-minutes/",
+    "https://www.cncf.io/announcements/2026/11/11/cncf-welcomes-adyen-as-platinum-end-user-member-to-advance-open-source-financial-infrastructure/",
+    "https://www.cncf.io/blog/2026/11/11/openshell-on-kubernetes-a-guide-for-platform-engineers/",
+    "https://www.cncf.io/blog/2026/11/11/platform-engineering-needs-to-become-more-humanand-less/",
+    "https://openai.com/index/jiostar-vijay-seshadri",
     "https://openai.com/index/gilbert-tobin-sam-nickless",
     "https://openai.com/index/chatgpt-plus-for-veterans",
     "https://www.cncf.io/announcements/2026/11/10/cncf-welcomes-twelve-new-members-as-organizations-look-to-run-ai-agents-on-open-sovereign-infrastructure/",
@@ -193,12 +199,6 @@
     "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
     "https://www.cncf.io/blog/2026/09/16/running-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend/",
     "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/",
-    "https://www.cncf.io/blog/2026/09/15/what-i-learned-organizing-kcd-lima-2026/",
-    "https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/",
-    "https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/",
-    "https://openai.com/index/fyxer",
-    "https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/",
-    "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-    "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/"
+    "https://www.cncf.io/blog/2026/09/15/what-i-learned-organizing-kcd-lima-2026/"
   ]
 }
