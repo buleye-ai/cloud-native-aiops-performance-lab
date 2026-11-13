@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 211,
+  "next_lesson": 212,
   "deliveries": {
-    "2026-08-13:morning": {
-      "lesson": 31,
-      "level": "A2",
-      "topic": "staying focused in a busy office",
-      "telegram_message_id": 55,
-      "sent_at": "2026-08-13T05:53:11.472Z"
-    },
     "2026-08-13:evening": {
       "lesson": 32,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "Learning from a small mistake",
       "telegram_message_id": 314,
       "sent_at": "2026-11-12T20:24:01.749Z"
+    },
+    "2026-11-13:morning": {
+      "lesson": 211,
+      "level": "B1",
+      "topic": "staying focused at work",
+      "telegram_message_id": 316,
+      "sent_at": "2026-11-13T06:54:27.551Z"
     }
   }
 }
