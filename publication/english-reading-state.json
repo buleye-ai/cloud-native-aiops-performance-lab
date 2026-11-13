@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 212,
+  "next_lesson": 213,
   "deliveries": {
-    "2026-08-13:evening": {
-      "lesson": 32,
-      "level": "A2",
-      "topic": "cooking an easy dinner",
-      "telegram_message_id": 56,
-      "sent_at": "2026-08-13T15:44:04.620Z"
-    },
     "2026-08-14:morning": {
       "lesson": 33,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "staying focused at work",
       "telegram_message_id": 316,
       "sent_at": "2026-11-13T06:54:27.551Z"
+    },
+    "2026-11-14:evening": {
+      "lesson": 212,
+      "level": "B1",
+      "topic": "Cooking an easy dinner",
+      "telegram_message_id": 317,
+      "sent_at": "2026-11-13T19:59:20.122Z"
     }
   }
 }
