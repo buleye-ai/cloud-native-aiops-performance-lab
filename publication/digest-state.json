@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://openai.com/business/customer-stories/amplitude",
+    "https://www.cncf.io/announcements/2026/11/12/cncf-recognizes-cloud-native-champions-in-2026-community-awards/",
+    "https://www.cncf.io/blog/2026/11/12/gang-scheduling-and-topology-aware-placement-for-ai-training-in-kubernetes/",
+    "https://openai.com/business/customer-stories/gondola",
+    "https://openai.com/business/customer-stories/holidays-extras-codex",
+    "https://openai.com/index/children-first-declaration",
     "https://www.cncf.io/blog/2026/11/11/introducing-cncf-user-groups-long-lived-homes-for-end-user-collaboration/",
     "https://www.cncf.io/announcements/2026/11/11/meta-wins-cncf-end-user-case-study-contest-for-accelerating-ai-infrastructure-deployments-from-hours-to-minutes/",
     "https://www.cncf.io/announcements/2026/11/11/cncf-welcomes-adyen-as-platinum-end-user-member-to-advance-open-source-financial-infrastructure/",
@@ -193,12 +199,6 @@
     "https://openai.com/index/astra-for-law",
     "https://openai.com/index/unlocking-new-ways-of-working",
     "https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/",
-    "https://openai.com/index/model-misalignment-reporting-framework",
-    "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
-    "https://openai.com/index/reimagining-advertising-with-ai",
-    "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
-    "https://www.cncf.io/blog/2026/09/16/running-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend/",
-    "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/",
-    "https://www.cncf.io/blog/2026/09/15/what-i-learned-organizing-kcd-lima-2026/"
+    "https://openai.com/index/model-misalignment-reporting-framework"
   ]
 }

@@ -1,0 +1,52 @@
+{
+  "id": "mwel8j5m-51eb2b",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-11-13T06:20:41.339Z",
+  "title": "Kubernetes 面向 AI 训练的调度能力成为关键基础设施议题",
+  "english": "A CNCF Blog post explains that distributed AI training workloads create scheduling requirements that Kubernetes' built-in scheduler cannot meet. Kubernetes schedules pods individually and independently, while distributed training requires coordinated placement. The post focuses on gang scheduling and topology-aware placement for AI training in Kubernetes. This signals that AI infrastructure depends not only on model and GPU capacity, but also on workload orchestration that can place related pods on suitable hardware together. For senior operations engineers, scheduling policy, cluster topology, and training-job reliability are becoming central operational concerns.",
+  "chinese": "CNCF 指出，分布式 AI 训练对 Kubernetes 调度提出了内置调度器难以满足的要求。Kubernetes 默认独立地逐个调度 Pod，但训练任务需要协调相关 Pod 的部署位置。该文聚焦两类能力：Gang Scheduling（成组调度）和 Topology-aware Placement（拓扑感知放置）。这意味着 AI 训练平台的有效性不仅取决于模型或硬件资源，也取决于集群能否以正确的方式同时、协调地安置训练工作负载。",
+  "why_it_matters": "对云原生与 AIOps 团队而言，AI 训练工作负载会把调度策略、硬件拓扑和任务可靠性推到平台工程的核心位置。资深运维开发需要能够将 Kubernetes 的 Pod 级调度行为与分布式训练的协同资源需求联系起来，并评估相应调度能力对集群运行和平台设计的影响。",
+  "interview_expression": "I would evaluate AI training infrastructure from both resource capacity and scheduling behavior. In Kubernetes, independently scheduling pods may not satisfy the coordinated placement requirements of distributed training.",
+  "vocabulary": [
+    {
+      "term": "gang scheduling",
+      "meaning": "成组调度；将相互依赖的一组工作负载作为整体进行调度。",
+      "example": "Distributed AI training can require gang scheduling for related pods."
+    },
+    {
+      "term": "topology-aware placement",
+      "meaning": "拓扑感知放置；根据硬件或基础设施拓扑安排工作负载位置。",
+      "example": "Topology-aware placement is discussed for AI training in Kubernetes."
+    },
+    {
+      "term": "distributed training",
+      "meaning": "分布式训练；由多个工作负载协同完成的 AI 训练。",
+      "example": "Distributed training introduces requirements beyond independent pod scheduling."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "url": "https://openai.com/business/customer-stories/amplitude",
+      "published_at": "2026-11-12T20:00:00.000Z",
+      "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "CNCF Recognizes Cloud Native Champions in 2026 Community Awards",
+      "url": "https://www.cncf.io/announcements/2026/11/12/cncf-recognizes-cloud-native-champions-in-2026-community-awards/",
+      "published_at": "2026-11-12T16:00:00.000Z",
+      "summary": "Annual awards honor leaders, maintainers, and documentarians building open source infrastructure Key Highlights KUBECON + CLOUDNATIVECON NORTH AMERICA, SALT LAKE CITY – November 12, 2026 – The Cloud Native Computing Foundation® (CNCF®), which builds sustainable ecosystems..."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "Gang scheduling and topology-aware placement for AI training in Kubernetes",
+      "url": "https://www.cncf.io/blog/2026/11/12/gang-scheduling-and-topology-aware-placement-for-ai-training-in-kubernetes/",
+      "published_at": "2026-11-12T12:00:00.000Z",
+      "summary": "Distributed AI training workloads impose complex scheduling requirements that Kubernetes&#8217;s built-in scheduler can&#8217;t meet. Kubernetes schedules pods individually and independently, but distributed training introduces two requirements that break this model: Pods must land on hardware with..."
+    }
+  ],
+  "telegram_message_id": 315
+}
