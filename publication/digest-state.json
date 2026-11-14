@@ -1,5 +1,8 @@
 {
   "used_urls": [
+    "https://openai.com/index/introducing-chatgpt-wallet",
+    "https://openai.com/business/customer-stories/shield",
+    "https://www.cncf.io/blog/2026/11/10/donating-kuberay-to-cncf/",
     "https://openai.com/business/customer-stories/amplitude",
     "https://www.cncf.io/announcements/2026/11/12/cncf-recognizes-cloud-native-champions-in-2026-community-awards/",
     "https://www.cncf.io/blog/2026/11/12/gang-scheduling-and-topology-aware-placement-for-ai-training-in-kubernetes/",
@@ -196,9 +199,6 @@
     "https://www.cncf.io/blog/2026/09/11/kubecon-cloudnativecon-north-america-2026-your-week-in-salt-lake-city/",
     "https://openai.com/index/cooley-gopublic",
     "https://www.cncf.io/blog/2026/09/17/opentelemetry-everywhere-migrating-a-metrics-platform-at-scale/",
-    "https://openai.com/index/astra-for-law",
-    "https://openai.com/index/unlocking-new-ways-of-working",
-    "https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/",
-    "https://openai.com/index/model-misalignment-reporting-framework"
+    "https://openai.com/index/astra-for-law"
   ]
 }

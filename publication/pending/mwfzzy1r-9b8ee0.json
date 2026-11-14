@@ -1,0 +1,52 @@
+{
+  "id": "mwfzzy1r-9b8ee0",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-11-14T06:01:41.151Z",
+  "title": "云原生与 AI 简报：Agent 支付、IT 工作交接与 KubeRay",
+  "english": "OpenAI introduced ChatGPT Wallet, a way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections. In a separate customer story, Shield uses OpenAI-powered Forge agents to navigate legacy portals and hand off work, allowing IT technicians to focus on issues that require their judgment. The CNCF Blog reports that KubeRay is being donated to the CNCF and describes the PARK stack—PyTorch, AI models, Ray, and Kubernetes—as an emerging de facto open-source standard for production AI. Together, these items point to two operational concerns: defining human approval and protection boundaries for agent actions, and connecting AI workloads to Kubernetes-based infrastructure. The supplied summaries do not specify KubeRay donation terms or implementation details.",
+  "chinese": "OpenAI 介绍了 ChatGPT Wallet，让 ChatGPT Work、Codex 和 dots 中的 Agent 在用户批准及现有银行卡保护措施下完成购买。OpenAI 的 Shield 客户案例称，Forge Agent 可在旧版门户系统中处理工作交接，使 IT 技术人员专注于需要人工判断的问题。CNCF 博客介绍了 KubeRay 捐赠给 CNCF，并称由 PyTorch、AI 模型、Ray 和 Kubernetes 组成的 PARK 技术栈正成为生产级 AI 的事实开源标准。提供的来源摘要没有说明 KubeRay 捐赠的具体条款或实施细节。",
+  "why_it_matters": "对云原生平台团队而言，KubeRay 与 Kubernetes 的结合关系到生产 AI 工作负载的基础设施路径；对 AIOps 和 Agent Infra 团队而言，Agent 执行采购或操作旧系统时，用户授权、既有保护措施与人工判断边界是重要运维考量。对职业发展来说，理解 AI 工作负载编排及 Agent 与企业系统的交接方式，有助于讨论平台可靠性和自动化治理。",
+  "interview_expression": "I focus on how AI agents interact with production systems, including approval boundaries and human handoffs. I also track how Kubernetes-based platforms support AI workloads.",
+  "vocabulary": [
+    {
+      "term": "user approval",
+      "meaning": "用户批准",
+      "example": "The agent completes a purchase only with user approval."
+    },
+    {
+      "term": "legacy portal",
+      "meaning": "旧版门户系统",
+      "example": "The agent navigates the legacy portal to hand off routine work."
+    },
+    {
+      "term": "production AI",
+      "meaning": "生产级人工智能",
+      "example": "The team runs production AI workloads on Kubernetes."
+    }
+  ],
+  "sources": [
+    {
+      "source": "OpenAI News",
+      "title": "Introducing ChatGPT Wallet",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet",
+      "published_at": "2026-11-13T15:00:00.000Z",
+      "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections."
+    },
+    {
+      "source": "OpenAI News",
+      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+      "url": "https://openai.com/business/customer-stories/shield",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment."
+    },
+    {
+      "source": "CNCF Blog",
+      "title": "Donating KubeRay to CNCF",
+      "url": "https://www.cncf.io/blog/2026/11/10/donating-kuberay-to-cncf/",
+      "published_at": "2026-11-10T16:00:00.000Z",
+      "summary": "The PARK stack (PyTorch, AI models, Ray, and Kubernetes) is emerging as the de facto open source standard for production AI. Within that stack, KubeRay has become the bridge connecting scalable AI applications built on Ray..."
+    }
+  ],
+  "telegram_message_id": 318
+}
