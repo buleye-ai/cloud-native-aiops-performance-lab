@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 213,
+  "next_lesson": 214,
   "deliveries": {
-    "2026-08-14:morning": {
-      "lesson": 33,
-      "level": "A2",
-      "topic": "buying useful things at a shop",
-      "telegram_message_id": 58,
-      "sent_at": "2026-08-14T05:50:35.191Z"
-    },
     "2026-08-14:evening": {
       "lesson": 34,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "Cooking an easy dinner",
       "telegram_message_id": 317,
       "sent_at": "2026-11-13T19:59:20.122Z"
+    },
+    "2026-11-14:morning": {
+      "lesson": 213,
+      "level": "B1",
+      "topic": "Buying useful things at a shop",
+      "telegram_message_id": 319,
+      "sent_at": "2026-11-14T06:38:37.284Z"
     }
   }
 }
