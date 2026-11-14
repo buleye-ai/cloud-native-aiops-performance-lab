@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 214,
+  "next_lesson": 215,
   "deliveries": {
-    "2026-08-14:evening": {
-      "lesson": 34,
-      "level": "A2",
-      "topic": "why sleep helps the brain",
-      "telegram_message_id": 59,
-      "sent_at": "2026-08-14T15:27:25.059Z"
-    },
     "2026-08-15:morning": {
       "lesson": 35,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "Buying useful things at a shop",
       "telegram_message_id": 319,
       "sent_at": "2026-11-14T06:38:37.284Z"
+    },
+    "2026-11-15:evening": {
+      "lesson": 214,
+      "level": "B1",
+      "topic": "How sleep supports learning",
+      "telegram_message_id": 320,
+      "sent_at": "2026-11-14T18:27:43.852Z"
     }
   }
 }
