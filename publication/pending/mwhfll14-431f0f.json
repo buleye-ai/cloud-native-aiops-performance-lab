@@ -1,0 +1,38 @@
+{
+  "id": "mwhfll14-431f0f",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-11-15T06:06:11.128Z",
+  "title": "Kubernetes v1.37：通过挂载选项与 EmptyDir 权限强化容器存储",
+  "english": "The Kubernetes Blog describes storage security features in Kubernetes v1.37: permission modes for emptyDir volumes and bind mount options. These features let application developers and security teams express stricter storage policies directly in Kubernetes. The examples in the supplied summary include preventing files from being deleted across containers and preventing arbitrary binaries from being executed from writable volumes. The post also introduces the Linux storage and permission mechanisms behind these controls. The available source does not provide further implementation details, so this brief does not infer specific defaults, compatibility requirements, or operational procedures.",
+  "chinese": "来源称，Kubernetes v1.37 增加了 emptyDir 权限模式和 bind mount 选项，用于在 Kubernetes 配置中实施更严格的存储安全策略。摘要给出的示例包括限制容器间删除文件，以及禁止从可写卷执行任意二进制文件。文章还介绍了相关 Linux 存储与权限机制；所提供内容未说明具体配置方式或兼容性细节。",
+  "why_it_matters": "对云原生平台与安全运维而言，这些能力把部分卷访问约束纳入 Kubernetes 本身，有助于设计容器间隔离策略和审查可写存储的风险。对 AIOps 或 Agent Infra 的意义在于：工作负载可能使用共享或可写卷，平台团队应将卷权限与挂载约束纳入部署评估；来源未提供具体实施步骤，需查阅原文确认。",
+  "interview_expression": "Kubernetes v1.37 adds emptyDir permission modes and bind mount options to support stricter storage security policies. I would verify the exact configuration and compatibility details before applying them to production workloads.",
+  "vocabulary": [
+    {
+      "term": "permission mode",
+      "meaning": "权限模式",
+      "example": "The team reviewed the permission mode for the shared volume."
+    },
+    {
+      "term": "bind mount",
+      "meaning": "绑定挂载",
+      "example": "Bind mount options can constrain how a volume is exposed to a container."
+    },
+    {
+      "term": "writable volume",
+      "meaning": "可写卷",
+      "example": "The security review considered whether a writable volume could expose executable files."
+    }
+  ],
+  "sources": [
+    {
+      "source": "Kubernetes Blog",
+      "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
+      "url": "https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/",
+      "published_at": "2026-09-16T18:30:00.000Z",
+      "summary": "<p>Kubernetes v1.37 brings important storage security features: <code>emptyDir</code> permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for example, prohibiting deletion of files across containers or execution of arbitrary binaries from writable volumes, directly in Kubernetes without any complicated circumvention.</p> <h2 id=\"linux-storage-and-permission-fundamentals\">Linux storage and permission fundamentals<a class=\"td-heading-self-link\" href=\"#linux-storage-and-permission-fundamentals\" aria-label=\"Heading self-link\"></a></h2><p>Before diving into the new Kubernetes features, let us briefly review the low-level Linux security mechanisms that make them possible.</p> <h3 id=\"bind-mount-flags\">Bind mount flags<a class=\"td-heading-self-link\" href=\"#bind-mount-flags\" aria-label=\"Heading self-link\"></a"
+    }
+  ],
+  "telegram_message_id": 321
+}
