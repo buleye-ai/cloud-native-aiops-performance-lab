@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 215,
+  "next_lesson": 216,
   "deliveries": {
-    "2026-08-15:morning": {
-      "lesson": 35,
-      "level": "A2",
-      "topic": "making plans with family",
-      "telegram_message_id": 61,
-      "sent_at": "2026-08-15T03:10:20.842Z"
-    },
     "2026-08-15:evening": {
       "lesson": 36,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "How sleep supports learning",
       "telegram_message_id": 320,
       "sent_at": "2026-11-14T18:27:43.852Z"
+    },
+    "2026-11-15:morning": {
+      "lesson": 215,
+      "level": "B1",
+      "topic": "Making plans with family",
+      "telegram_message_id": 322,
+      "sent_at": "2026-11-15T06:44:47.230Z"
     }
   }
 }
