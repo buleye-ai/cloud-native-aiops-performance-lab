@@ -1,5 +1,7 @@
 {
   "used_urls": [
+    "https://openai.com/index/step-toward-defining-the-standard-model",
+    "https://openai.com/index/our-new-blog-for-science",
     "https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/",
     "https://openai.com/index/introducing-chatgpt-wallet",
     "https://openai.com/business/customer-stories/shield",
@@ -197,8 +199,6 @@
     "https://openai.com/index/v7",
     "https://openai.com/index/australian-youth-safety-blueprint",
     "https://openai.com/index/hex-gpt-6-astra",
-    "https://www.cncf.io/blog/2026/09/11/kubecon-cloudnativecon-north-america-2026-your-week-in-salt-lake-city/",
-    "https://openai.com/index/cooley-gopublic",
-    "https://www.cncf.io/blog/2026/09/17/opentelemetry-everywhere-migrating-a-metrics-platform-at-scale/"
+    "https://www.cncf.io/blog/2026/09/11/kubecon-cloudnativecon-north-america-2026-your-week-in-salt-lake-city/"
   ]
 }
