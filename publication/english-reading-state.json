@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 217,
+  "next_lesson": 218,
   "deliveries": {
-    "2026-08-16:morning": {
-      "lesson": 37,
-      "level": "A2",
-      "topic": "a calm morning routine",
-      "telegram_message_id": 63,
-      "sent_at": "2026-08-16T03:29:43.020Z"
-    },
     "2026-08-16:evening": {
       "lesson": 38,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "Taking a good lunch break",
       "telegram_message_id": 324,
       "sent_at": "2026-11-16T06:43:39.142Z"
+    },
+    "2026-11-17:evening": {
+      "lesson": 217,
+      "level": "B1",
+      "topic": "enjoying music at home",
+      "telegram_message_id": 325,
+      "sent_at": "2026-11-16T22:28:37.992Z"
     }
   }
 }
