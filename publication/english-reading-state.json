@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 219,
+  "next_lesson": 220,
   "deliveries": {
-    "2026-08-17:morning": {
-      "lesson": 39,
-      "level": "A2",
-      "topic": "planning three important tasks",
-      "telegram_message_id": 65,
-      "sent_at": "2026-08-17T03:30:28.167Z"
-    },
     "2026-08-17:evening": {
       "lesson": 40,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "Taking the bus to work",
       "telegram_message_id": 327,
       "sent_at": "2026-11-17T08:03:33.742Z"
+    },
+    "2026-11-18:evening": {
+      "lesson": 219,
+      "level": "B1",
+      "topic": "daily life in a car-free city center",
+      "telegram_message_id": 328,
+      "sent_at": "2026-11-17T21:17:52.028Z"
     }
   }
 }
