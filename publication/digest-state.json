@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+    "https://kubernetes.io/blog/2026/11/16/ipvs-removal/",
+    "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+    "https://openai.com/index/strengthening-online-child-safety",
+    "https://openai.com/index/science-at-the-frontier",
+    "https://openai.com/business/customer-stories/revolut",
     "https://openai.com/index/step-toward-defining-the-standard-model",
     "https://openai.com/index/our-new-blog-for-science",
     "https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/",
@@ -193,12 +199,6 @@
     "https://openai.com/index/priorities-principles-third-party-assessments",
     "https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/",
     "https://openai.com/index/advisory-group-on-mathematics-and-ai",
-    "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
-    "https://openai.com/index/building-standards-next-phase-ai",
-    "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
-    "https://openai.com/index/v7",
-    "https://openai.com/index/australian-youth-safety-blueprint",
-    "https://openai.com/index/hex-gpt-6-astra",
-    "https://www.cncf.io/blog/2026/09/11/kubecon-cloudnativecon-north-america-2026-your-week-in-salt-lake-city/"
+    "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra"
   ]
 }
