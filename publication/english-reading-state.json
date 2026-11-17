@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 218,
+  "next_lesson": 219,
   "deliveries": {
-    "2026-08-16:evening": {
-      "lesson": 38,
-      "level": "A2",
-      "topic": "saving a little money each week",
-      "telegram_message_id": 64,
-      "sent_at": "2026-08-16T13:52:42.628Z"
-    },
     "2026-08-17:morning": {
       "lesson": 39,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "enjoying music at home",
       "telegram_message_id": 325,
       "sent_at": "2026-11-16T22:28:37.992Z"
+    },
+    "2026-11-17:morning": {
+      "lesson": 218,
+      "level": "B1",
+      "topic": "Taking the bus to work",
+      "telegram_message_id": 327,
+      "sent_at": "2026-11-17T08:03:33.742Z"
     }
   }
 }
