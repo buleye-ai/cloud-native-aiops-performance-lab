@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 220,
+  "next_lesson": 221,
   "deliveries": {
-    "2026-08-17:evening": {
-      "lesson": 40,
-      "level": "A2",
-      "topic": "a simple idea from science",
-      "telegram_message_id": 66,
-      "sent_at": "2026-08-17T14:04:06.518Z"
-    },
     "2026-08-18:morning": {
       "lesson": 41,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "daily life in a car-free city center",
       "telegram_message_id": 328,
       "sent_at": "2026-11-17T21:17:52.028Z"
+    },
+    "2026-11-18:morning": {
+      "lesson": 220,
+      "level": "B1",
+      "topic": "Making a Simple Healthy Breakfast",
+      "telegram_message_id": 330,
+      "sent_at": "2026-11-18T07:40:15.421Z"
     }
   }
 }
