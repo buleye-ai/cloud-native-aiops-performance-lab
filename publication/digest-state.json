@@ -1,5 +1,10 @@
 {
   "used_urls": [
+    "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+    "https://www.cncf.io/blog/2026/11/17/is-your-opentelemetry-pipeline-becoming-a-performance-bottleneck/",
+    "https://openai.com/index/introducing-chatgpt-for-sales",
+    "https://openai.com/index/astra-law-6-2",
+    "https://openai.com/index/introducing-openai-for-chile",
     "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
     "https://kubernetes.io/blog/2026/11/16/ipvs-removal/",
     "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
@@ -194,11 +199,6 @@
     "https://openai.com/index/better-prompt-caching-for-gpt-6",
     "https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/",
     "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-    "https://www.cncf.io/blog/2026/09/22/from-attendee-badge-to-speaker-badge-my-first-kubecon-at-kubecon-cloudnativecon-india-2026/",
-    "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-    "https://openai.com/index/priorities-principles-third-party-assessments",
-    "https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/",
-    "https://openai.com/index/advisory-group-on-mathematics-and-ai",
-    "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra"
+    "https://www.cncf.io/blog/2026/09/22/from-attendee-badge-to-speaker-badge-my-first-kubecon-at-kubecon-cloudnativecon-india-2026/"
   ]
 }
