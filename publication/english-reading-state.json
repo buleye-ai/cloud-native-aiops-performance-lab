@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 221,
+  "next_lesson": 222,
   "deliveries": {
-    "2026-08-18:morning": {
-      "lesson": 41,
-      "level": "A2",
-      "topic": "Talking about the weather",
-      "telegram_message_id": 68,
-      "sent_at": "2026-08-18T03:13:23.628Z"
-    },
     "2026-08-18:evening": {
       "lesson": 42,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "Making a Simple Healthy Breakfast",
       "telegram_message_id": 330,
       "sent_at": "2026-11-18T07:40:15.421Z"
+    },
+    "2026-11-19:evening": {
+      "lesson": 221,
+      "level": "B1",
+      "topic": "How food connects people",
+      "telegram_message_id": 331,
+      "sent_at": "2026-11-18T20:52:11.325Z"
     }
   }
 }
