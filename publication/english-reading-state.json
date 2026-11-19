@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 222,
+  "next_lesson": 223,
   "deliveries": {
-    "2026-08-18:evening": {
-      "lesson": 42,
-      "level": "A2",
-      "topic": "Learning from mistakes",
-      "telegram_message_id": 69,
-      "sent_at": "2026-08-18T14:17:46.481Z"
-    },
     "2026-08-19:morning": {
       "lesson": 43,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "How food connects people",
       "telegram_message_id": 331,
       "sent_at": "2026-11-18T20:52:11.325Z"
+    },
+    "2026-11-19:morning": {
+      "lesson": 222,
+      "level": "B1",
+      "topic": "Workplace communication",
+      "telegram_message_id": 333,
+      "sent_at": "2026-11-19T07:35:51.660Z"
     }
   }
 }
