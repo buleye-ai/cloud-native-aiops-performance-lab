@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 223,
+  "next_lesson": 224,
   "deliveries": {
-    "2026-08-19:morning": {
-      "lesson": 43,
-      "level": "A2",
-      "topic": "staying focused in a busy office",
-      "telegram_message_id": 71,
-      "sent_at": "2026-08-19T03:26:09.561Z"
-    },
     "2026-08-19:evening": {
       "lesson": 44,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "Workplace communication",
       "telegram_message_id": 333,
       "sent_at": "2026-11-19T07:35:51.660Z"
+    },
+    "2026-11-20:evening": {
+      "lesson": 223,
+      "level": "B1",
+      "topic": "Choosing a good weekend activity",
+      "telegram_message_id": 334,
+      "sent_at": "2026-11-19T20:56:43.898Z"
     }
   }
 }
