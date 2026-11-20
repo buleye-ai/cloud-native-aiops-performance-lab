@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 224,
+  "next_lesson": 225,
   "deliveries": {
-    "2026-08-19:evening": {
-      "lesson": 44,
-      "level": "A2",
-      "topic": "Cooking an easy dinner",
-      "telegram_message_id": 72,
-      "sent_at": "2026-08-19T14:18:35.463Z"
-    },
     "2026-08-20:morning": {
       "lesson": 45,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "Choosing a good weekend activity",
       "telegram_message_id": 334,
       "sent_at": "2026-11-19T20:56:43.898Z"
+    },
+    "2026-11-20:morning": {
+      "lesson": 224,
+      "level": "B1",
+      "topic": "morning exercise routine",
+      "telegram_message_id": 336,
+      "sent_at": "2026-11-20T07:27:09.301Z"
     }
   }
 }
