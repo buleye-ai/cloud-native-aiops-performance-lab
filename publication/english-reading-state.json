@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 225,
+  "next_lesson": 226,
   "deliveries": {
-    "2026-08-20:morning": {
-      "lesson": 45,
-      "level": "A2",
-      "topic": "Buying useful things at a shop",
-      "telegram_message_id": 74,
-      "sent_at": "2026-08-20T03:31:17.237Z"
-    },
     "2026-08-20:evening": {
       "lesson": 46,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "morning exercise routine",
       "telegram_message_id": 336,
       "sent_at": "2026-11-20T07:27:09.301Z"
+    },
+    "2026-11-21:evening": {
+      "lesson": 225,
+      "level": "B1",
+      "topic": "A lesson from travel",
+      "telegram_message_id": 337,
+      "sent_at": "2026-11-20T20:41:41.393Z"
     }
   }
 }
