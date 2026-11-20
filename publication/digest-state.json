@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+    "https://openai.com/business/learn/deploying-daybreak-red",
+    "https://openai.com/business/learn/pr-scans-demo",
+    "https://openai.com/business/learn/codex-security-plugin-demo",
+    "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+    "https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/",
     "https://www.cncf.io/blog/2026/11/18/optimizing-kubernetes-admission-control-where-kyvernos-cel-admission-cost-actually-goes/",
     "https://openai.com/index/the-silent-consensus",
     "https://openai.com/index/research-acceleration-jagged-frontier",
@@ -193,12 +199,6 @@
     "https://openai.com/index/proaction",
     "https://www.cncf.io/blog/2026/09/25/security-slam-2026-fall-edition/",
     "https://www.cncf.io/blog/2026/09/24/observability-day-where-the-community-comes-together-at-kubecon-cloudnativecon-north-america-2026/",
-    "https://openai.com/index/ringg",
-    "https://openai.com/index/introducing-mentalhealthbench",
-    "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
-    "https://openai.com/index/two-years-of-openai-academy",
-    "https://www.cncf.io/blog/2026/09/23/which-hat-am-i-wearing-right-now/",
-    "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
-    "https://openai.com/index/sam-altman-un-security-council-remarks"
+    "https://openai.com/index/ringg"
   ]
 }
