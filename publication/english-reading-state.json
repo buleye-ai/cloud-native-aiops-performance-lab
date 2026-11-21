@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 226,
+  "next_lesson": 227,
   "deliveries": {
-    "2026-08-20:evening": {
-      "lesson": 46,
-      "level": "A2",
-      "topic": "why sleep helps the brain",
-      "telegram_message_id": 75,
-      "sent_at": "2026-08-20T14:22:25.180Z"
-    },
     "2026-08-21:morning": {
       "lesson": 47,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "A lesson from travel",
       "telegram_message_id": 337,
       "sent_at": "2026-11-20T20:41:41.393Z"
+    },
+    "2026-11-21:morning": {
+      "lesson": 226,
+      "level": "B1",
+      "topic": "Keeping a small home tidy",
+      "telegram_message_id": 339,
+      "sent_at": "2026-11-21T07:20:52.853Z"
     }
   }
 }
