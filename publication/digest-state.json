@@ -1,5 +1,11 @@
 {
   "used_urls": [
+    "https://www.cncf.io/blog/2026/11/20/when-a-sync-window-closes-how-argo-cd-self-heal-skipped-the-migration-hook/",
+    "https://openai.com/index/combatting-adversarial-distillation",
+    "https://openai.com/business/customer-stories/hebbia",
+    "https://openai.com/index/introducing-medchembench",
+    "https://www.cncf.io/blog/2026/11/19/how-to-support-your-app-on-kubernetes-environments-you-dont-control/",
+    "https://www.cncf.io/blog/2026/11/16/your-runtime-security-tool-is-not-your-baseline-silos-dressed-as-autonomy-in-cloud-native-teams/",
     "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
     "https://openai.com/business/learn/deploying-daybreak-red",
     "https://openai.com/business/learn/pr-scans-demo",
@@ -193,12 +199,6 @@
     "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
     "https://openai.com/index/how-we-will-do-better-for-australia",
     "https://www.cncf.io/blog/2026/09/28/the-case-for-a-cloud-native-agent-harness/",
-    "https://openai.com/index/lenfest-ai-collaborative-expansion",
-    "https://openai.com/form/codex-originals",
-    "https://openai.com/index/basis-tax-workbook-with-astra",
-    "https://openai.com/index/proaction",
-    "https://www.cncf.io/blog/2026/09/25/security-slam-2026-fall-edition/",
-    "https://www.cncf.io/blog/2026/09/24/observability-day-where-the-community-comes-together-at-kubecon-cloudnativecon-north-america-2026/",
-    "https://openai.com/index/ringg"
+    "https://openai.com/index/lenfest-ai-collaborative-expansion"
   ]
 }
