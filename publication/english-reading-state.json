@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 228,
+  "next_lesson": 229,
   "deliveries": {
-    "2026-08-21:evening": {
-      "lesson": 48,
-      "level": "A2",
-      "topic": "How honeybees find food",
-      "telegram_message_id": 78,
-      "sent_at": "2026-08-21T14:20:42.413Z"
-    },
     "2026-08-22:morning": {
       "lesson": 49,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "Making friends",
       "telegram_message_id": 340,
       "sent_at": "2026-11-21T19:44:49.966Z"
+    },
+    "2026-11-22:morning": {
+      "lesson": 228,
+      "level": "B1",
+      "topic": "Resting and recovering during a lunch break",
+      "telegram_message_id": 342,
+      "sent_at": "2026-11-22T07:01:49.245Z"
     }
   }
 }
