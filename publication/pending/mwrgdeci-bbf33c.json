@@ -1,0 +1,38 @@
+{
+  "id": "mwrgdeci-bbf33c",
+  "kind": "industry",
+  "status": "pending",
+  "created_at": "2026-11-22T06:25:30.594Z",
+  "title": "Kubernetes v1.37 新特性：PVC 未使用时间追踪进入 Beta",
+  "english": "Kubernetes v1.37 promotes the PersistentVolumeClaimUnusedSinceTime feature gate to Beta, enabled by default. The PVC protection controller now adds an Unused condition to each PersistentVolumeClaim, indicating whether any running pod references it. This eliminates the need for custom tooling or cross-referencing to identify unused PVCs, simplifying storage management in large clusters. The feature helps detect orphaned volumes, optimize resource utilization, and reduce costs. As a Beta feature, it is expected to evolve with feedback before General Availability.",
+  "chinese": "Kubernetes v1.37 将 PersistentVolumeClaimUnusedSinceTime 特性门控提升至 Beta 阶段，并默认启用。该特性由 PVC 保护控制器为每个 PersistentVolumeClaim 添加一个 Unused 条件，直接反映是否有运行中的 Pod 引用该 PVC。这免去了自定义工具或交叉引用查询的繁琐，让用户快速识别不再使用的存储卷，从而优化资源利用、降低成本，并在大型集群中简化存储管理。作为 Beta 功能，它将在最终 GA 前根据反馈持续演进。",
+  "why_it_matters": "对云原生运维而言，该特性降低了存储资源闲置的检测成本，是 FinOps 和容量规划的重要基础。在 AIOps 场景中，Unused 条件可作为自动化回收或告警的信号，减少人工排查。对于 Agent Infra，类似状态感知能力可让智能体更高效地管理基础设施。对职业发展而言，掌握最新特性并理解其业务价值是资深工程师的必备素养。",
+  "interview_expression": "In Kubernetes 1.37, the PersistentVolumeClaimUnusedSinceTime feature reached Beta, making it easier to identify unused storage volumes without custom scripts. This is valuable for optimizing resource efficiency in production clusters.",
+  "vocabulary": [
+    {
+      "term": "Unused condition",
+      "meaning": "未使用条件，PVC 上新增的状态标记，指示是否有运行中的 Pod 引用",
+      "example": "The Unused condition on a PVC shows whether it's referenced by any running pod."
+    },
+    {
+      "term": "feature gate",
+      "meaning": "特性门控，用于控制 Kubernetes 功能启用状态的开关",
+      "example": "The PersistentVolumeClaimUnusedSinceTime feature gate is now Beta in v1.37."
+    },
+    {
+      "term": "PVC protection controller",
+      "meaning": "PVC 保护控制器，负责维护持久卷声明生命周期的控制器",
+      "example": "The PVC protection controller now adds the Unused condition to each claim."
+    }
+  ],
+  "sources": [
+    {
+      "source": "Kubernetes Blog",
+      "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)",
+      "url": "https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/",
+      "published_at": "2026-09-21T18:30:00.000Z",
+      "summary": "<p>Kubernetes v1.37 promotes the <code>PersistentVolumeClaimUnusedSinceTime</code> feature gate to Beta (enabled by default). With this feature, the PersistentVolumeClaim (PVC) protection controller adds an <code>Unused</code> condition to each PVC, telling you whether any running pod currently references it — no custom tooling or cross-referencing required.</p> <p>For the API definition of PVC conditions, see the <a href=\"https://kubernetes.io/docs/reference/kubernetes-api/core/persistent-volume-claim-v1/#PersistentVolumeClaimCondition\">PersistentVolumeClaim API reference</a>. Read on to learn how the <code>Unused</code> condition works and how to use it.</p> <h2 id=\"why-track-pvc-usage\">Why track PVC usage?<a class=\"td-heading-self-link\" href=\"#why-track-pvc-usage\" aria-label=\"Heading self-link\"></a></h2><p>In large-scale Kubernetes clusters, it is common for users to create PVCs and t"
+    }
+  ],
+  "telegram_message_id": 341
+}

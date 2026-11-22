@@ -1,5 +1,6 @@
 {
   "used_urls": [
+    "https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/",
     "https://www.cncf.io/blog/2026/11/20/when-a-sync-window-closes-how-argo-cd-self-heal-skipped-the-migration-hook/",
     "https://openai.com/index/combatting-adversarial-distillation",
     "https://openai.com/business/customer-stories/hebbia",
@@ -198,7 +199,6 @@
     "https://openai.com/index/introducing-dots",
     "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
     "https://openai.com/index/how-we-will-do-better-for-australia",
-    "https://www.cncf.io/blog/2026/09/28/the-case-for-a-cloud-native-agent-harness/",
-    "https://openai.com/index/lenfest-ai-collaborative-expansion"
+    "https://www.cncf.io/blog/2026/09/28/the-case-for-a-cloud-native-agent-harness/"
   ]
 }
