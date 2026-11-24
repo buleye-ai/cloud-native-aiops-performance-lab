@@ -1,14 +1,7 @@
 {
   "started_at": "2026-07-28",
-  "next_lesson": 231,
+  "next_lesson": 232,
   "deliveries": {
-    "2026-08-23:morning": {
-      "lesson": 51,
-      "level": "A2",
-      "topic": "Planning a Day",
-      "telegram_message_id": 82,
-      "sent_at": "2026-08-23T03:33:19.605Z"
-    },
     "2026-08-23:evening": {
       "lesson": 52,
       "level": "A2",
@@ -1261,6 +1254,13 @@
       "topic": "Daily commute by bus and train",
       "telegram_message_id": 345,
       "sent_at": "2026-11-23T07:50:54.009Z"
+    },
+    "2026-11-24:evening": {
+      "lesson": 231,
+      "level": "B1",
+      "topic": "life in a different kind of city",
+      "telegram_message_id": 346,
+      "sent_at": "2026-11-24T00:17:44.309Z"
     }
   }
 }
